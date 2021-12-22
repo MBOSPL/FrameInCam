@@ -1,0 +1,55 @@
+﻿<div class="vendor-projects" ng-init="init()">
+    <div ng-if="!isEditMode">
+        <div class="row">
+            <div class="col-md-10">
+                <!-- Tabs content -->
+                <div class="tab-content">
+                    <div class="tab-pane bg-white show active" id="v-pills-ownproject" role="tabpanel" aria-labelledby="v-pills-ownproject">
+                        <div class="widget_title">
+                            <label class="font-weight-bold">Owned Projects</label>
+                            <span class="btn btn-sm bg-white text-primary text-capitalize p-0 pull-right" ng-click="newProject()" aria-expanded="false" aria-controls="photoUploadModel">
+                                <i class="fa fa-plus"></i> ADD Project
+                            </span>
+                        </div>
+                        <fic-vendor-home-projects-view ng-model="projects" ng-disabled="isDisabled()"></fic-vendor-home-projects-view>
+                    </div>
+                    <div class="tab-pane bg-white" id="v-pills-assignedproject" role="tabpanel" aria-labelledby="v-pills-assignedproject">
+                        <div class="widget_title">
+                            <label class="font-weight-bold">Assigned Projects</label>
+                            <span class="btn btn-sm bg-white text-primary text-capitalize p-0 pull-right" ng-click="newProject()" aria-expanded="false" aria-controls="photoUploadModel">
+                                <i class="fa fa-plus"></i> ADD Project
+                            </span>
+                        </div>
+                        <fic-vendor-home-projects-view ng-model="assignedProjects" ng-disabled="isDisabled()"></fic-vendor-home-projects-view>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <!-- Tabs nav -->
+                <div class="nav flex-column nav-pills nav-pills-custom" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <a href="#v-pills-ownproject" class="nav-link mb-3 p-3 shadow active" id="v-pills-ownproject-tab" data-toggle="pill" role="tab" aria-controls="v-pills-ownproject" aria-selected="true">
+                        <i class="fa fa-photo mr-2"></i>
+                        <span class="font-weight-bold small text-uppercase">Own Projects</span>
+                    </a>
+                    <!--<a href="#v-pills-album" class="nav-link mb-3 p-3 shadow" id="v-pills-album-tab" data-toggle="pill" role="tab" aria-controls="v-pills-album" aria-selected="false">
+                <i class="fa fa-list mr-2"></i>
+                <span class="font-weight-bold small text-uppercase">Albums</span>
+            </a>-->
+                    <a href="#v-pills-assignedproject" class="nav-link mb-3 p-3 shadow" id="v-pills-assignedproject-tab" data-toggle="pill" role="tab" aria-controls="v-pills-assignedproject" aria-selected="false">
+                        <i class="fa fa-file-video-o mr-2"></i>
+                        <span class="font-weight-bold small text-uppercase">Assigned Projects</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
+                    <div ng-if="isEditMode">
+                        <div class="mt-2 mb-2 p-3 bg-danger" ng-if="errorMsgs && errorMsgs.length > 0">
+                            <div class="clear" ng-repeat="errorMsg in errorMsgs">
+                                <small class="text-white" ng-bind="errorMsg"></small>
+                            </div>
+                        </div>
+                        <fic-vendor-home-projects-edit-form ng-model="selectedProject" save-project="save($project)" cancel-edit="completeEdit()" ng-disabled="isDisabled()">
+                        </fic-vendor-home-projects-edit-form>
+                    </div>
+                </div>

@@ -1,0 +1,43 @@
+@using FrameIncam.WebApi.Views.Emails.ProjectCreated
+@using FrameIncam.WebApi.Views.Shared
+@model ProjectCreatedEmailViewModel
+
+@{
+    ViewData["EmailTitle"] = "Your Album";
+    ViewData["UserName"] = Model.Username;
+    ViewData["clientUrl"] = Model.ClientUrl;
+    ViewData["companyLogoPath"] = Model.CompanyLogoPath;
+}
+
+<p>
+    We have shared Photos with you and need your help with selecting the best photos for your album.
+</p>
+
+<br />
+
+@await Html.PartialAsync("EmailButton", new EmailButtonViewModel("Your Album", Model.ProjectLink))
+<table width="100%" border="0" cellspacing="0" cellpadding="0">
+    <tr>
+        <td bgcolor="#ffffff" align="center" style="padding: 0px,">
+            <table border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td align="center" style="border-radius: 3px;">
+                        Access Pin : @Model.ProjectPin
+                    </td>
+                </tr>
+                <tr>
+                    <td align="center" style="border-radius: 3px;">
+                        If you have any questions, please feel free to contact us anytime.
+                    </td>
+                </tr>
+            </table>
+        </td>
+    </tr>
+</table>
+<br />
+<br />
+
+<p>
+    Thanks & Regards,<br />
+    @Model.VendorName<br />
+</p>

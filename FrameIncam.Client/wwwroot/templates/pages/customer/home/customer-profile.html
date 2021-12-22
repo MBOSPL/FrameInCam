@@ -1,0 +1,37 @@
+﻿<div class="container mt-5 pt-5 pb-5" ng-init="init()">
+    <div class="card customer-profile p-5">
+        <form name="updateProfileForm" ng-submit="updateProfile(updateProfileForm)" ng-validate="profileUpdateValidationOptions" ng-if="ready">
+            <h4 class="mb-4">Profile <button type="submit" class="btn btn-sm bg-success pull-right"><i class="fa fa-save mr-2"></i> SAVE</button></h4>
+            <div class="info-container">
+                <div class="widget_title">
+                    <label class="font-weight-bold">Personal Information</label>
+                    <span class="btn btn-sm bg-white text-primary text-capitalize p-0 pull-right" data-toggle="collapse" data-target="#personal-info" aria-expanded="false" aria-controls="personal-info">
+                        <i class="fa fa-minus"></i>
+                    </span>
+                </div>
+                <div class="collapse show" id="personal-info">
+                    <div class="row">
+                        <div class="form-group col-6">
+                            <label class="form-label">Email</label>
+                            <input name="email" readonly ng-model="profile.email" class="form-label">
+                        </div>
+                        <div class="form-group col-6">
+                            <label class="form-label">Mobile</label>
+                            <input name="mobile" ng-model="profile.mobile" type="tel" class="form-control">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-6">
+                            <label class="form-label">Name</label>
+                            <input name="name" ng-model="profile.name" type="text" class="form-control">
+                        </div>
+                        <div class="form-group col-6">
+                            <label class="form-label">Password</label>
+                            <input  name="password" ng-model="profile.password" type="password" class="form-control">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+        </form>
+    </div>
+</div>

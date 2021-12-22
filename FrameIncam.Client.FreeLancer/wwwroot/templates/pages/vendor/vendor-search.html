@@ -1,0 +1,37 @@
+﻿<section id="inner_pages" ng-init="init()">
+    <div class="container">
+        <div class="listing_header mt-4">
+            <div class="pull-left">
+                <h5>
+                    <span ng-bind="title | capitalize"></span>
+                </h5>
+                <div class="clear">
+                    <small class="font-italic" ng-bind="'Showing ' + (vendors.pageRecords.length || 0) + ' results as per your search'"></small>
+                </div>
+            </div>
+
+            <div class="layout-switcher">
+                <a href ng-class="{'active':view == 'grid'}" ng-click="view = 'grid'"><i class="fa fa-th"></i></a>
+                <a href ng-class="{'active':view == 'list'}" ng-click="view = 'list'"><i class="fa fa-align-justify"></i></a>
+            </div>
+            <div class="pull-right col-4">
+                <input type="text" class="form-control" placeholder="Search" ng-change="refresh()" ng-model="searchQuery.search">
+                <button type="button" class="btn mr-3 btn-link btn-icon btn-clear-text" tabindex="-1" ng-if="searchQuery.search" ng-click="clearSearch($event)">
+                    <i class="fa fa-close text-danger"></i>
+                </button>
+            </div>
+        </div>
+
+        <div class="vendor-explorer-container">
+            <fic-vendor-grid-explorer ng-model="vendors" select-vendor="toggleVendorSelection($vendor)" ng-disabled="isDisabled()" ng-if="view == 'grid'"></fic-vendor-grid-explorer>
+            <fic-vendor-list-explorer ng-model="vendors" select-vendor="toggleVendorSelection($vendor)" ng-disabled="isDisabled()" ng-if="view == 'list'"></fic-vendor-list-explorer>
+        </div>
+        <nav class="pagination_nav">
+            <ul class="pagination">
+                <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+                <li class="active"><a href="#">1</a></li>
+                <li class="disabled"><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+            </ul>
+        </nav>
+    </div>
+</section>

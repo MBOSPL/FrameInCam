@@ -1,0 +1,13 @@
+﻿.vendor-home{
+
+}
+
+    .vendor-home .nav-pills-custom .nav-link {
+        background-color:white;
+        color:black;
+    }
+
+        .vendor-home .nav-pills-custom .nav-link.active {
+            background-color: #007bff;
+            color: white;
+        }

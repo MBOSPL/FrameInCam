@@ -1,0 +1,12 @@
+﻿.fic-hover-menu-parent
+{
+    position: relative;
+}
+
+    .fic-hover-menu-parent > .fic-hover-menu.position-fixed.dropdown-menu {
+        position: fixed;
+        left: auto;
+        right: auto;
+        top: auto;
+        bottom: auto;
+    }

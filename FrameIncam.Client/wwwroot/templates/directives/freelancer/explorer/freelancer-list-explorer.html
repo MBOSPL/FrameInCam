@@ -1,0 +1,8 @@
+﻿<div class="freelancer-list-explorer">
+    <div class="row">
+        <div class="vendor" ng-repeat="vendor in value.pageRecords">
+            <fic-freelancer-list-item-presentation ng-model="vendor" view-freelancer="viewFreeLancer($freelancer)" assign-freelancer="assignFreeLancer($freelancer)" select-freelancer="selectFreeLancer($freelancer)" ng-disabled="isDisabled()">
+            </fic-freelancer-list-item-presentation>
+        </div>
+    </div>
+</div>

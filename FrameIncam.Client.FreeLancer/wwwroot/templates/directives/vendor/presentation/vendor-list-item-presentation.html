@@ -1,0 +1,43 @@
+﻿<div class="vendor-list-item-presentation" ng-if="value">
+    <div class="ml-3 listview show_listing">
+        <div class="listing_wrap">
+            <div class="listing_img">
+                <span class="like_post"><i class="fa fa-share-square-o"></i></span>
+                <div class="listing_cate">
+                    <span class="listing_like">
+                        <a href="#" ng-click="selectVendor()">
+                            <i class="fa" ng-class="{'fa-heart':value.isShortlisted,'fa-heart-o':!value.isShortlisted}"></i>
+                        </a>
+                    </span>
+                </div>
+                <img ng-src="{{presentationUrl}}" alt="image" style="object-fit:cover">
+            </div>
+            <div class="listing_info" ng-click="viewVendor()">
+                <div class="post_category">
+                    <a href="#"><span ng-bind="value.type"></span></a>
+                </div>
+                <h4><a href="#"><span ng-bind="value.name | capitalize"></span></a></h4>
+                <div class="w-100 pb-3" ng-if="value.service">
+                    <small class="text-dark col-6 pull-left pl-0" ng-bind="value.service.description"></small>
+                    <small class="text-dark font-weight-bold col-6 pull-right pr-0">
+                        <span class="pull-right">
+                            <i class="fa fa-rupee"></i> {{value.service.price}}
+                        </span>
+                    </small>
+                </div>
+                <div class="listing_review_info w-100" style="position:absolute;bottom:0px;">
+                    <p>
+                        <span class="review_score" ng-bind="value.rating.value + '/5'"></span>
+                        <i ng-class="{'active':value.rating.value >= 1}" class="fa fa-star"></i>
+                        <i ng-class="{'active':value.rating.value >= 2}" class="fa fa-star"></i>
+                        <i ng-class="{'active':value.rating.value >= 3}" class="fa fa-star"></i>
+                        <i ng-class="{'active':value.rating.value >= 4}" class="fa fa-star"></i>
+                        <i ng-class="{'active':value.rating.value == 5}" class="fa fa-star"></i>
+                        <span ng-bind="'(' + value.rating.totalReviews + ' Reviews)'"></span>
+                    </p>
+                    <p class="listing_map_m"><i class="fa fa-map-marker"></i> <span ng-bind="value.location"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,156 @@
+﻿fic-thumbnail
+{
+    position: relative;
+    display: block;
+    width: 110px;
+    height: 110px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 3px;
+}
+
+    fic-thumbnail > div {
+        position: absolute;
+        text-align: center;
+        width: 100%;
+        height: 14px;
+        line-height: 14px;
+        top: 43px;
+        left: 0;
+        white-space: nowrap;
+    }
+
+    fic-thumbnail > input[type=checkbox] {
+        position: absolute;
+        top: 0.375rem;
+        left: 0.375rem;
+        cursor: pointer;
+    }
+
+    fic-thumbnail > img {
+        display: block;
+        max-width: 100%;
+        max-height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        opacity: 0;
+        transition: opacity linear 250ms;
+    }
+
+        fic-thumbnail > img.in {
+            opacity: 1;
+        }
+
+    .thumbnail-primary fic-thumbnail,
+    fic-thumbnail.primary {
+        border-color: #0062cc !important;
+    }
+
+    .thumbnail-secondary fic-thumbnail,
+    fic-thumbnail.secondary {
+        border-color: #6c757d !important;
+    }
+
+    .thumbnail-success fic-thumbnail,
+    fic-thumbnail.success {
+        border-color: #28a745 !important;
+        border:2px solid;
+    }
+
+    .thumbnail-danger fic-thumbnail,
+    fic-thumbnail.danger {
+        border-color: #dc3545 !important;
+    }
+
+    .thumbnail-warning fic-thumbnail,
+    fic-thumbnail.warning {
+        border-color: #ffc107 !important;
+    }
+
+    .thumbnail-info fic-thumbnail,
+    fic-thumbnail.info {
+        border-color: #117a8b !important;
+    }
+
+    .thumbnail-light fic-thumbnail,
+    fic-thumbnail.light {
+        border-color: #f8f9fa !important;
+    }
+
+    .thumbnail-dark fic-thumbnail,
+    fic-thumbnail.dark {
+        border-color: #343a40 !important;
+    }
+
+    .thumbnail-muted fic-thumbnail,
+    fic-thumbnail.muted {
+        border-color: #6c757d !important;
+    }
+
+    .thumbnail-white fic-thumbnail,
+    fic-thumbnail.white {
+        border-color: #fff !important;
+    }
+
+    fic-thumbnail .absolute {
+        position: absolute;
+        top: 0px !important;
+        left: 0px !important;
+        width: 30px;
+        height: 30px;
+    }
+
+    fic-thumbnail .payment-check {
+        color: #fff;
+        font-size: 10px;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        width: 25px;
+        height: 25px;
+        /*margin-top: 44px;*/
+        /*margin-left: 33px;*/
+    }
+
+    /*CHECKBOX*/
+
+        fic-thumbnail .payment-check input {
+            display: none;
+            /*margin-top: 100px;*/
+            /*padding-top: 100px;*/
+        }
+
+        fic-thumbnail .payment-check label {
+            /*margin-top: 12px;*/
+            /*margin-left: 20px;*/
+            /*margin-right: 10px;*/
+        }
+
+        fic-thumbnail .payment-check div.isselectable {
+            width: 23px;
+            height: 23px;
+            border: 2px solid #e0e8f8;
+            text-align: center;
+            line-height: 20px;
+            border-radius: 3px;
+            cursor: pointer;
+            background: white;
+        }
+
+        fic-thumbnail .payment-check label i {
+            font-size: 20px;
+            color: #032066;
+            opacity: 0;
+        }
+
+        fic-thumbnail .payment-check input:checked + label i {
+            opacity: 1;
+        }
+
+        fic-thumbnail .payment-check input:checked + label div {
+            background: #e0e8f8;
+        }
+        .medium-zoom-overlay
+        {
+            opacity:0.7 !important;
+        }

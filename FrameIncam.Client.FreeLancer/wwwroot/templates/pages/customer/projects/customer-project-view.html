@@ -1,0 +1,25 @@
+﻿<section id="inner_pages" ng-init="init()">
+    <div class="container" ng-if="ready">
+        <div class="listing_header mt-4">
+            <h5 class="w-100"><span ng-bind="project.projectName"></span> <span ng-if="needApproval()" class="pull-right"><button class="btn btn-sm btn-primary mr-2" ng-click="saveSelection()"><i class="fa fa-save mr-2"></i> SAVE</button> <button class="btn btn-sm bg-success" ng-click="confirmSelection()"><i class="fa fa-check mr-2"></i> CONFIRM</button></span></h5>
+            <div class="clear">
+                <small>{{files.length || 0}} Photos</small>
+            </div>
+        </div>
+        <div class="project-detail-container">
+            <fic-customer-project-file-explorer ng-model="files" ng-disabled="isDisabled()" options="{project:project,isSelectable:needApproval()}"></fic-customer-project-file-explorer>
+        </div>
+        <nav class="pagination_nav">
+            <ul class="pagination">
+                <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+                <li class="active"><a href="#">1</a></li>
+                <li class="disabled"><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="container" ng-if="!ready">
+        <div class="listing_header mt-4">
+            <h5 class="w-100"><span ng-bind="'Loading...'" class="font-italic"></span></h5>
+        </div>
+    </div>
+</section>

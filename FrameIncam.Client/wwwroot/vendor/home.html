@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html ng-app="app" debug>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Frame Incam</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" type="text/css">
+    <link rel="stylesheet" href="../assets/css/dashboard.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="../assets/css/colors/blue.css" />
+    <link rel="shortcut icon" href="../assets/images/favicon.ico">
+    <link rel="stylesheet" href="../css/site.css" />
+    <link rel="stylesheet" href="../css/ng.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/js/popper.min.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
+
+    <script src="../dist/lib.js"></script>
+    <script src="../dist/ng.js"></script>
+
+</head>
+<body ng-controller="vendorHomeController" ng-cloak ng-init="init()">
+    <fic-vendor-app-header></fic-vendor-app-header>
+    <div class="main-container bg-light vendor-home">
+        <section id="inner_pages" ng-init="init()">
+            <div class="container-fluid pl-3 pt-1 pr-2">
+                <div class="listing_header mt-4 border-0">
+                    <div class="pull-left">
+                        <h5>
+                            <span ng-bind="'Your Account' | capitalize"></span>
+                        </h5>
+                    </div>
+                </div>
+                <div class="vendor-explorer-container">
+                    <div class="row">
+                        <div class="col-md-2">
+                            <!-- Tabs nav -->
+                            <div class="nav flex-column nav-pills nav-pills-custom" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                                <!--<a href class="nav-link mb-3 p-3 shadow active" id="v-pills-home-tab" data-toggle="pill" ng-click="loadTab('vendor-dashboard')" role="tab" aria-controls="v-pills-home" aria-selected="true">
+                                    <i class="fa fa-bar-chart mr-2"></i>
+                                    <span class="font-weight-bold small text-uppercase">Dashboard</span>
+                                </a>-->
+                                <a href class="nav-link mb-3 p-3 shadow active" id="v-pills-profile-tab" data-toggle="pill" ng-click="loadTab('vendor-profile')" role="tab" aria-controls="v-pills-profile" aria-selected="true">
+                                    <i class="fa fa-user-circle-o mr-2"></i>
+                                    <span class="font-weight-bold small text-uppercase">Profile</span>
+                                </a>
+                                <a href class="nav-link mb-3 p-3 shadow" id="v-pills-portfolio-tab" data-toggle="pill" ng-click="loadTab('vendor-portfolio')" role="tab" aria-controls="v-pills-portfolio" aria-selected="false">
+                                    <i class="fa fa-file-video-o mr-2"></i>
+                                    <span class="font-weight-bold small text-uppercase">Portfolio</span>
+                                </a>
+                                <a href class="nav-link mb-3 p-3 shadow" id="v-pills-projects-tab" data-toggle="pill" ng-click="loadTab('vendor-projects')" role="tab" aria-controls="v-pills-projects" aria-selected="false">
+                                    <i class="fa fa-list-alt mr-2"></i>
+                                    <span class="font-weight-bold small text-uppercase">Projects</span>
+                                </a>
+                                <a href class="nav-link mb-3 p-3 shadow" id="v-pills-messages-tab" data-toggle="pill" ng-click="loadTab('vendor-reviews')" role="tab" aria-controls="v-pills-messages" aria-selected="false">
+                                    <i class="fa fa-star mr-2"></i>
+                                    <span class="font-weight-bold small text-uppercase">Reviews</span>
+                                </a>
+                                <a href class="nav-link mb-3 p-3 shadow" id="v-pills-subscription-tab" data-toggle="pill" ng-click="loadTab('vendor-subscription')" role="tab" aria-controls="v-pills-subscription" aria-selected="false">
+                                    <i class="fa fa-rupee mr-2"></i>
+                                    <span class="font-weight-bold small text-uppercase">Subscription</span>
+                                </a>
+                                 <a href class="nav-link mb-3 p-3 shadow" id="v-pills-freelancer-tab" data-toggle="pill" ng-click="loadTab('vendor-freelancer')" role="tab" aria-controls="v-pills-freelancer" aria-selected="false">
+                                    <i class="fa fa-rupee mr-2"></i>
+                                    <span class="font-weight-bold small text-uppercase">Freelancer</span>
+                                </a>
+                                <!--<a href class="nav-link mb-3 p-3 shadow" id="v-pills-users-tab" data-toggle="pill" ng-click="loadTab('vendor-users')" role="tab" aria-controls="v-pills-users" aria-selected="true">
+                                    <i class="fa fa-users mr-2"></i>
+                                    <span class="font-weight-bold small text-uppercase">Users</span>
+                                </a>-->
+                            </div>
+                        </div>
+                        <div class="col-md-10">
+                            <!-- Tabs content -->
+                            <div class="tab-content" id="v-pills-tabContent">
+                                <div class="tab-pane fade shadow rounded bg-white show active p-5" role="tabpanel" ui-view>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

@@ -1,0 +1,5 @@
+{
+  "clientConfig": {
+    "fincamApiUrl": "https://localhost:44348"
+  }
+}

@@ -1,0 +1,5 @@
+{
+    "clientConfig": {
+        "fincamApiUrl": "http://13.127.198.83:8080"
+    }
+}

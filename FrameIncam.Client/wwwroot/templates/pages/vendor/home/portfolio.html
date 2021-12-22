@@ -1,0 +1,135 @@
+﻿<div class="vendor-portfolio" ng-init="init()">
+    <h4 class="mb-4">Portfolio</h4>
+    <div class="row">
+        <div class="col-md-10">
+            <!-- Tabs content -->
+            <div class="tab-content" id="v-pills-tabContent">
+                <div class="tab-pane bg-white show active" id="v-pills-photo" role="tabpanel" aria-labelledby="v-pills-photo-tab">
+                    <div class="widget_title">
+                        <label class="font-weight-bold">Photos</label>
+                        <span class="btn btn-sm bg-white text-primary text-capitalize p-0 pull-right" data-toggle="modal" data-target="#photoUploadModel" aria-expanded="false" aria-controls="photoUploadModel">
+                            <i class="fa fa-plus"></i> UPLOAD PHOTOS
+                        </span>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <a href class="d-block pull-left" tabindex="-1" ng-repeat="photo in photos">
+                                <div class="p-2">
+                                    <fic-thumbnail src="photo.presentationUrl" 
+                                                   style="  height: 200px !important;
+                                        width: 200px !important;
+                                        right: 5rem;
+                                        left: 2rem;
+                                        position: relative;" />
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane bg-white" id="v-pills-album" role="tabpanel" aria-labelledby="v-pills-album-tab">
+                    <div class="widget_title">
+                        <label class="font-weight-bold">Albums</label>
+                        <span class="btn btn-sm bg-white text-primary text-capitalize p-0 pull-right" data-toggle="collapse" data-target="#personal-info" aria-expanded="false" aria-controls="personal-info">
+                            <i class="fa fa-plus"></i> NEW ALBUM
+                        </span>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="customer-projects-container">
+                                <fic-customer-project-grid-explorer ng-model="albums" ng-disabled="isDisabled()"></fic-customer-project-grid-explorer>
+                            </div>
+                            <div class="clear">
+                                <nav class="pagination_nav">
+                                    <ul class="pagination">
+                                        <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+                                        <li class="active"><a href="#">1</a></li>
+                                        <li class="disabled"><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane bg-white" id="v-pills-video" role="tabpanel" aria-labelledby="v-pills-video-tab">
+                    <div class="widget_title">
+                        <label class="font-weight-bold">Videos</label>
+                        <span class="btn btn-sm bg-white text-primary text-capitalize p-0 pull-right" data-toggle="modal" data-target="#videoUploadModel" aria-expanded="false" aria-controls="videoUploadModel">
+                            <i class="fa fa-plus"></i> UPLOAD VIDEOS
+                        </span>
+                    </div>
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="col-4 pull-left" ng-repeat="video in videos">
+                                <div class="listing_video">
+                                    <iframe class="mfp-iframe" ng-src="{{trustSrc(video.presentationUrl)}}" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2">
+            <!-- Tabs nav -->
+            <div class="nav flex-column nav-pills nav-pills-custom" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <a href="#v-pills-photo" class="nav-link mb-3 p-3 shadow active" id="v-pills-photo-tab" data-toggle="pill" role="tab" aria-controls="v-pills-photo" aria-selected="true">
+                    <i class="fa fa-photo mr-2"></i>
+                    <span class="font-weight-bold small text-uppercase">Photos</span>
+                </a>
+                <!--<a href="#v-pills-album" class="nav-link mb-3 p-3 shadow" id="v-pills-album-tab" data-toggle="pill" role="tab" aria-controls="v-pills-album" aria-selected="false">
+                    <i class="fa fa-list mr-2"></i>
+                    <span class="font-weight-bold small text-uppercase">Albums</span>
+                </a>-->
+                <a href="#v-pills-video" class="nav-link mb-3 p-3 shadow" id="v-pills-videos-tab" data-toggle="pill" role="tab" aria-controls="v-pills-video" aria-selected="false">
+                    <i class="fa fa-file-video-o mr-2"></i>
+                    <span class="font-weight-bold small text-uppercase">Videos</span>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" id="photoUploadModel" tabindex="-1">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Upload a Photos</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <ng-dropzone class="dropzone" options="dzOptions" callbacks="dzCallbacks" methods="dzMethods"></ng-dropzone>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" id="sbmtbtn" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal" id="videoUploadModel" tabindex="-1">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Embed a Videos</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form ng-submit="submitVideos()" id="submitVideoForm">
+                    <div class="form-group" ng-repeat="input in videoFormsInput">
+                        <label for="email">Video #{{$index+1}}:</label>
+                        <input ng-model="input.fileName" type="text" class="form-control" placeholder="Enter a Embed Youtube or Vimeo Link">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" ng-click="submitVideos()" class="btn btn-primary">Save changes</button>
+            </div>
+        </div>
+    </div>
+</div>

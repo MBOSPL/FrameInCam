@@ -1,0 +1,9 @@
+﻿<div class="customer-project-grid-explorer">
+    <div class="row">
+        <div class="col-md-3 project" ng-repeat="project in value">
+            <a href ng-disabled="isDisabled()" ng-click="viewProject(project)">
+                <fic-customer-project-grid-item-presentation ng-model="project" options="options" ng-disabled="isDisabled()"></fic-customer-project-grid-item-presentation>
+            </a>
+        </div>
+    </div>
+</div>

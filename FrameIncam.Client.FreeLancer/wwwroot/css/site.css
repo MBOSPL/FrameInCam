@@ -1,0 +1,28 @@
+﻿.header_custom .navbar.navbar-expand-lg {
+    background-color: #000;
+}
+
+.invalid-input {
+    border: 1px solid red;
+}
+
+input.form-control + .btn-clear-text {
+    position: absolute;
+    top: 0;
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    z-index: 4;
+    right:0;
+    background:none;
+}
+.card.text-center.card1.p-3:hover {
+    background-color: #38ccff;
+    color: #fff;
+}
+.ellipsis {
+    text-overflow: ellipsis;
+    /* Required for text-overflow to do anything */
+    white-space: nowrap;
+    overflow: hidden;
+}

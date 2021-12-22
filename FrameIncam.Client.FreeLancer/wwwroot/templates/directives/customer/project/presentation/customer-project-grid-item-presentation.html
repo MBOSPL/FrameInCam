@@ -1,0 +1,15 @@
+﻿<div class="customer-project-grid-item-presentation" ng-if="value">
+    <div class="grid_view show_listing">
+        <div class="listing_wrap">
+            <div class="listing_img">
+                <span class="like_post" ng-if="isShareEnabled()"><i class="fa fa-share-square-o"></i></span>
+                <a href="#"><img ng-src="{{defaultPresentationUrl}}" alt="image" width="257" height="200" style="object-fit:cover"></a>
+            </div>
+            <div class="listing_info">
+                <h6><a href="#" class="ellipsis" ng-attr-title="{{value.projectName}}">{{value.projectName}}</a></h6>
+                <p>{{value.fileCount || 0}} Photos</p>
+                <h6><span class="badge badge-primary">{{ value.status || "New" }}</span></h6>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,17 @@
+﻿<div class="vendor-home-projects-view" ng-if="value">
+    <div class="customer-projects-container" ng-if="value.length > 0">
+        <fic-customer-project-grid-explorer ng-model="value" ng-disabled="isDisabled()"></fic-customer-project-grid-explorer>
+    </div>
+    <div class="customer-projects-container p-3" ng-if="value.length === 0">
+        <span class="font-italic">No projects found</span>
+        </div>
+        <div class="clear">
+            <nav class="pagination_nav">
+                <ul class="pagination">
+                    <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
+                    <li class="active"><a href="#">1</a></li>
+                    <li class="disabled"><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>

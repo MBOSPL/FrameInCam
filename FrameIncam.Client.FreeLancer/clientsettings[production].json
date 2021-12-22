@@ -1,0 +1,5 @@
+{
+  "clientConfig": {
+    "fincamApiUrl": "http://65.1.60.157:5000"
+  }
+}

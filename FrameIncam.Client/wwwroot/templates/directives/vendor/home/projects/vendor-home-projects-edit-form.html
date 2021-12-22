@@ -1,0 +1,94 @@
+﻿<div class="vendor-home-projects-edit-form" ng-if="value">
+    <form name="editProjectForm" ng-submit="save(editProjectForm)" ng-validate="saveProjectValidationOptions" ng-if="ready">
+        <h4 class="mb-4">{{ getTitle() }} <button type="submit" class="btn btn-sm bg-success pull-right"><i class="fa fa-save mr-2"></i> SAVE</button> <button ng-click="cancelEdit()" type="button" class="btn btn-sm bg-danger pull-right mr-2"><i class="fa fa-times mr-2"></i> CANCEL</button></h4>
+        <div class="info-container">
+            <div class="widget_title">
+                <label class="font-weight-bold">General Information</label>
+                <span class="btn btn-sm bg-white text-primary text-capitalize p-0 pull-right" data-toggle="collapse" data-target="#general-info" aria-expanded="false" aria-controls="general-info">
+                    <i class="fa fa-minus"></i>
+                </span>
+            </div>
+            <div class="collapse show" id="general-info">
+                <div class="row">
+                    <div class="form-group col-6">
+                        <label class="form-label">Name</label>
+                        <input name="name" type="text" class="form-control" ng-model="value.projectName">
+                    </div>
+                    <div class="form-group col-6">
+                        <label class="form-label">Date</label>
+                        <input name="date" type="date" class="form-control" ng-model="value.projectDate">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-6">
+                        <label class="form-label">Value</label>
+                        <input name="value" type="number" class="form-control" ng-model="value.projectValue">
+                    </div>
+                    <div class="form-group col-6">
+                        <label class="form-label">Advance</label>
+                        <input name="advance" type="number" class="form-control" ng-model="value.advanceAmt">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-6">
+                        <label class="form-label">GST No</label>
+                        <input name="gstNo" ng-model="value.gstNo" type="text" class="form-control">
+                    </div>
+                </div>
+            </div>
+            <div class="widget_title">
+                <label class="font-weight-bold">Customer Information</label>
+                <span class="btn btn-sm bg-white text-primary text-capitalize p-0 pull-right" data-toggle="collapse" data-target="#customer-info" aria-expanded="false" aria-controls="customer-info">
+                    <i class="fa fa-minus"></i>
+                </span>
+            </div>
+            <div class="collapse show" id="customer-info">
+                <div class="row">
+                    <div class="form-group col-6">
+                        <label class="form-label">Customer Name</label>
+                        <input type="text" class="form-control" name="customerName" ng-model="value.customerName">
+                    </div>
+                    <div class="form-group col-6">
+                        <label class="form-label">Customer Email</label>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" name="customerEmail" ng-model="value.customerEmail">
+                            <!--<div class="input-group-append">
+                                <button ng-click="getCustomer(value.customerEmail)" class="btn btn-outline-secondary m-0" type="button"><i class="fa fa-search"></i> Check</button>
+                            </div>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-6">
+                        <label class="form-label">Customer Mobile</label>
+                        <input type="tel" class="form-control" name="customerMobile" ng-model="value.customerMobileNo">
+                    </div>
+                    <div class="form-group col-6">
+                        <label class="form-label">Customer Alternate Mobile</label>
+                        <input type="text" class="form-control" name="customerAlternateMobile" ng-model="value.customerAlternateMobileNo">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-6">
+                        <label class="form-label">PIN code</label>
+                        <input type="text" class="form-control" name="customerPin" ng-model="value.customerPin">
+                    </div>
+                    <div class="form-group col-6">
+                        <label class="form-label">Door no., Building</label>
+                        <input type="text" class="form-control" name="customerAddressLine1" ng-model="value.customerAddress1">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-6">
+                        <label class="form-label">Street, Sector, Area, Colony</label>
+                        <input type="text" class="form-control" name="customerAddressLine2" ng-model="value.customerAddress2">
+                    </div>
+                    <div class="form-group col-6">
+                        <label class="form-label">City</label>
+                        <input type="text" class="form-control" name="customerCity" ng-model="value.customerCity">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>

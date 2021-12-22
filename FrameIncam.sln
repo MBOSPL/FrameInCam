@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29911.84
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FrameIncam.Client", "FrameIncam.Client\FrameIncam.Client.csproj", "{70908DA0-DF00-4EF7-AB5D-96EF8D041995}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FrameIncam", "FrameIncam\FrameIncam.csproj", "{7B210274-5D01-4F90-8CD9-1D7209444997}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FrameIncam.Domains", "FrameIncam.Domains\FrameIncam.Domains.csproj", "{748AA3FD-C7F8-4C95-A6E3-25F2AAD44C8F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FrameIncam.WebApi", "FrameIncam.WebApi\FrameIncam.WebApi.csproj", "{29516B3A-1C31-4C54-975D-3150CD485B55}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FrameIncam.Client.FreeLancer", "FrameIncam.Client.FreeLancer\FrameIncam.Client.FreeLancer.csproj", "{AD1CC848-EF55-4314-85C5-8A045E713576}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{70908DA0-DF00-4EF7-AB5D-96EF8D041995}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70908DA0-DF00-4EF7-AB5D-96EF8D041995}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70908DA0-DF00-4EF7-AB5D-96EF8D041995}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70908DA0-DF00-4EF7-AB5D-96EF8D041995}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B210274-5D01-4F90-8CD9-1D7209444997}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B210274-5D01-4F90-8CD9-1D7209444997}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B210274-5D01-4F90-8CD9-1D7209444997}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B210274-5D01-4F90-8CD9-1D7209444997}.Release|Any CPU.Build.0 = Release|Any CPU
+		{748AA3FD-C7F8-4C95-A6E3-25F2AAD44C8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{748AA3FD-C7F8-4C95-A6E3-25F2AAD44C8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{748AA3FD-C7F8-4C95-A6E3-25F2AAD44C8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{748AA3FD-C7F8-4C95-A6E3-25F2AAD44C8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29516B3A-1C31-4C54-975D-3150CD485B55}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29516B3A-1C31-4C54-975D-3150CD485B55}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29516B3A-1C31-4C54-975D-3150CD485B55}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29516B3A-1C31-4C54-975D-3150CD485B55}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD1CC848-EF55-4314-85C5-8A045E713576}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD1CC848-EF55-4314-85C5-8A045E713576}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD1CC848-EF55-4314-85C5-8A045E713576}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD1CC848-EF55-4314-85C5-8A045E713576}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {92E93975-C929-4B9F-BC69-53344DC306F7}
+	EndGlobalSection
+EndGlobal

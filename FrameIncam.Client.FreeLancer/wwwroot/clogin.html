@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html ng-app="app" debug>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Frame Incam</title>
+    <base href="/"></base>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/colors/blue.css" />
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="css/site.css" />
+    <link rel="stylesheet" href="css/ng.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <script src="dist/lib.js"></script>
+    <script src="dist/ng.js"></script>
+
+</head>
+<body class="customer-login"  ui-view ng-controller="customerLoginController" ng-cloak ng-init="init()">
+   <section class="parallex-bg">
+        <div class="container">
+            <div id="login_signup">
+                <div class="form_wrap_m">
+                    <div class="white_box">
+                        <div class="logo">
+                            <img src="assets/images/FrameInCam_logo.png" width="70" height="40" alt="Frame In Cam" />
+                        </div>
+                        <h3>Hey, Welcome Back!<br>Second Shooter</h3>
+                        <form name="vendorSigninForm" >
+                            <div class="form-group">
+                                <input type="text" name="username"  class="form-control" placeholder="Username">
+                            </div>
+                            <div class="form-group">
+                                <input type="password" name="password"  class="form-control" placeholder="Password">
+                            </div>
+                            <div class="form-group">
+                                <div class="mt-2 mb-2 p-3 bg-danger" >
+                                    <div class="clear" >
+                                        <small class="text-white" ></small>
+                                    </div>
+                                </div>
+                                <!--<input type="submit" class="btn btn-block" value="Login">-->
+                                <a href="/vendor-login" class="btn btn-block">Login</a>
+                            </div>
+                        </form>
+                        <p>Register as a Second Shooter? <a href="/vendor-signup">Signup</a></p>
+                        <p><a href>Lost your password?</a></p>
+                        <!--<div class="user-signin mt-2">
+                            <div class="back_home">Are you a customer? <a href="/customer-signin" class="btn outline-btn btn-sm"><i class="fa fa-sign-in"></i> Sign In</a></div>
+                        </div>-->
+                        <div class="back_home"><a href="/" class="btn outline-btn btn-sm"><i class="fa fa-angle-double-left"></i> Back to Home</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html ng-app="app" debug>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Frame Incam</title>
+    <base href="/home"></base>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="assets/css/colors/blue.css" />
+    <link rel="stylesheet" href="assets/css/nanogallery2.min.css" />
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+    <link rel="stylesheet" href="css/site.css" />
+    <link rel="stylesheet" href="css/ng.css" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/medium-zoom.min.js"></script>
+    <script src="assets/js/jquery.nanogallery2.min.js"></script>
+    <script src="dist/lib.js"></script>
+    <script src="dist/ng.js"></script>
+    <!--<script type="text/javascript" language="javascript">
+        document.addEventListener("DOMContentLoaded", function () {
+            var versionUpdate = (new Date()).getTime();
+            var script = document.createElement("script");
+            script.type = "text/javascript";
+            script.src = "dist/lib.js?v=" + versionUpdate;
+            document.body.appendChild(script);
+
+            var script = docume
+            nt.createElement("script");
+            script.type = "text/javascript";
+            script.src = "dist/ng.js?v=" + versionUpdate;
+            document.body.appendChild(script);
+
+            var stylesheet = document.createElement("link");
+            stylesheet.rel = "stylesheet";
+            stylesheet.href = "css/site.css?v=" + versionUpdate;
+            document.body.appendChild(stylesheet);
+
+            var stylesheet = document.createElement("link");
+            stylesheet.rel = "stylesheet";
+            stylesheet.href = "css/ng.css?v=" + versionUpdate;
+            document.body.appendChild(stylesheet);
+        });
+    </script>-->
+</head>
+<body ng-controller="indexController" ng-cloak ng-init="init()">
+    <fic-customer-app-header></fic-customer-app-header>
+    <div class="main-container" ui-view>
+    </div>
+    <fic-app-footer></fic-app-footer>
+    <script src="assets/js/interface.js"></script>    
+</body>
+</html>

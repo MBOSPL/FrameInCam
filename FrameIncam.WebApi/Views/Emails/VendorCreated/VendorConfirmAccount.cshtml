@@ -1,0 +1,53 @@
+@using FrameIncam.WebApi.Views.Emails.VendorCreated
+@using FrameIncam.WebApi.Views.Shared
+@model VendorConfirmAccountEmailViewModel
+
+@{
+    ViewData["EmailTitle"] = "Welcome!";
+    ViewData["UserName"] = Model.Username;
+    ViewData["clientUrl"] = Model.ClientUrl;
+    ViewData["companyLogoPath"] = Model.CompanyLogoPath;
+}
+
+<p>
+    Welcome to FrameInCam, India's first AI driven photographer discovery platform.
+</p>
+
+<br />
+
+@await Html.PartialAsync("EmailButton", new EmailButtonViewModel("Confirm Account", Model.ConfirmEmailUrl))
+
+<br />
+<p>
+    I know, there are a lot of platforms available to showcase your brilliant work to the world, but
+    <br />
+    How do you manage your Event photo uploads?
+    <br />
+    Are you still using Hard Disks & Pen Drives to share with your customers?
+    <br />
+    How many of them actually give you business?
+    <br />
+    How many times have you felt that there was a bias in the platform favoring only a few?
+    <br />
+    Why is it that in spite of doing everything possible you still are finding it difficult to get work?
+    <br />
+</p>
+
+<br />
+<p>
+    We at FrameInCam, know the pain and have ventured to come up with a solution to solve these problems. We believe in the philosophy of K.I.S.S (Keep It Simple Stupid).
+</p>
+<br />
+<p>
+    We believe that, the days of showing customers "What We Have" are gone, and the days of showing customers "What They Want" are here. As a result, we are handpicking the world's best photographers, and taking them straight into the hands of customers.
+</p>
+<br />
+<p>
+    We promise to give you an experience like never before and help you through this journey of discovery.
+</p>
+<br />
+<p>
+    Regards.<br />
+    Shahin C K<br />
+    Founder, C.E.O<br />
+</p>

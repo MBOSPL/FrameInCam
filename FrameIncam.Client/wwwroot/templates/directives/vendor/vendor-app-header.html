@@ -1,0 +1,37 @@
+﻿<header id="header" class="header_custom">
+    <nav class="navbar navbar-expand-lg fixed-top" id="header_nav">
+        <div class="container-fluid">
+            <div class="row header_row">
+                <div class="col-md-3 col-sm-12 col-xs-12">
+                    <div class="navbar-header">
+                        <div class="logo">
+                            <a ng-href="/vendor-home">
+                                <!--<h6 class="text-white d-inline-block">
+                                            <i class="fa fa-camera pr-1"></i>
+                                        </h6> -->
+                                <img src="/assets/images/FrameInCam.png" width="30px" height="40px" />
+                                <strong class="text-white d-inline-block pl-3">Frame In Cam</strong>
+                            </a>
+                        </div>
+                    </div>
+                    <button id="menu_slide" data-target="#navigation" aria-expanded="false" data-toggle="collapse" class="navbar-toggler" type="button">
+                        <i class="fa fa-bars"></i>
+                    </button>
+                </div>
+                <div class="col-md-9 col-sm-12 col-xs-12">
+                    <div class="collapse navbar-collapse" id="navigation">
+                        <ul class="nav navbar-nav mr-auto">
+                            <li class="menu-item-has-children">
+                                <a href ng-bind="$root.userProfile.user.name">You</a> <span class="arrow"></span>
+                                <ul class="sub-menu" style="left:-100px">
+                                    <li><a href>Change Password</a></li>
+                                    <li><a href ng-click="vendorLogout()">Logout</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>

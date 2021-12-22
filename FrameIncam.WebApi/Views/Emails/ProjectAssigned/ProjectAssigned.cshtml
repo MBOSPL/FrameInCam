@@ -1,0 +1,31 @@
+@using FrameIncam.WebApi.Views.Emails.ProjectAssigned
+@using FrameIncam.WebApi.Views.Shared
+@model ProjectAssignedEmailViewModel
+
+@{
+    ViewData["EmailTitle"] = "Project Assigned!";
+    ViewData["UserName"] = Model.Username;
+    ViewData["clientUrl"] = Model.ClientUrl;
+}
+
+<p>
+    We Are FrameInCam, India's first AI driven photographer discovery platform.
+</p>
+
+<br />
+
+@await Html.PartialAsync("EmailButton", new EmailButtonViewModel("Explore", Model.ProjectUrl))
+
+<br />
+<p>
+    A photographer @Model.AssignedBy assigned project @Model.ProjectName to you. Click Explore Button to visit your page.
+    <br />
+</p>
+
+<br />
+
+<p>
+    Regards.<br />
+    Shahin C K<br />
+    Founder, C.E.O<br />
+</p>
