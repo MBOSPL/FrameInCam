@@ -180,39 +180,39 @@
     // Private
     // --------------------------------------------------------------------------------
     var cache = {
-        "/templates/directives/app-footer.html": "<footer id=\"footer\" class=\"secondary-bg\"><div class=\"container\"><div class=\"row\"><div class=\"col-md-4\"><div class=\"footer_widgets\"><h5>Connect with Us</h5><div class=\"follow_us\"><ul><li><a href=\"#\"><i class=\"fa fa-facebook\" aria-hidden=\"true\"></i></a></li><li><a href=\"#\"><i class=\"fa fa-twitter\" aria-hidden=\"true\"></i></a></li><li><a href=\"#\"><i class=\"fa fa-linkedin\" aria-hidden=\"true\"></i></a></li><li><a href=\"#\"><i class=\"fa fa-google-plus\" aria-hidden=\"true\"></i></a></li><li><a href=\"#\"><i class=\"fa fa-instagram\" aria-hidden=\"true\"></i></a></li></ul></div></div></div><div class=\"col-md-4\"></div><div class=\"col-md-4 ng-hide\"><div class=\"footer_widgets\"><h5>Our Newsletter</h5><div class=\"newsletter_wrap\"><form action=\"\" method=\"get\"><input type=\"email\" class=\"form-control\" placeholder=\"Enter Email Address\"> <input type=\"submit\" value=\"subscribe\" class=\"btn\"></form></div></div></div></div></div><div class=\"footer_bottom\"><div class=\"container\"><p>Copyright &copy; 2020 Frame In Cam. All Rights Reserved</p></div></div></footer>",
-        "/templates/directives/customer/customer-app-header.html": "<header id=\"header\" class=\"header_custom\"><nav class=\"navbar navbar-expand-lg fixed-top\" id=\"header_nav\"><div class=\"container-fluid\"><div class=\"row header_row\"><div class=\"col-md-3 col-sm-12 col-xs-12\"><div class=\"navbar-header\"><div class=\"logo\"><a ng-href=\"/\"><img src=\"/assets/images/FrameInCam.png\" width=\"30px\" height=\"40px\"/> <strong class=\"text-white d-inline-block pl-3\">Frame In Cam</strong></a></div></div><button id=\"menu_slide\" data-target=\"#navigation\" aria-expanded=\"false\" data-toggle=\"collapse\" class=\"navbar-toggler\" type=\"button\"><i class=\"fa fa-bars\"></i></button></div><div class=\"col-md-9 col-sm-12 col-xs-12\"><div class=\"collapse navbar-collapse\" id=\"navigation\"><ul class=\"nav navbar-nav mr-auto\"><li class=\"menu-item-has-children\" ng-if=\"$root.isCustomerLoggedIn()\"><a href>You</a> <span class=\"arrow\"></span><ul class=\"sub-menu\" style=\"left:-100px\"><li ng-if=\"false\"><a href>Your Account</a></li><li><a ng-click=\"customerProfile()\">Your Profile</a></li><li><a ng-click=\"browseProjects()\">Your Projects</a></li><li><a ng-click=\"browseShortlistedVendors()\">Your Shortlisted Vendors</a></li><li ng-if=\"false\"><a>Your messages</a></li><li><a ng-click=\"logout()\">Logout</a></li></ul></li><li ng-if=\"!$root.isCustomerLoggedIn()\"><a href ng-click=\"loginCustomer()\">Sign In</a></li></ul><div class=\"submit_listing\" ng-if=\"!$root.isUserLoggedIn()\"><a href ng-click=\"registerVendor()\" class=\"btn outline-btn\"><i class=\"fa fa-plus-circle\"></i> Register as Vendor</a></div><div class=\"submit_listing\" ng-if=\"$root.isVendorLoggedIn()\"><a href ng-click=\"goHome()\" class=\"btn outline-btn\"><i class=\"fa fa-home\"></i> Go Home</a></div></div></div></div></div></nav></header>",
+        "/templates/directives/app-footer.html": "<footer id=\"footer\" class=\"secondary-bg\"><div class=\"container\"><div class=\"row\"><div class=\"col-md-4\"><div class=\"footer_widgets\"><h5>Connect with Us</h5><div class=\"follow_us\"><ul><li><a href=\"https://www.facebook.com/FrameInCam/\"><i class=\"fa fa-facebook\" aria-hidden=\"true\"></i></a></li><li><a href=\"https://www.instagram.com/frameincam/?igshid=14owuihyo2id7\"><i class=\"fa fa-instagram\" aria-hidden=\"true\"></i></a></li></ul></div></div></div><div class=\"col-md-4\"></div><div class=\"col-md-4\"><div class=\"footer_widgets\"><h5>Address</h5><div class=\"newsletter_wrap\">Frame In Cam LLP Sisiram, Chettipadi, Parappanangadi Kerala 676319</div><br/><h5>Contact No</h5><div class=\"newsletter_wrap\"><a href=\"tel://917259659590\">+91 7259659590</a></div></div></div></div></div><div class=\"footer_bottom\"><div class=\"container\"><p>Copyright &copy; 2020 Frame In Cam. All Rights Reserved</p></div></div></footer>",
+        "/templates/directives/customer/customer-app-header.html": "<header id=\"header\" class=\"header_custom\"><nav class=\"navbar navbar-expand-lg fixed-top\" id=\"header_nav\"><div class=\"container-fluid\"><div class=\"row header_row\"><div class=\"col-md-3 col-sm-12 col-xs-12\"><div class=\"navbar-header\"><div class=\"logo\"><a ng-href=\"/\"><img src=\"/assets/images/FrameInCam.png\" width=\"30px\" height=\"40px\"/> <strong class=\"text-dark d-inline-block pl-3\" style=\"margin: 2px\">Frame In Cam</strong></a></div></div><button id=\"menu_slide\" data-target=\"#navigation\" aria-expanded=\"false\" data-toggle=\"collapse\" class=\"navbar-toggler\" type=\"button\"><i class=\"fa fa-bars\"></i></button></div><div class=\"col-md-9 col-sm-12 col-xs-12\"><div class=\"collapse navbar-collapse\" id=\"navigation\"><ul class=\"nav navbar-nav mr-auto\"><li class=\"menu-item-has-children\" ng-if=\"$root.isCustomerLoggedIn()\"><a href>You</a> <span class=\"arrow\"></span><ul class=\"sub-menu\" style=\"left:-100px\"><li ng-if=\"false\"><a href>Your Account</a></li><li><a ng-click=\"customerProfile()\">Your Profile</a></li><li><a ng-click=\"browseProjects()\">Your Projects</a></li><li><a ng-click=\"browseShortlistedVendors()\">Your Shortlisted Photographers</a></li><li ng-if=\"false\"><a>Your messages</a></li><li><a ng-click=\"logout()\">Logout</a></li></ul></li><li ng-if=\"!$root.isCustomerLoggedIn()\"><a href ng-click=\"loginCustomer()\">Sign In</a></li></ul><div class=\"submit_listing\" ng-if=\"!$root.isUserLoggedIn()\"><a href ng-click=\"registerVendor()\" class=\"btn outline-btn\"><i class=\"fa fa-plus-circle\"></i> Register as Photographer</a></div><div class=\"submit_listing\" ng-if=\"$root.isVendorLoggedIn()\"><a href ng-click=\"goHome()\" class=\"btn outline-btn\"><i class=\"fa fa-home\"></i> Go Home</a></div></div></div></div></div></nav></header>",
         "/templates/directives/customer/project/explorer/customer-project-grid-explorer.html": "<div class=\"customer-project-grid-explorer\"><div class=\"row\"><div class=\"col-md-3 project\" ng-repeat=\"project in value\"><a href ng-disabled=\"isDisabled()\" ng-click=\"viewProject(project)\"><fic-customer-project-grid-item-presentation ng-model=\"project\" options=\"options\" ng-disabled=\"isDisabled()\"></fic-customer-project-grid-item-presentation></a></div></div></div>",
         "/templates/directives/customer/project/file/customer-project-file-explorer.html": "<div class=\"customer-project-file-explorer\"><fic-nano-gallery files=\"value\" options=\"options\"></fic-nano-gallery></div>",
         "/templates/directives/customer/project/file/presentation/customer-project-file-presentation.html": "<div class=\"p-2\"><fic-thumbnail src=\"thumbnailPresentationUrl\" asrc=\"originalPresentationUrl\" options=\"{ selectable:options.isSelectable }\" is-selected=\"isFileSelected()\" on-toggle-selection=\"toggleFileSelection()\" style=\"height: 200px !important;         width: 200px !important;         right: 5rem;         left: 2rem;         position: relative;\" ng-class=\"{'success':isFileSelected()}\"/></div>",
-        "/templates/directives/customer/project/presentation/customer-project-grid-item-presentation.html": "<div class=\"customer-project-grid-item-presentation\" ng-if=\"value\"><div class=\"grid_view show_listing\"><div class=\"listing_wrap\"><div class=\"listing_img\"><span class=\"like_post\" ng-if=\"isShareEnabled()\"><i class=\"fa fa-share-square-o\"></i></span> <a href=\"#\"><img ng-src=\"{{defaultPresentationUrl}}\" alt=\"image\" width=\"257\" height=\"200\" style=\"object-fit:cover\"></a></div><div class=\"listing_info\"><h6><a href=\"#\" class=\"ellipsis\" ng-attr-title=\"{{value.projectName}}\">{{value.projectName}}</a></h6><p>{{value.fileCount || 0}} Photos</p><h6><span class=\"badge badge-primary\">{{ value.status || \"New\" }}</span></h6></div></div></div></div>",
+        "/templates/directives/customer/project/presentation/customer-project-grid-item-presentation.html": "<div class=\"customer-project-grid-item-presentation\" ng-if=\"value\"><div class=\"grid_view show_listing\"><div class=\"listing_wrap\"><div class=\"listing_img\"><span class=\"like_post\" ng-if=\"isShareEnabled()\"><i class=\"fa fa-share-square-o\"></i></span> <a href=\"\" href=\"\"><img ng-src=\"{{defaultPresentationUrl}}\" alt=\"image\" width=\"257\" height=\"200\" style=\"object-fit:cover\"></a></div><div class=\"listing_info\"><h6><a href=\"\" href=\"\" class=\"ellipsis\" ng-attr-title=\"{{value.projectName}}\">{{value.projectName}}</a></h6><p>{{value.fileCount || 0}} Photos</p><h6><span class=\"badge badge-primary\">{{ value.status || \"New\" }}</span></h6></div></div></div></div>",
         "/templates/directives/freelancer/explorer/freelancer-grid-explorer.html": "<div class=\"vendor-grid-explorer\"><div class=\"row\"><div class=\"col-md-4 vendor\" ng-repeat=\"vendor in value.pageRecords\"><fic-freelancer-grid-item-presentation ng-model=\"vendor\" view-freelancer=\"viewFreeLancer($freelancer)\" select-freelancer=\"selectFreeLancer($freelancer)\" ng-disabled=\"isDisabled()\"></fic-freelancer-grid-item-presentation></div></div></div>",
         "/templates/directives/freelancer/explorer/freelancer-list-explorer.html": "<div class=\"freelancer-list-explorer\"><div class=\"row\"><div class=\"vendor\" ng-repeat=\"vendor in value.pageRecords\"><fic-freelancer-list-item-presentation ng-model=\"vendor\" view-freelancer=\"viewFreeLancer($freelancer)\" assign-freelancer=\"assignFreeLancer($freelancer)\" select-freelancer=\"selectFreeLancer($freelancer)\" ng-disabled=\"isDisabled()\"></fic-freelancer-list-item-presentation></div></div></div>",
         "/templates/directives/freelancer/presentation/freelancer-grid-item-presentation.html": "<div class=\"vendor-grid-item-presentation\" ng-if=\"value\"><div class=\"grid_view show_listing\"><div class=\"listing_wrap\"><div class=\"listing_img\"><span class=\"like_post\" ng-click=\"viewFreeLancer()\"><i class=\"fa fa-share-square-o\"></i></span><div class=\"listing_cate\"><span class=\"listing_like\"><a href ng-click=\"selectFreeLancer()\"><i class=\"fa\" ng-class=\"{'fa-heart':value.isShortlisted,'fa-heart-o':!value.isShortlisted}\"></i></a></span></div><img ng-src=\"{{presentationUrl}}\" alt=\"image\" width=\"350\" height=\"250\" style=\"object-fit:cover\"></div><div class=\"listing_info\" ng-click=\"viewFreeLancer()\"><div class=\"post_category\"><a href><span ng-bind=\"value.type\"></span></a></div><div class=\"mt\"><h4><a href><span ng-bind=\"value.name | capitalize\"></span></a></h4></div><div class=\"listing_review_info\"><p><span class=\"review_score\" ng-bind=\"value.rating.value + '/5'\"></span> <i ng-class=\"{'active':value.rating.value >= 1}\" class=\"fa fa-star\"></i> <i ng-class=\"{'active':value.rating.value >= 2}\" class=\"fa fa-star\"></i> <i ng-class=\"{'active':value.rating.value >= 3}\" class=\"fa fa-star\"></i> <i ng-class=\"{'active':value.rating.value >= 4}\" class=\"fa fa-star\"></i> <i ng-class=\"{'active':value.rating.value == 5}\" class=\"fa fa-star\"></i> <span ng-bind=\"'(' + value.rating.totalReviews + ' Reviews)'\"></span></p><p class=\"listing_map_m\" ng-if=\"value.location!=''\"><i class=\"fa fa-map-marker\"></i> <span ng-bind=\"value.location\"></span></p></div></div></div></div></div>",
         "/templates/directives/freelancer/presentation/freelancer-list-item-presentation.html": "<div class=\"freelancer-list-item-presentation\" ng-class=\"{'assigned-project':value.isSelected===true}\" style=\"height:230px;\" ng-if=\"value\"><div class=\"ml-3 listview show_listing\"><div class=\"listing_wrap\"><div class=\"listing_img\"><span class=\"like_post\" ng-click=\"viewFreeLancer()\"><i class=\"fa fa-share-square-o\"></i></span><div class=\"listing_cate\"><span class=\"listing_like\"><a href ng-click=\"selectFreeLancer()\"><i class=\"fa\" ng-class=\"{'fa-heart':value.isShortlisted,'fa-heart-o':!value.isShortlisted}\"></i></a></span></div><img ng-src=\"{{presentationUrl}}\" alt=\"image\" width=\"300\" height=\"220\" style=\"object-fit:cover\"></div><div class=\"listing_info\"><span style=\"position:absolute;right:0;top:0\"><input id=\"box{{value.id}}\" type=\"checkbox\" ng-model=\"value.isSelected\" ng-change=\"assignFreeLancer()\"/> <label for=\"box{{value.id}}\"></label></span><div class=\"post_category\"><a href><span ng-bind=\"value.type\"></span></a></div><div class=\"mt\"><h4><a href ng-click=\"viewFreeLancer()\"><span ng-bind=\"value.name | capitalize\"></span></a></h4></div><div class=\"listing_review_info\"><p><span class=\"review_score\" ng-bind=\"value.rating.value + '/5'\"></span> <i ng-class=\"{'active':value.rating.value >= 1}\" class=\"fa fa-star\"></i> <i ng-class=\"{'active':value.rating.value >= 2}\" class=\"fa fa-star\"></i> <i ng-class=\"{'active':value.rating.value >= 3}\" class=\"fa fa-star\"></i> <i ng-class=\"{'active':value.rating.value >= 4}\" class=\"fa fa-star\"></i> <i ng-class=\"{'active':value.rating.value == 5}\" class=\"fa fa-star\"></i> <span ng-bind=\"'(' + value.rating.totalReviews + ' Reviews)'\"></span></p><p class=\"listing_map_m\" ng-if=\"value.location!=''\"><i class=\"fa fa-map-marker\"></i> <span ng-bind=\"value.location\"></span></p></div></div></div></div></div>",
-        "/templates/directives/vendor/vendor-app-header-home-for-subscription.html": "<header id=\"header\" class=\"header_custom\"><nav class=\"navbar navbar-expand-lg fixed-top\" id=\"header_nav\"><div class=\"container-fluid\"><div class=\"row header_row\"><div class=\"col-md-3 col-sm-12 col-xs-12\"><div class=\"navbar-header\"><div class=\"logo\"><a href><img src=\"/assets/images/FrameInCam.png\" width=\"30px\" height=\"40px\"/> <strong class=\"text-white d-inline-block pl-3\">Frame In Cam</strong></a></div></div><button id=\"menu_slide\" data-target=\"#navigation\" aria-expanded=\"false\" data-toggle=\"collapse\" class=\"navbar-toggler\" type=\"button\"><i class=\"fa fa-bars\"></i></button></div><div class=\"col-md-9 col-sm-12 col-xs-12\"><div class=\"collapse navbar-collapse\" id=\"navigation\"><ul class=\"nav navbar-nav mr-auto\"><li class=\"menu-item-has-children\"><a href ng-bind=\"$root.userProfile.user.name\">You</a> <span class=\"arrow\"></span><ul class=\"sub-menu\" style=\"left:-100px\"><li><a href ng-click=\"vendorLogout()\">Logout</a></li></ul></li></ul></div></div></div></div></nav></header>",
-        "/templates/directives/vendor/vendor-app-header.html": "<header id=\"header\" class=\"header_custom\"><nav class=\"navbar navbar-expand-lg fixed-top\" id=\"header_nav\"><div class=\"container-fluid\"><div class=\"row header_row\"><div class=\"col-md-3 col-sm-12 col-xs-12\"><div class=\"navbar-header\"><div class=\"logo\"><a ng-href=\"/vendor-home\"><img src=\"/assets/images/FrameInCam.png\" width=\"30px\" height=\"40px\"/> <strong class=\"text-white d-inline-block pl-3\">Frame In Cam</strong></a></div></div><button id=\"menu_slide\" data-target=\"#navigation\" aria-expanded=\"false\" data-toggle=\"collapse\" class=\"navbar-toggler\" type=\"button\"><i class=\"fa fa-bars\"></i></button></div><div class=\"col-md-9 col-sm-12 col-xs-12\"><div class=\"collapse navbar-collapse\" id=\"navigation\"><ul class=\"nav navbar-nav mr-auto\"><li class=\"menu-item-has-children\"><a href ng-bind=\"$root.userProfile.user.name\">You</a> <span class=\"arrow\"></span><ul class=\"sub-menu\" style=\"left:-100px\"><li><a href>Change Password</a></li><li><a href ng-click=\"vendorLogout()\">Logout</a></li></ul></li></ul></div></div></div></div></nav></header>",
+        "/templates/directives/vendor/vendor-app-header-home-for-subscription.html": "<header id=\"header\" class=\"header_custom\"><nav class=\"navbar navbar-expand-lg fixed-top\" id=\"header_nav\"><div class=\"container-fluid\"><div class=\"row header_row\"><div class=\"col-md-3 col-sm-12 col-xs-12\"><div class=\"navbar-header\"><div class=\"logo\"><a href><img src=\"/assets/images/FrameInCam.png\" width=\"30px\" height=\"40px\"/> <strong class=\"text-dark d-inline-block pl-3\">Frame In Cam</strong></a></div></div><button id=\"menu_slide\" data-target=\"#navigation\" aria-expanded=\"false\" data-toggle=\"collapse\" class=\"navbar-toggler\" type=\"button\"><i class=\"fa fa-bars\"></i></button></div><div class=\"col-md-9 col-sm-12 col-xs-12\"><div class=\"collapse navbar-collapse\" id=\"navigation\"><ul class=\"nav navbar-nav mr-auto\"><li class=\"menu-item-has-children\"><a href ng-bind=\"$root.userProfile.user.name\">You</a> <span class=\"arrow\"></span><ul class=\"sub-menu\" style=\"left:-100px\"><li><a href ng-click=\"vendorLogout()\">Logout</a></li></ul></li></ul></div></div></div></div></nav></header>",
+        "/templates/directives/vendor/vendor-app-header.html": "<header id=\"header\" class=\"header_custom\"><nav class=\"navbar navbar-expand-lg fixed-top\" id=\"header_nav\"><div class=\"container-fluid\"><div class=\"row header_row\"><div class=\"col-md-3 col-sm-12 col-xs-12\"><div class=\"navbar-header\"><div class=\"logo\"><a ng-href=\"/vendor-home\"><img src=\"/assets/images/FrameInCam.png\" width=\"30px\" height=\"40px\"/> <strong class=\"text-dark d-inline-block pl-3\">Frame In Cam</strong></a></div></div><button id=\"menu_slide\" data-target=\"#navigation\" aria-expanded=\"false\" data-toggle=\"collapse\" class=\"navbar-toggler\" type=\"button\"><i class=\"fa fa-bars\"></i></button></div><div class=\"col-md-9 col-sm-12 col-xs-12\"><div class=\"collapse navbar-collapse\" id=\"navigation\"><ul class=\"nav navbar-nav mr-auto\"><li class=\"menu-item-has-children\"><a href ng-bind=\"$root.userProfile.user.name\">You</a> <span class=\"arrow\"></span><ul class=\"sub-menu\" style=\"left:-100px\"><li><a href>Change Password</a></li><li><a href ng-click=\"vendorLogout()\">Logout</a></li></ul></li></ul></div></div></div></div></nav></header>",
         "/templates/directives/vendor/explorer/vendor-grid-explorer.html": "<div class=\"vendor-grid-explorer\"><div class=\"row\"><div class=\"col-md-4 vendor\" ng-repeat=\"vendor in value.pageRecords\"><fic-vendor-grid-item-presentation ng-model=\"vendor\" view-vendor=\"viewVendor($vendor)\" select-vendor=\"selectVendor($vendor)\" ng-disabled=\"isDisabled()\"></fic-vendor-grid-item-presentation></div></div></div>",
         "/templates/directives/vendor/explorer/vendor-list-explorer.html": "<div class=\"vendor-list-explorer\"><div class=\"row\"><div class=\"vendor\" ng-repeat=\"vendor in value.pageRecords\"><fic-vendor-list-item-presentation ng-model=\"vendor\" view-vendor=\"viewVendor($vendor)\" select-vendor=\"selectVendor($vendor)\" ng-disabled=\"isDisabled()\"></fic-vendor-list-item-presentation></div></div></div>",
         "/templates/directives/vendor/home/freelancer/vendor-home-freelancer-edit-form.html": "<div class=\"vendor-home-freelancer-edit-form\" ng-if=\"value\"><form name=\"editProjectForm\" ng-submit=\"save(editProjectForm)\" ng-validate=\"saveProjectValidationOptions\" ng-if=\"ready\"><h4 class=\"mb-4\">{{ getTitle() }} <button type=\"submit\" class=\"btn btn-sm bg-success pull-right\"><i class=\"fa fa-save mr-2\"></i> SAVE</button> <button ng-click=\"cancelEdit()\" type=\"button\" class=\"btn btn-sm bg-danger pull-right mr-2\"><i class=\"fa fa-times mr-2\"></i> CANCEL</button></h4><div class=\"info-container\"><div class=\"widget_title\"><label class=\"font-weight-bold\">General Information</label> <span class=\"btn btn-sm bg-white text-primary text-capitalize p-0 pull-right\" data-toggle=\"collapse\" data-target=\"#general-info\" aria-expanded=\"false\" aria-controls=\"general-info\"><i class=\"fa fa-minus\"></i></span></div><div class=\"collapse show\" id=\"general-info\"><div class=\"row\"><div class=\"form-group col-6\"><label class=\"form-label\">Name</label> <input name=\"name\" type=\"text\" class=\"form-control\" ng-model=\"value.projectName\"></div><div class=\"form-group col-6\"><label class=\"form-label\">Date</label> <input name=\"date\" type=\"date\" class=\"form-control\" ng-model=\"value.projectDate\"></div></div><div class=\"row\"><div class=\"form-group col-6\"><label class=\"form-label\">Value</label> <input name=\"value\" type=\"number\" class=\"form-control\" ng-model=\"value.projectValue\"></div><div class=\"form-group col-6\"><label class=\"form-label\">Advance</label> <input name=\"advance\" type=\"number\" class=\"form-control\" ng-model=\"value.advanceAmt\"></div></div><div class=\"row\"><div class=\"form-group col-6\"><label class=\"form-label\">GST No</label> <input name=\"gstNo\" ng-model=\"value.gstNo\" type=\"text\" class=\"form-control\"></div></div></div><div class=\"widget_title\"><label class=\"font-weight-bold\">Customer Information</label> <span class=\"btn btn-sm bg-white text-primary text-capitalize p-0 pull-right\" data-toggle=\"collapse\" data-target=\"#customer-info\" aria-expanded=\"false\" aria-controls=\"customer-info\"><i class=\"fa fa-minus\"></i></span></div><div class=\"collapse show\" id=\"customer-info\"><div class=\"row\"><div class=\"form-group col-6\"><label class=\"form-label\">Customer Name</label> <input type=\"text\" class=\"form-control\" name=\"customerName\" ng-model=\"value.customerName\"></div><div class=\"form-group col-6\"><label class=\"form-label\">Customer Email</label><div class=\"input-group mb-3\"><input type=\"text\" class=\"form-control\" name=\"customerEmail\" ng-model=\"value.customerEmail\"><div class=\"input-group-append\"><button ng-click=\"getCustomer(value.customerEmail)\" class=\"btn btn-outline-secondary m-0\" type=\"button\"><i class=\"fa fa-search\"></i> Check</button></div></div></div></div><div class=\"row\"><div class=\"form-group col-6\"><label class=\"form-label\">Customer Mobile</label> <input type=\"tel\" class=\"form-control\" name=\"customerMobile\" ng-model=\"value.customerMobileNo\"></div><div class=\"form-group col-6\"><label class=\"form-label\">Customer Alternate Mobile</label> <input type=\"text\" class=\"form-control\" name=\"customerAlternateMobile\" ng-model=\"value.customerAlternateMobileNo\"></div></div><div class=\"row\"><div class=\"form-group col-6\"><label class=\"form-label\">PIN code</label> <input type=\"text\" class=\"form-control\" name=\"customerPin\" ng-model=\"value.customerPin\"></div><div class=\"form-group col-6\"><label class=\"form-label\">Door no., Building</label> <input type=\"text\" class=\"form-control\" name=\"customerAddressLine1\" ng-model=\"value.customerAddress1\"></div></div><div class=\"row\"><div class=\"form-group col-6\"><label class=\"form-label\">Street, Sector, Area, Colony</label> <input type=\"text\" class=\"form-control\" name=\"customerAddressLine2\" ng-model=\"value.customerAddress2\"></div><div class=\"form-group col-6\"><label class=\"form-label\">City</label> <input type=\"text\" class=\"form-control\" name=\"customerCity\" ng-model=\"value.customerCity\"></div></div></div></div></form></div>",
-        "/templates/directives/vendor/home/freelancer/vendor-home-freelancer-view.html": "<div class=\"vendor-home-projects-view\" ng-if=\"value\"><div class=\"customer-projects-container\" ng-if=\"value.pageRecords.length > 0\"><fic-freelancer-grid-explorer ng-model=\"value\" view-freelancer=\"viewFreeLancer($freelancer)\" select-freelancer=\"toggleFreeLancerSelection($freelancer)\" ng-if=\"view == 'grid'\" ng-disabled=\"isDisabled()\"></fic-freelancer-grid-explorer><fic-freelancer-list-explorer ng-model=\"value\" assign-freelancer=\"assignFreeLancer($freelancer)\" view-freelancer=\"viewFreeLancer($freelancer)\" select-freelancer=\"toggleFreeLancerSelection($freelancer)\" ng-if=\"view == 'list'\" ng-disabled=\"isDisabled()\"></fic-freelancer-list-explorer></div><div class=\"customer-freelancer-container p-3\" ng-if=\"value.pageRecords.length === 0\"><span class=\"font-italic\">No Second Shooter found</span></div><div class=\"clear\"><nav class=\"pagination_nav\"><ul class=\"pagination\"><li class=\"disabled\"><a href=\"#\" aria-label=\"Previous\"><span aria-hidden=\"true\">&laquo;</span></a></li><li class=\"active\"><a href=\"#\">1</a></li><li class=\"disabled\"><a href=\"#\" aria-label=\"Next\"><span aria-hidden=\"true\">&raquo;</span></a></li></ul></nav></div></div>",
+        "/templates/directives/vendor/home/freelancer/vendor-home-freelancer-view.html": "<div class=\"vendor-home-projects-view\" ng-if=\"value\"><div class=\"customer-projects-container\" ng-if=\"value.pageRecords.length > 0\"><fic-freelancer-grid-explorer ng-model=\"value\" view-freelancer=\"viewFreeLancer($freelancer)\" select-freelancer=\"toggleFreeLancerSelection($freelancer)\" ng-if=\"view == 'grid'\" ng-disabled=\"isDisabled()\"></fic-freelancer-grid-explorer><fic-freelancer-list-explorer ng-model=\"value\" assign-freelancer=\"assignFreeLancer($freelancer)\" view-freelancer=\"viewFreeLancer($freelancer)\" select-freelancer=\"toggleFreeLancerSelection($freelancer)\" ng-if=\"view == 'list'\" ng-disabled=\"isDisabled()\"></fic-freelancer-list-explorer></div><div class=\"customer-freelancer-container p-3\" ng-if=\"value.pageRecords.length === 0\"><span class=\"font-italic\">No Second Shooter found</span></div><div class=\"clear\"><nav class=\"pagination_nav\"><ul class=\"pagination\"><li class=\"disabled\"><a href=\"\" href=\"\" aria-label=\"Previous\"><span aria-hidden=\"true\">&laquo;</span></a></li><li class=\"active\"><a href=\"\" href=\"\">1</a></li><li class=\"disabled\"><a href=\"\" href=\"\" aria-label=\"Next\"><span aria-hidden=\"true\">&raquo;</span></a></li></ul></nav></div></div>",
         "/templates/directives/vendor/home/projects/vendor-home-projects-edit-form.html": "<div class=\"vendor-home-projects-edit-form\" ng-if=\"value\"><form name=\"editProjectForm\" ng-submit=\"save(editProjectForm)\" ng-validate=\"saveProjectValidationOptions\" ng-if=\"ready\"><h4 class=\"mb-4\">{{ getTitle() }} <button type=\"submit\" class=\"btn btn-sm bg-success pull-right\"><i class=\"fa fa-save mr-2\"></i> SAVE</button> <button ng-click=\"cancelEdit()\" type=\"button\" class=\"btn btn-sm bg-danger pull-right mr-2\"><i class=\"fa fa-times mr-2\"></i> CANCEL</button></h4><div class=\"info-container\"><div class=\"widget_title\"><label class=\"font-weight-bold\">General Information</label> <span class=\"btn btn-sm bg-white text-primary text-capitalize p-0 pull-right\" data-toggle=\"collapse\" data-target=\"#general-info\" aria-expanded=\"false\" aria-controls=\"general-info\"><i class=\"fa fa-minus\"></i></span></div><div class=\"collapse show\" id=\"general-info\"><div class=\"row\"><div class=\"form-group col-6\"><label class=\"form-label\">Name</label> <input name=\"name\" type=\"text\" class=\"form-control\" ng-model=\"value.projectName\"></div><div class=\"form-group col-6\"><label class=\"form-label\">Date</label> <input name=\"date\" type=\"date\" class=\"form-control\" ng-model=\"value.projectDate\"></div></div><div class=\"row\"><div class=\"form-group col-6\"><label class=\"form-label\">Value</label> <input name=\"value\" type=\"number\" class=\"form-control\" ng-model=\"value.projectValue\"></div><div class=\"form-group col-6\"><label class=\"form-label\">Advance</label> <input name=\"advance\" type=\"number\" class=\"form-control\" ng-model=\"value.advanceAmt\"></div></div><div class=\"row\"><div class=\"form-group col-6\"><label class=\"form-label\">GST No</label> <input name=\"gstNo\" ng-model=\"value.gstNo\" type=\"text\" class=\"form-control\"></div></div></div><div class=\"widget_title\"><label class=\"font-weight-bold\">Customer Information</label> <span class=\"btn btn-sm bg-white text-primary text-capitalize p-0 pull-right\" data-toggle=\"collapse\" data-target=\"#customer-info\" aria-expanded=\"false\" aria-controls=\"customer-info\"><i class=\"fa fa-minus\"></i></span></div><div class=\"collapse show\" id=\"customer-info\"><div class=\"row\"><div class=\"form-group col-6\"><label class=\"form-label\">Customer Name</label> <input type=\"text\" class=\"form-control\" name=\"customerName\" ng-model=\"value.customerName\"></div><div class=\"form-group col-6\"><label class=\"form-label\">Customer Email</label><div class=\"input-group mb-3\"><input type=\"text\" class=\"form-control\" name=\"customerEmail\" ng-model=\"value.customerEmail\"></div></div></div><div class=\"row\"><div class=\"form-group col-6\"><label class=\"form-label\">Customer Mobile</label> <input type=\"tel\" class=\"form-control\" name=\"customerMobile\" ng-model=\"value.customerMobileNo\"></div><div class=\"form-group col-6\"><label class=\"form-label\">Customer Alternate Mobile</label> <input type=\"text\" class=\"form-control\" name=\"customerAlternateMobile\" ng-model=\"value.customerAlternateMobileNo\"></div></div><div class=\"row\"><div class=\"form-group col-6\"><label class=\"form-label\">PIN code</label> <input type=\"text\" class=\"form-control\" name=\"customerPin\" ng-model=\"value.customerPin\"></div><div class=\"form-group col-6\"><label class=\"form-label\">Door no., Building</label> <input type=\"text\" class=\"form-control\" name=\"customerAddressLine1\" ng-model=\"value.customerAddress1\"></div></div><div class=\"row\"><div class=\"form-group col-6\"><label class=\"form-label\">Street, Sector, Area, Colony</label> <input type=\"text\" class=\"form-control\" name=\"customerAddressLine2\" ng-model=\"value.customerAddress2\"></div><div class=\"form-group col-6\"><label class=\"form-label\">City</label> <input type=\"text\" class=\"form-control\" name=\"customerCity\" ng-model=\"value.customerCity\"></div></div></div></div></form></div>",
-        "/templates/directives/vendor/home/projects/vendor-home-projects-view.html": "<div class=\"vendor-home-projects-view\" ng-if=\"value\"><div class=\"customer-projects-container\" ng-if=\"value.length > 0\"><fic-customer-project-grid-explorer view-project=\"viewProject($projectId)\" ng-model=\"value\" ng-disabled=\"isDisabled()\"></fic-customer-project-grid-explorer></div><div class=\"customer-projects-container p-3\" ng-if=\"value.length === 0\"><span class=\"font-italic\">No projects found</span></div><div class=\"clear\"><nav class=\"pagination_nav\"><ul class=\"pagination\"><li class=\"disabled\"><a href=\"#\" aria-label=\"Previous\"><span aria-hidden=\"true\">&laquo;</span></a></li><li class=\"active\"><a href=\"#\">1</a></li><li class=\"disabled\"><a href=\"#\" aria-label=\"Next\"><span aria-hidden=\"true\">&raquo;</span></a></li></ul></nav></div></div>",
+        "/templates/directives/vendor/home/projects/vendor-home-projects-view.html": "<div class=\"vendor-home-projects-view\" ng-if=\"value\"><div class=\"customer-projects-container\" ng-if=\"value.length > 0\"><fic-customer-project-grid-explorer view-project=\"viewProject($projectId)\" ng-model=\"value\" ng-disabled=\"isDisabled()\"></fic-customer-project-grid-explorer></div><div class=\"customer-projects-container p-3\" ng-if=\"value.length === 0\"><span class=\"font-italic\">No projects found</span></div><div class=\"clear\"><nav class=\"pagination_nav\"><ul class=\"pagination\"><li class=\"disabled\"><a href=\"\" href=\"\" aria-label=\"Previous\"><span aria-hidden=\"true\">&laquo;</span></a></li><li class=\"active\"><a href=\"\" href=\"\">1</a></li><li class=\"disabled\"><a href=\"\" href=\"\" aria-label=\"Next\"><span aria-hidden=\"true\">&raquo;</span></a></li></ul></nav></div></div>",
         "/templates/directives/vendor/presentation/vendor-grid-item-presentation.html": "<div class=\"vendor-grid-item-presentation\" ng-if=\"value\"><div class=\"grid_view show_listing\"><div class=\"listing_wrap\"><div class=\"listing_img\"><span class=\"like_post\" ng-click=\"viewVendor()\"><i class=\"fa fa-share-square-o\"></i></span><div class=\"listing_cate\" ng-show=\"$root.isCustomerLoggedIn()\"><span class=\"listing_like\"><a href ng-click=\"selectVendor()\"><i class=\"fa\" ng-class=\"{'fa-heart':value.isShortlisted,'fa-heart-o':!value.isShortlisted}\"></i></a></span></div><img ng-src=\"{{presentationUrl}}\" alt=\"image\" width=\"350\" height=\"250\" style=\"object-fit:cover\"></div><div class=\"listing_info\" ng-click=\"viewVendor()\"><div class=\"post_category\"><a href><span ng-bind=\"value.type\"></span></a></div><div class=\"mt\"><h4><a href><span ng-bind=\"value.name | capitalize\"></span></a></h4></div><div class=\"listing_review_info\"><p><span class=\"review_score\" ng-bind=\"value.rating.value + '/5'\"></span> <i ng-class=\"{'active':value.rating.value >= 1}\" class=\"fa fa-star\"></i> <i ng-class=\"{'active':value.rating.value >= 2}\" class=\"fa fa-star\"></i> <i ng-class=\"{'active':value.rating.value >= 3}\" class=\"fa fa-star\"></i> <i ng-class=\"{'active':value.rating.value >= 4}\" class=\"fa fa-star\"></i> <i ng-class=\"{'active':value.rating.value == 5}\" class=\"fa fa-star\"></i> <span ng-bind=\"'(' + value.rating.totalReviews + ' Reviews)'\"></span></p><p class=\"listing_map_m\"><i class=\"fa fa-map-marker\"></i> <span ng-bind=\"value.location\"></span></p></div></div></div></div></div>",
         "/templates/directives/vendor/presentation/vendor-list-item-presentation.html": "<div class=\"vendor-list-item-presentation\" ng-if=\"value\"><div class=\"ml-3 listview show_listing\"><div class=\"listing_wrap\"><div class=\"listing_img\"><span class=\"like_post\"><i class=\"fa fa-share-square-o\"></i></span><div class=\"listing_cate\" ng-show=\"$root.isCustomerLoggedIn()\"><span class=\"listing_like\"><a href ng-click=\"selectVendor()\"><i class=\"fa\" ng-class=\"{'fa-heart':value.isShortlisted,'fa-heart-o':!value.isShortlisted}\"></i></a></span></div><img ng-src=\"{{presentationUrl}}\" alt=\"image\" style=\"object-fit:cover\"></div><div class=\"listing_info\" ng-click=\"viewVendor()\"><div class=\"post_category\"><a href><span ng-bind=\"value.type\"></span></a></div><h4><a href><span ng-bind=\"value.name | capitalize\"></span></a></h4><div class=\"w-100 pb-3\" ng-if=\"value.service\"><small class=\"text-dark col-6 pull-left pl-0\" ng-bind=\"value.service.description\"></small> <small class=\"text-dark font-weight-bold col-6 pull-right pr-0\"><span class=\"pull-right\"><i class=\"fa fa-rupee\"></i> {{value.service.price}}</span></small></div><div class=\"listing_review_info w-100\" style=\"position:absolute;bottom:0px;\"><p><span class=\"review_score\" ng-bind=\"value.rating.value + '/5'\"></span> <i ng-class=\"{'active':value.rating.value >= 1}\" class=\"fa fa-star\"></i> <i ng-class=\"{'active':value.rating.value >= 2}\" class=\"fa fa-star\"></i> <i ng-class=\"{'active':value.rating.value >= 3}\" class=\"fa fa-star\"></i> <i ng-class=\"{'active':value.rating.value >= 4}\" class=\"fa fa-star\"></i> <i ng-class=\"{'active':value.rating.value == 5}\" class=\"fa fa-star\"></i> <span ng-bind=\"'(' + value.rating.totalReviews + ' Reviews)'\"></span></p><p class=\"listing_map_m\"><i class=\"fa fa-map-marker\"></i> <span ng-bind=\"value.location\"></span></p></div></div></div></div></div>",
-        "/templates/pages/customer/home.html": "<div ng-init=\"init()\" class=\"customer-home\"><section id=\"banner\" class=\"parallex-bg section-padding\"><div class=\"container-fluid\"><div id=\"listing_img_slider\"><div class=\"owl-carousel owl-theme\"><div class=\"item\"><img src=\"assets/images/landing-cover/2.jpg\" width=\"650\" height=\"325\" alt=\"image\"></div><div class=\"item\"><img src=\"assets/images/landing-cover/3.jpg\" width=\"650\" height=\"325\" alt=\"image\"></div><div class=\"item\"><img src=\"assets/images/landing-cover/6.jpg\" width=\"650\" height=\"325\" alt=\"image\"></div><div class=\"item\"><img src=\"assets/images/landing-cover/7.jpg\" width=\"650\" height=\"325\" alt=\"image\"></div><div class=\"item\"><img src=\"assets/images/landing-cover/8.jpg\" width=\"650\" height=\"325\" alt=\"image\"></div><div class=\"item\"><img src=\"assets/images/landing-cover/9.jpg\" width=\"650\" height=\"325\" alt=\"image\"></div></div></div></div><div class=\"container p-4\"><div class=\"intro_text white-text div_zindex\"><h1>Welcome to Frame In Cam</h1><h5>Find &amp; Explore Nearest Photographers</h5><div class=\"search_form\"><form><div class=\"form-group select\"><select name=\"type\" class=\"form-control\" ng-model=\"searchQuery.vendorTypeId\" ng-options=\"vendorType.id as vendorType.type for vendorType in vendorTypes\"></select></div><div class=\"form-group select\"><select name=\"city\" class=\"form-control\" ng-model=\"searchQuery.cityGeoId\" ng-options=\"geoCity.id as geoCity.geoName for geoCity in geoCities\"></select></div><div class=\"form-group search_btn\"><input type=\"submit\" value=\"Search\" class=\"btn btn-block\" ng-click=\"searchVendors()\"></div></form></div></div></div><div class=\"dark-overlay\"></div></section><section id=\"photo\" class=\"p-5 text-center ng-hide\"><div class=\"container\"><h4 class=\"text-center mb-5 font-weight-bold\">Latest Active Photographers</h4><div class=\"row\"><div id=\"card0\" class=\"col-4\" ng-repeat=\"vendor in vendors\"><div class=\"PrimaryVendorCard shadow extra-radius sc-jTzLTM wFnqD\" style=\"margin-bottom: 37.5px;\"><div class=\"__react_component_tooltip place-top type-dark\" data-id=\"tooltip\"></div><div class=\"vendor-card extra-radius\"><div class=\"vendor-picture margin-r-10\"><a ng-click=\"navigateVendor(vendor_id)\"><img src=\"http://frameincam.com:8080/api/master/vendor/get-default-presentation/15\" class=\"object-fit-cover w-100\" style=\"height: 283px; border-radius: 5px 5px 0px 0px;\"/></div><div class=\"vendor-info\"><div class=\"padding-10\"><div class=\"line f-space-between\"><div class=\"frow\"><a target=\"_blank\" class=\"vendor-detail text-bold h6\" ng-click=\"navigateVendor(vendor_id)\" style=\"max-width: 200px;\">{{vendor.name}}</a> <img data-tip=\"This vendor's address and background has been verified.\" data-effect=\"solid\" data-place=\"top\" data-class=\"tag-pointer bg-vendor verified-pointer\" src=\"https://images.wedmegood.com/react-frontend-v4/static/media/verifiedtick.07694cf2.svg\" alt=\"verified_icon\" class=\"pointer\" currentitem=\"false\"/></div><div class=\"nowrap\"><span class=\"StarRating center rating-5 regular\"><i class=\"fa fa-star margin-r-5\"></i>4.9</span></div></div><div class=\"line f-space-between\"><div class=\"frow\"><p class=\"vendor-detail text-left\"><span>PhotoGrapher</span></p><p class=\"text-right pl-5 ml-5\" style=\"position:relative;left:2.5rem\">46 reviews</p></div></div></div></div></div></div></div></div></div></section></div>",
-        "/templates/pages/customer/vendor-shortlist.html": "<section id=\"inner_pages\" ng-init=\"init()\"><div class=\"container\" ng-if=\"ready\"><div class=\"listing_header mt-4\"><div class=\"pull-left\"><h5><span ng-bind=\"'Shortlisted Vendors(' + (vendors.pageRecords.length || 0) + ')'\"></span></h5></div><div class=\"layout-switcher\"><a href ng-class=\"{'active':view == 'grid'}\" ng-click=\"view = 'grid'\"><i class=\"fa fa-th\"></i></a> <a href ng-class=\"{'active':view == 'list'}\" ng-click=\"view = 'list'\"><i class=\"fa fa-align-justify\"></i></a></div></div><div ng-if=\"vendors.pageRecords.length > 0\"><div class=\"vendor-explorer-container\"><fic-vendor-grid-explorer ng-model=\"vendors\" select-vendor=\"toggleVendorSelection($vendor)\" ng-disabled=\"isDisabled()\" ng-if=\"view == 'grid'\"></fic-vendor-grid-explorer><fic-vendor-list-explorer ng-model=\"vendors\" select-vendor=\"toggleVendorSelection($vendor)\" ng-disabled=\"isDisabled()\" ng-if=\"view == 'list'\"></fic-vendor-list-explorer></div><nav class=\"pagination_nav\"><ul class=\"pagination\"><li class=\"disabled\"><a href=\"#\" aria-label=\"Previous\"><span aria-hidden=\"true\">&laquo;</span></a></li><li class=\"active\"><a href=\"#\">1</a></li><li class=\"disabled\"><a href=\"#\" aria-label=\"Next\"><span aria-hidden=\"true\">&raquo;</span></a></li></ul></nav></div><div ng-if=\"vendors.pageRecords.length === 0\"><span class=\"font-italic\" ng-bind=\"'You have\\'t shortlisted any vendors yet.'\"></span></div></div></section>",
+        "/templates/pages/customer/home.html": "<div ng-init=\"init()\" class=\"customer-home sridhar-media\" style=\"height: 607px;\"><section id=\"banner\" class=\"parallex-bg\"><div class=\"container-fluid sridhar-container-pad-left\"><div id=\"listing_img_slider\" style=\"position: relative; top: -180px;\"><h4 class=\"sridhar-media-h4\" style=\"position: relative; color: white; z-index: 1000; font-size: 32px; font-weight: 900; top: 439px;\">Welcome to Frame In Cam</h4><div class=\"search_form sridhar-media-form\" style=\"position: relative; top: 320px; top: 457px\"><form><div class=\"form-group\"><selectize class=\"col-12\" config=\"vendorTypeConfig\" options=\"vendorTypes\" ng-model=\"searchQuery.vendorTypeId\"></selectize></div><div class=\"form-group\"><selectize class=\"col-12\" config=\"cityConfig\" options=\"geoCities\" ng-model=\"searchQuery.cityGeoId\"></selectize></div><div class=\"form-group search_btn\"><input type=\"submit\" value=\"Search\" class=\"btn btn-block\" ng-click=\"searchVendors()\"/></div></form></div><img src=\"assets/images/landing-cover/new/photo10.jpg\" class=\"re_ban_img\"></div></div><div class=\"bg-white\"></div></section><section id=\"photo\" class=\"p-5 text-center ng-hide\"><div class=\"container\"><h4 class=\"text-center mb-5 font-weight-bold\">Latest Active Photographers</h4><div class=\"row\"><div id=\"card0\" class=\"col-4\" ng-repeat=\"vendor in vendors\"><div class=\"PrimaryVendorCard shadow extra-radius sc-jTzLTM wFnqD\" style=\"margin-bottom: 37.5px;\"><div class=\"__react_component_tooltip place-top type-dark\" data-id=\"tooltip\"></div><div class=\"vendor-card extra-radius\"><div class=\"vendor-picture margin-r-10\"><a ng-click=\"navigateVendor(vendor_id)\"><img src=\"http://frameincam.com:8080/api/master/vendor/get-default-presentation/15\" class=\"object-fit-cover w-100\" style=\"height: 283px; border-radius: 5px 5px 0px 0px;\"/></div><div class=\"vendor-info\"><div class=\"padding-10\"><div class=\"line f-space-between\"><div class=\"frow\"><a target=\"_blank\" class=\"vendor-detail text-bold h6\" ng-click=\"navigateVendor(vendor_id)\" style=\"max-width: 200px;\">{{vendor.name}}</a> <img data-tip=\"This vendor's address and background has been verified.\" data-effect=\"solid\" data-place=\"top\" data-class=\"tag-pointer bg-vendor verified-pointer\" src=\"https://images.wedmegood.com/react-frontend-v4/static/media/verifiedtick.07694cf2.svg\" alt=\"verified_icon\" class=\"pointer\" currentitem=\"false\"/></div><div class=\"nowrap\"><span class=\"StarRating center rating-5 regular\"><i class=\"fa fa-star margin-r-5\"></i>4.9</span></div></div><div class=\"line f-space-between\"><div class=\"frow\"><p class=\"vendor-detail text-left\"><span>PhotoGrapher</span></p><p class=\"text-right pl-5 ml-5\" style=\"position:relative;left:2.5rem\">46 reviews</p></div></div></div></div></div></div></div></div></div></section></div>",
+        "/templates/pages/customer/vendor-shortlist.html": "<section id=\"inner_pages\" ng-init=\"init()\"><div class=\"container\" ng-if=\"ready\"><div class=\"listing_header mt-4\"><div class=\"pull-left\"><h5><span ng-bind=\"'Shortlisted Photographers(' + (vendors.pageRecords.length || 0) + ')'\"></span></h5></div><div class=\"layout-switcher\"><a href ng-class=\"{'active':view == 'grid'}\" ng-click=\"view = 'grid'\"><i class=\"fa fa-th\"></i></a> <a href ng-class=\"{'active':view == 'list'}\" ng-click=\"view = 'list'\"><i class=\"fa fa-align-justify\"></i></a></div></div><div ng-if=\"vendors.pageRecords.length > 0\"><div class=\"vendor-explorer-container\"><fic-vendor-grid-explorer ng-model=\"vendors\" select-vendor=\"toggleVendorSelection($vendor)\" ng-disabled=\"isDisabled()\" ng-if=\"view == 'grid'\"></fic-vendor-grid-explorer><fic-vendor-list-explorer ng-model=\"vendors\" select-vendor=\"toggleVendorSelection($vendor)\" ng-disabled=\"isDisabled()\" ng-if=\"view == 'list'\"></fic-vendor-list-explorer></div><nav class=\"pagination_nav\"><ul class=\"pagination\"><li class=\"disabled\"><a href=\"\" href=\"\" aria-label=\"Previous\"><span aria-hidden=\"true\">&laquo;</span></a></li><li class=\"active\"><a href=\"\" href=\"\">1</a></li><li class=\"disabled\"><a href=\"\" href=\"\" aria-label=\"Next\"><span aria-hidden=\"true\">&raquo;</span></a></li></ul></nav></div><div ng-if=\"vendors.pageRecords.length === 0\"><span class=\"font-italic\" ng-bind=\"'You have\\'t shortlisted any vendors yet.'\"></span></div></div></section>",
         "/templates/pages/customer/home/customer-profile.html": "<div class=\"container mt-5 pt-5 pb-5\" ng-init=\"init()\"><div class=\"card customer-profile p-5\"><form name=\"updateProfileForm\" ng-submit=\"updateProfile(updateProfileForm)\" ng-validate=\"profileUpdateValidationOptions\" ng-if=\"ready\"><h4 class=\"mb-4\">Profile <button type=\"submit\" class=\"btn btn-sm bg-success pull-right\"><i class=\"fa fa-save mr-2\"></i> SAVE</button></h4><div class=\"info-container\"><div class=\"widget_title\"><label class=\"font-weight-bold\">Personal Information</label> <span class=\"btn btn-sm bg-white text-primary text-capitalize p-0 pull-right\" data-toggle=\"collapse\" data-target=\"#personal-info\" aria-expanded=\"false\" aria-controls=\"personal-info\"><i class=\"fa fa-minus\"></i></span></div><div class=\"collapse show\" id=\"personal-info\"><div class=\"row\"><div class=\"form-group col-6\"><label class=\"form-label\">Email</label> <input name=\"email\" readonly=\"readonly\" ng-model=\"profile.email\" class=\"form-label\"></div><div class=\"form-group col-6\"><label class=\"form-label\">Mobile</label> <input name=\"mobile\" ng-model=\"profile.mobile\" type=\"tel\" class=\"form-control\"></div></div><div class=\"row\"><div class=\"form-group col-6\"><label class=\"form-label\">Name</label> <input name=\"name\" ng-model=\"profile.name\" type=\"text\" class=\"form-control\"></div><div class=\"form-group col-6\"><label class=\"form-label\">Password</label> <input name=\"password\" ng-model=\"profile.password\" type=\"password\" class=\"form-control\"></div></div></div></div></form></div></div>",
-        "/templates/pages/customer/projects/customer-project-view.html": "<section id=\"inner_pages\" ng-init=\"init()\"><div class=\"container\" ng-if=\"ready\"><div class=\"listing_header mt-4\"><h5 class=\"w-100\"><span ng-bind=\"project.projectName\"></span> <span ng-if=\"needApproval()\" class=\"pull-right\"><button class=\"btn btn-sm btn-primary mr-2\" ng-click=\"saveSelection()\"><i class=\"fa fa-save mr-2\"></i> SAVE</button> <button class=\"btn btn-sm bg-success\" ng-click=\"confirmSelection()\"><i class=\"fa fa-check mr-2\"></i> CONFIRM</button></span> <span ng-if=\"$root.isVendorLoggedIn() && project.status=='New' && project.photographer==0\" class=\"pull-right\"><button data-toggle=\"modal\" data-target=\"#assignProjectModal\" class=\"btn btn-sm btn-warning\">Assign a Second Shooter</button></span> <span ng-if=\"$root.isVendorLoggedIn() && project.status=='New' && project.photographer!=0\" class=\"pull-right\"><button data-toggle=\"modal\" data-target=\"#assignProjectModal\" class=\"btn btn-sm btn-warning\">Update a Second Shooter</button></span></h5><div class=\"clear\"><small>Customer Name <b>{{project.customerName}}</b></small><br/><small>Customer Email <b>{{project.customerEmail}}</b></small><br/><small>Customer Location <b>{{project.customerCity}}</b></small><br/><small ng-show=\"assignedFreelancer.id>0\">Assigned To <b>{{assignedFreelancer.freeLancer.name}}</b></small><br/><small>{{files.length || 0}} Photos</small></div></div><div class=\"project-detail-container\"><fic-customer-project-file-explorer ng-model=\"files\" ng-disabled=\"isDisabled()\" options=\"{project:project,isSelectable:needApproval()}\"></fic-customer-project-file-explorer></div><nav class=\"pagination_nav\"><ul class=\"pagination\"><li class=\"disabled\"><a href=\"#\" aria-label=\"Previous\"><span aria-hidden=\"true\">&laquo;</span></a></li><li class=\"active\"><a href=\"#\">1</a></li><li class=\"disabled\"><a href=\"#\" aria-label=\"Next\"><span aria-hidden=\"true\">&raquo;</span></a></li></ul></nav></div><div class=\"container\" ng-if=\"!ready\"><div class=\"listing_header mt-4\"><h5 class=\"w-100\"><span ng-bind=\"'Loading...'\" class=\"font-italic\"></span></h5></div></div><div class=\"modal fade\" id=\"assignProjectModal\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"exampleModalLongTitle\" aria-hidden=\"true\"><div class=\"modal-dialog\" role=\"document\"><div class=\"modal-content\"><div class=\"modal-header\"><h5 class=\"modal-title\" id=\"exampleModalLongTitle\">Assign a Project</h5><button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button></div><div class=\"modal-body\"><form><div class=\"form-group row\"><label for=\"staticProjectName\" class=\"col-sm-4 col-form-label\">Project Name</label><div class=\"col-sm-8\"><input type=\"text\" readonly=\"readonly\" class=\"form-control-plaintext\" id=\"staticProjectName\" ng-model=\"project.projectName\"></div></div><div class=\"form-group row\"><label for=\"staticCustomerName\" class=\"col-sm-4 col-form-label\">Customer Name</label><div class=\"col-sm-8\"><input type=\"text\" readonly=\"readonly\" class=\"form-control-plaintext\" id=\"staticCustomerName\" ng-model=\"project.customerName\"></div></div><div class=\"card\"><div class=\"card-body\"><div class=\"card-title\">List of Shortlisted Second Shooters</div><fic-vendor-home-freelancer-view view=\"view\" ng-model=\"freelancers\" ng-disabled=\"isDisabled()\"></fic-vendor-home-freelancer-view></div></div></form></div><div class=\"modal-footer\"><button type=\"button\" class=\"btn btn-secondary\" data-dismiss=\"modal\">Close</button> <button type=\"button\" class=\"btn btn-primary\" ng-click=\"assignProject()\">Save changes</button></div></div></div></div></section>",
-        "/templates/pages/customer/projects/customer-projects.html": "<section id=\"inner_pages\" ng-init=\"init()\"><div class=\"container\"><div class=\"listing_header mt-4\"><h5><span ng-bind=\"'Your Projects (' + (projects.length || 0) + ')'\"></span></h5></div><div class=\"customer-projects-container\"><fic-customer-project-grid-explorer view-project=\"viewProject($projectId)\" ng-model=\"projects\" ng-disabled=\"isDisabled()\"></fic-customer-project-grid-explorer></div><nav class=\"pagination_nav\"><ul class=\"pagination\"><li class=\"disabled\"><a href=\"#\" aria-label=\"Previous\"><span aria-hidden=\"true\">&laquo;</span></a></li><li class=\"active\"><a href=\"#\">1</a></li><li class=\"disabled\"><a href=\"#\" aria-label=\"Next\"><span aria-hidden=\"true\">&raquo;</span></a></li></ul></nav></div></section>",
-        "/templates/pages/freelancer/freelancer-detail.html": "<div class=\"vendor-detail\" ng-init=\"init()\" ng-show=\"ready\"><section class=\"listing_detail_header style2_header parallex-bg\"><div class=\"container\"><div class=\"div_zindex white-text\"><div class=\"row\"><div class=\"col-md-8\"><h1><span ng-bind=\"detail.freeLancer.name\"></span></h1><p></p><div class=\"listing_rating\"><p><span class=\"review_score\" ng-bind=\"detail.rating.value + '/5'\"></span> <i ng-class=\"{'active':detail.rating.value >= 1}\" class=\"fa fa-star\"></i> <i ng-class=\"{'active':detail.rating.value >= 2}\" class=\"fa fa-star\"></i> <i ng-class=\"{'active':detail.rating.value >= 3}\" class=\"fa fa-star\"></i> <i ng-class=\"{'active':detail.rating.value >= 4}\" class=\"fa fa-star\"></i> <i ng-class=\"{'active':detail.rating.value == 5}\" class=\"fa fa-star\"></i> <span ng-bind=\"'(' + detail.rating.totalReviews + ' Reviews)'\"></span></p><p class=\"listing_like\"><a href ng-click=\"toggleFreeLancerSelection(detail)\"><i class=\"fa\" ng-class=\"{'fa-heart':detail.isShortlisted,'fa-heart-o':!detail.isShortlisted}\"></i> {{ detail.totalLikes }} Likes</a></p></div></div><div class=\"col-md-4\" ng-if=\"detail.pricePerDay && detail.pricePerDay > 0\"><div class=\"pricing_info\"><p class=\"listing_price\"><span><i class=\"fa fa-rupee\"></i> {{detail.pricePerDay | number:2}}</span></p><div class=\"listing_message\" ng-if=\"false\"><a class=\"btn\" data-toggle=\"modal\" data-target=\"#message_modal\"><i class=\"fa fa-envelope-o\"></i> Send Message</a></div></div></div></div></div></div><div class=\"dark-overlay\"></div></section><section class=\"listing_info_wrap listing_detail_2\"><div class=\"container\"><div class=\"sidebar_wrap listing_action_btn\"><ul><li><a href=\"#writereview\" class=\"js-target-scroll\"><i class=\"fa fa-star\"></i> Write a Review</a></li></ul></div><div class=\"image_slider_wrap\"><div id=\"listing_img_slider\"></div></div><div class=\"view_map\"><a href class=\"js-target-scroll\"><i class=\"fa fa-map-marker\"></i></a></div><div class=\"row\"><div class=\"col-md-8\"><div class=\"ElemoListing_detail\"><div class=\"accordion\" id=\"accordionExample\"><div class=\"card\"><div class=\"card-header\" id=\"headingOne\"><h2 class=\"mb-0\"><a class=\"btn btn-link text-left\" type=\"button\" data-toggle=\"collapse\" data-target=\"#collapseOne\" aria-expanded=\"true\" aria-controls=\"collapseOne\"><i class=\"fa fa-file-text-o\"></i> Projects</a></h2></div><div id=\"collapseOne\" class=\"collapse show\" aria-labelledby=\"headingOne\" data-parent=\"#accordionExample\"><div class=\"card-body\"><section id=\"nav-detail\" style=\"background:none;\"><ul class=\"nav nav-tabs\"><li class=\"active\"><a data-toggle=\"tab\" data-target=\"#portfolio\">Portfolios ({{photos.length}})</a></li><li><a data-toggle=\"tab\" data-target=\"#videos\">Videos ({{videos.length}})</a></li></ul><div class=\"tab-content\"><div id=\"portfolio\" class=\"tab-pane in active\"><a href class=\"d-block pull-left\" tabindex=\"-1\" ng-repeat=\"photo in photos\"><div class=\"p-2\"><img ng-src=\"{{photo.presentationUrl}}\" options=\"{ selectable:options.isSelectable }\" style=\"height: 100px !important;                                                                             width: 100px !important;                                                                             right: 5rem;                                                                             left: 2rem;\"/></div></a></div><div id=\"albums\" class=\"tab-pane fade\"></div><div id=\"videos\" class=\"tab-pane fade\"><div class=\"col-4 pull-left\" ng-repeat=\"video in videos\"><div class=\"listing_video\"><iframe class=\"mfp-iframe\" ng-src=\"{{trustSrc(video.presentationUrl)}}\" allowfullscreen></iframe></div></div></div></div></section></div></div></div><div class=\"card mt-5\"><div class=\"card-header\" id=\"headingThree\"><h2 class=\"mb-0\"><a class=\"btn btn-link text-left collapsed\" type=\"button\" data-toggle=\"collapse\" data-target=\"#collapseThree\" aria-expanded=\"false\" aria-controls=\"collapseThree\"><i class=\"fa fa-rupee pr-2\"></i> Estimated Pricing</a></h2></div><div id=\"collapseThree\" class=\"collapse\" aria-labelledby=\"headingThree\" data-parent=\"#accordionExample\"><div class=\"card-body\"><div class=\"w-100 py-3 ng-scope\" ng-repeat=\"package in detail.packages\"><label class=\"text-dark col-6 pull-left pl-0\">{{ package.description }}</label> <label class=\"text-dark font-weight-bold col-6 pull-right pr-0\"><span class=\"pull-right\"><i class=\"fa fa-rupee\"></i> {{ package.pricePerDay | number:2 }} per day</span></label></div></div></div></div></div><div class=\"reviews_list\"><div class=\"widget_title\"><h4><span>{{totalReviews}} Reviews for</span> {{detail.freeLancer.name}}</h4></div><div class=\"review_wrap\" ng-repeat=\"review in reviews\"><div class=\"review_author\"><img src=\"assets/images/13.jpg\" alt=\"image\"><figcaption><h6>{{ review.customerName}}</h6></figcaption></div><div class=\"review_detail\"><h5>{{ review.title }}</h5><p>{{ review.body }}</p><div class=\"listing_rating\"><p><span class=\"review_score\" ng-bind=\"review.ratings + '/5'\"></span> <i ng-class=\"{'active':review.ratings >= 1}\" class=\"fa fa-star\"></i> <i ng-class=\"{'active':review.ratings >= 2}\" class=\"fa fa-star\"></i> <i ng-class=\"{'active':review.ratings >= 3}\" class=\"fa fa-star\"></i> <i ng-class=\"{'active':review.ratings >= 4}\" class=\"fa fa-star\"></i> <i ng-class=\"{'active':review.ratings == 5}\" class=\"fa fa-star\"></i> (5 Reviews)</p><p><i class=\"fa fa-clock-o\"></i>{{ review.createdDate | date:'MMM d, y hh:mm a' }}</p></div><div class=\"reply pl-3 ml-3 text-justify\" ng-show=\"review.reply!='' &&review.reply!=null \"><p><span class=\"mr-2 font-weight-bold text-primary\"><i class=\"fa fa-comments\" aria-hidden=\"true\"></i></span> <span class=\"pr-2 font-weight-bold text-primary\">Reply :</span> {{review.reply}}</div></div></div></div><div id=\"writereview\" class=\"review_form\"><div class=\"widget_title\"><h4>Write a Review</h4></div><form ng-submit=\"storeReview()\" method=\"post\"><div class=\"form-group\"><label class=\"form-label\">Your Rating for this listing</label><div class=\"listing_rating\"><input required name=\"rating\" ng-model=\"review.ratings\" id=\"rating-5\" value=\"5\" type=\"radio\"> <label for=\"rating-5\" class=\"fa fa-star\"></label> <input required name=\"rating\" ng-model=\"review.ratings\" id=\"rating-4\" value=\"4\" type=\"radio\"> <label for=\"rating-4\" class=\"fa fa-star\"></label> <input required name=\"rating\" ng-model=\"review.ratings\" id=\"rating-3\" value=\"3\" type=\"radio\"> <label for=\"rating-3\" class=\"fa fa-star\"></label> <input required name=\"rating\" ng-model=\"review.ratings\" id=\"rating-2\" value=\"2\" type=\"radio\"> <label for=\"rating-2\" class=\"fa fa-star\"></label> <input required name=\"rating\" ng-model=\"review.ratings\" id=\"rating-1\" value=\"1\" type=\"radio\"> <label for=\"rating-1\" class=\"fa fa-star\"></label></div></div><div class=\"form-group\"><label class=\"form-label\">Email</label> <input name=\"\" required type=\"email\" ng-readonly=\"review.email!=''\" ng-model=\"review.email\" placeholder=\"you@website.com\" class=\"form-control\"></div><div class=\"form-group\"><label class=\"form-label\">Title</label> <input name=\"\" required type=\"text\" ng-model=\"review.title\" placeholder=\"Title of Your Review\" class=\"form-control\"></div><div class=\"form-group\"><label class=\"form-label\">Review</label> <textarea required name=\"\" ng-model=\"review.body\" cols=\"\" rows=\"\" class=\"form-control\" placeholder=\"Yout Experience\"></textarea></div><div class=\"form-group\"><button type=\"submit\" ng-disabled=\"review_is_submitting==true\" class=\"btn\"><span ng-show=\"review_is_submitting==true\" class=\"spinner-border spinner-border-sm\" role=\"status\" aria-hidden=\"true\"></span> Submit Review</button></div></form></div></div></div><div class=\"col-md-4\"><div class=\"ElemoListing_sidebar\"><div class=\"sidebar_wrap listing_contact_info\"><div class=\"widget_title\"><h6>Contact Info</h6></div><ul><li><i class=\"fa fa-map-marker\"></i> {{ detail.address.addressLine1 || \"\" }}</li><li ng-if=\"detail.address.addressLine2\">{{ detail.address.addressLine2 }}</li><li><i class=\"fa fa-phone\"></i> <a href>{{ detail.freeLancer.mobile }}</a></li><li><i class=\"fa fa-envelope\"></i> <a href>{{ detail.freeLancer.email }}</a></li><li><i class=\"fa fa-link\"></i> <a href>{{ detail.freeLancer.siteUrl }}</a></li></ul><div class=\"social_links\"><a href class=\"facebook_link\"><i class=\"fa fa-facebook-f\"></i></a> <a href class=\"linkedin_link\"><i class=\"fa fa-linkedin\"></i></a> <a href class=\"twitter_link\"><i class=\"fa fa-twitter\"></i></a> <a href class=\"google_plus_link\"><i class=\"fa fa-google-plus\"></i></a></div></div><div class=\"sidebar_wrap\"><div class=\"widget_title\"><h4>Watch Video</h4></div><div class=\"listing_video\"><iframe class=\"mfp-iframe\" ng-src=\"{{trustSrc(videos[0].presentationUrl)}}\" allowfullscreen></iframe></div></div></div></div></div></div></section></div><div class=\"modal fade bd-example-modal-lg\" id=\"report_modal\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"exampleModalLabel\" aria-hidden=\"true\"><div class=\"modal-dialog modal-lg\" role=\"document\"><div class=\"modal-content\"><div class=\"modal-header\"><h5 class=\"modal-title\" id=\"exampleModalLabel\">Report Inaccurate Info</h5><button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button></div><div class=\"modal-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-6\"><fieldset id=\"c-group-filled\"><label for=\"cf1\"><input type=\"checkbox\" id=\"cf1\" name=\"c-group-filled\" class=\"filled\" checked=\"checked\"> <span class=\"label-text\">Vendor Pricing Incorrect</span></label> <label for=\"cf2\"><input type=\"checkbox\" id=\"cf2\" name=\"c-group-filled\" class=\"filled\"> <span class=\"label-text\">vendor address/city is incorrect</span></label></fieldset></div><div class=\"col-6\"><fieldset id=\"c-group-filled\"><label for=\"cf4\"><input type=\"checkbox\" id=\"cf4\" name=\"c-group-filled\" class=\"filled\"> <span class=\"label-text\">Vendor phone number is Incorrect</span></label> <label for=\"cf5\"><input type=\"checkbox\" id=\"cf4\" name=\"c-group-filled\" class=\"filled\" checked=\"checked\"> <span class=\"label-text\">This vendor has plagiarised images</span></label></fieldset></div></div><textarea rows=\"3\" cols=\"3\" placeholder=\"If there is any additional feedback in terms of incorrect or missing information/pictures that needs to be added or removed from this profile.Please mention here.\">                 </textarea></div></div><div class=\"modal-footer\"><button type=\"button\" class=\"btn btn-secondary\" data-dismiss=\"modal\">Close</button> <button type=\"button\" class=\"btn btn-primary\">Save changes</button></div></div></div></div>",
-        "/templates/pages/vendor/vendor-detail.html": "<div class=\"vendor-detail\" ng-init=\"init()\" ng-show=\"ready\"><section class=\"listing_detail_header style2_header parallex-bg\"><div class=\"container\"><div class=\"div_zindex white-text\"><div class=\"row\"><div class=\"col-md-8\"><h1><span ng-bind=\"detail.vendor.name\"></span></h1><p></p><div class=\"listing_rating\"><p><span class=\"review_score\" ng-bind=\"detail.rating.value + '/5'\"></span> <i ng-class=\"{'active':detail.rating.value >= 1}\" class=\"fa fa-star\"></i> <i ng-class=\"{'active':detail.rating.value >= 2}\" class=\"fa fa-star\"></i> <i ng-class=\"{'active':detail.rating.value >= 3}\" class=\"fa fa-star\"></i> <i ng-class=\"{'active':detail.rating.value >= 4}\" class=\"fa fa-star\"></i> <i ng-class=\"{'active':detail.rating.value == 5}\" class=\"fa fa-star\"></i> <span ng-bind=\"'(' + detail.rating.totalReviews + ' Reviews)'\"></span></p><p ng-if=\"$root.isCustomerLoggedIn()\" class=\"listing_like\"><a href=\"#\"><i class=\"fa fa-heart-o\"></i> {{ detail.totalLikes }} Likes</a></p></div></div><div class=\"col-md-4\" ng-if=\"detail.pricePerDay && detail.pricePerDay > 0\"><div class=\"pricing_info\"><p class=\"listing_price\"><span><i class=\"fa fa-rupee\"></i> {{detail.pricePerDay | number:2}}</span></p><div class=\"listing_message\" ng-if=\"false\"><a class=\"btn\" data-toggle=\"modal\" data-target=\"#message_modal\"><i class=\"fa fa-envelope-o\"></i> Send Message</a></div></div></div></div></div></div><div class=\"dark-overlay\"></div></section><section class=\"listing_info_wrap listing_detail_2\"><div class=\"container\"><div class=\"sidebar_wrap listing_action_btn\"><ul><li class=\"dropdown\"><a class=\"dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\"><i class=\"fa fa-share-alt\"></i>Share This <span class=\"caret\"></span></a><ul class=\"dropdown-menu\" style=\"width: 10px!important;\"><li style=\"width: 5rem!important;\"><a href=\"#\">Page 1-1</a></li><li style=\"width: 5rem!important;\"><a href=\"#\">Page 1-2</a></li><li style=\"width: 5rem!important;\"><a href=\"#\">Page 1-3</a></li></ul></li><li><a href ng-click=\"showLoginAlert()\" class=\"js-target-scroll\"><i class=\"fa fa-star\"></i> Write a Review</a></li><li><a data-toggle=\"modal\" data-target=\".bd-example-modal-lg\"><i class=\"fa fa-exclamation-triangle\"></i> Report</a></li></ul></div><div class=\"image_slider_wrap\"><div id=\"listing_img_slider\"><div class=\"owl-carousel owl-theme\"><div class=\"item\" ng-repeat=\"photo in photos\" ng-init=\"$last && initCarousel()\"><img ng-src=\"{{photo.presentationUrl}}\" width=\"400\" height=\"220\" alt=\"image\"></div></div></div></div><div class=\"view_map\"><a href class=\"js-target-scroll\"><i class=\"fa fa-map-marker\"></i></a></div><div class=\"row\"><div class=\"col-md-8\"><div class=\"ElemoListing_detail\"><div class=\"accordion\" id=\"accordionExample\"><div class=\"card\"><div class=\"card-header\" id=\"headingOne\"><h2 class=\"mb-0\"><a class=\"btn btn-link text-left\" type=\"button\" data-toggle=\"collapse\" data-target=\"#collapseOne\" aria-expanded=\"true\" aria-controls=\"collapseOne\"><i class=\"fa fa-file-text-o\"></i> Projects</a></h2></div><div id=\"collapseOne\" class=\"collapse show\" aria-labelledby=\"headingOne\" data-parent=\"#accordionExample\"><div class=\"card-body\"><section id=\"nav-detail\" style=\"background:none;\"><ul class=\"nav nav-tabs\"><li class=\"active\"><a data-toggle=\"tab\" data-target=\"#portfolio\">Portfolios ({{photos.length}})</a></li><li><a data-toggle=\"tab\" data-target=\"#videos\">Videos ({{videos.length}})</a></li></ul><div class=\"tab-content\"><div id=\"portfolio\" class=\"tab-pane in active\"><a href class=\"d-block pull-left\" tabindex=\"-1\" ng-repeat=\"photo in photos\"><div class=\"p-2\"><img ng-src=\"{{photo.presentationUrl}}\" options=\"{ selectable:options.isSelectable }\" style=\"height: 100px !important;                                                                             width: 100px !important;                                                                             right: 5rem;                                                                             left: 2rem;\"/></div></a></div><div id=\"albums\" class=\"tab-pane fade\"></div><div id=\"videos\" class=\"tab-pane fade\"><div class=\"col-4 pull-left\" ng-repeat=\"video in videos\"><div class=\"listing_video\"><iframe class=\"mfp-iframe\" ng-src=\"{{trustSrc(video.presentationUrl)}}\" allowfullscreen></iframe></div></div></div></div></section></div></div></div><div class=\"card mt-5\"><div class=\"card-header\" id=\"headingTwo\"><h2 class=\"mb-0\"><a class=\"btn btn-link text-left collapsed\" type=\"button\" data-toggle=\"collapse\" data-target=\"#collapseTwo\" aria-expanded=\"false\" aria-controls=\"collapseTwo\"><i class=\"fa fa-align-left\"></i> Services Offered</a></h2></div><div id=\"collapseTwo\" class=\"collapse\" aria-labelledby=\"headingTwo\" data-parent=\"#accordionExample\"><div class=\"card-body\"><div class=\"features-li\"><ul><li ng-repeat=\"service in detail.services\"><span>{{ service.desc }}</span></li></ul></div></div></div></div><div class=\"card mt-5\"><div class=\"card-header\" id=\"headingThree\"><h2 class=\"mb-0\"><a class=\"btn btn-link text-left collapsed\" type=\"button\" data-toggle=\"collapse\" data-target=\"#collapseThree\" aria-expanded=\"false\" aria-controls=\"collapseThree\"><i class=\"fa fa-rupee pr-2\"></i> Estimated Pricing</a></h2></div><div id=\"collapseThree\" class=\"collapse\" aria-labelledby=\"headingThree\" data-parent=\"#accordionExample\"><div class=\"card-body\"><div class=\"w-100 py-3 ng-scope\" ng-repeat=\"package in detail.packages\"><label class=\"text-dark col-6 pull-left pl-0\">{{ package.description }}</label> <label class=\"text-dark font-weight-bold col-6 pull-right pr-0\"><span class=\"pull-right\"><i class=\"fa fa-rupee\"></i> {{ package.pricePerDay | number:2 }} per day</span></label></div></div></div></div><div class=\"card mt-5\"><div class=\"card-header\" id=\"headingFour\"><h2 class=\"mb-0\"><a class=\"btn btn-link text-left collapsed\" type=\"button\" data-toggle=\"collapse\" data-target=\"#collapseFour\" aria-expanded=\"false\" aria-controls=\"collapseFour\"><i class=\"fa fa-calendar-check-o\"></i> Opening Hours</a></h2></div><div id=\"collapseFour\" class=\"collapse\" aria-labelledby=\"headingFour\" data-parent=\"#accordionExample\"><div class=\"card-body\"><ul><li><span class=\"hours_title\"><i class=\"fa fa-clock-o\"></i>Monday</span> <span>8:00am</span> - <span>9:00pm</span></li><li><span class=\"hours_title\"><i class=\"fa fa-clock-o\"></i>Tuesday</span> <span>8:00am</span> - <span>9:00pm</span></li><li><span class=\"hours_title\"><i class=\"fa fa-clock-o\"></i>Wednesday</span> <span>8:00am</span> - <span>9:00pm</span></li><li><span class=\"hours_title\"><i class=\"fa fa-clock-o\"></i>Thursday</span> <span>8:00am</span> - <span>9:00pm</span></li><li><span class=\"hours_title\"><i class=\"fa fa-clock-o\"></i>Friday</span> <span>8:00am</span> - <span>9:00pm</span></li><li><span class=\"hours_title\"><i class=\"fa fa-clock-o\"></i>Saturday</span> <span>12:00am</span> - <span>9:00pm</span></li><li><span class=\"hours_title\"><i class=\"fa fa-clock-o\"></i>Sunday</span> <span>Closed</span></li></ul></div></div></div></div><div class=\"mt-5\" id=\"single_map \"><div class=\"widget_title\"><h4>View Map</h4></div><div id=\"singleListingMap-container\"><div id=\"singlemap\" data-latitude=\"34.6230191\" data-longitude=\"-98.4315764\" data-map-icon=\"assets/images/category-icon2.png\"></div></div></div><div class=\"reviews_list\"><div class=\"widget_title\"><h4><span>{{totalReviews}} Reviews for</span> {{detail.vendor.name}}</h4></div><div class=\"review_wrap\" ng-repeat=\"review in reviews\"><div class=\"review_author\"><img src=\"assets/images/13.jpg\" alt=\"image\"><figcaption><h6>{{ review.customerName}}</h6></figcaption></div><div class=\"review_detail\"><h5>{{ review.title }}</h5><p>{{ review.body }}</p><div class=\"listing_rating\"><p><span class=\"review_score\" ng-bind=\"review.ratings + '/5'\"></span> <i ng-class=\"{'active':review.ratings >= 1}\" class=\"fa fa-star\"></i> <i ng-class=\"{'active':review.ratings >= 2}\" class=\"fa fa-star\"></i> <i ng-class=\"{'active':review.ratings >= 3}\" class=\"fa fa-star\"></i> <i ng-class=\"{'active':review.ratings >= 4}\" class=\"fa fa-star\"></i> <i ng-class=\"{'active':review.ratings == 5}\" class=\"fa fa-star\"></i> (5 Reviews)</p><p><i class=\"fa fa-clock-o\"></i>{{ review.createdDate | date:'MMM d, y hh:mm a' }}</p></div><div class=\"reply pl-3 ml-3 text-justify\" ng-show=\"review.reply!='' &&review.reply!=null \"><p><span class=\"mr-2 font-weight-bold text-primary\"><i class=\"fa fa-comments\" aria-hidden=\"true\"></i></span> <span class=\"pr-2 font-weight-bold text-primary\">Reply :</span> {{review.reply}}</div></div></div></div><div id=\"writereview\" class=\"review_form\" ng-show=\"$root.isCustomerLoggedIn()\"><div class=\"widget_title\"><h4>Write a Review</h4></div><form ng-submit=\"storeReview()\" method=\"post\"><div class=\"form-group\"><label class=\"form-label\">Your Rating for this listing</label><div class=\"listing_rating\"><input required name=\"rating\" ng-model=\"review.ratings\" id=\"rating-5\" value=\"5\" type=\"radio\"> <label for=\"rating-5\" class=\"fa fa-star\"></label> <input required name=\"rating\" ng-model=\"review.ratings\" id=\"rating-4\" value=\"4\" type=\"radio\"> <label for=\"rating-4\" class=\"fa fa-star\"></label> <input required name=\"rating\" ng-model=\"review.ratings\" id=\"rating-3\" value=\"3\" type=\"radio\"> <label for=\"rating-3\" class=\"fa fa-star\"></label> <input required name=\"rating\" ng-model=\"review.ratings\" id=\"rating-2\" value=\"2\" type=\"radio\"> <label for=\"rating-2\" class=\"fa fa-star\"></label> <input required name=\"rating\" ng-model=\"review.ratings\" id=\"rating-1\" value=\"1\" type=\"radio\"> <label for=\"rating-1\" class=\"fa fa-star\"></label></div></div><div class=\"form-group\"><label class=\"form-label\">Email</label> <input name=\"\" required type=\"email\" ng-readonly=\"review.email!=''\" ng-model=\"review.email\" placeholder=\"you@website.com\" class=\"form-control\"></div><div class=\"form-group\"><label class=\"form-label\">Title</label> <input name=\"\" required type=\"text\" ng-model=\"review.title\" placeholder=\"Title of Your Review\" class=\"form-control\"></div><div class=\"form-group\"><label class=\"form-label\">Review</label> <textarea required name=\"\" ng-model=\"review.body\" cols=\"\" rows=\"\" class=\"form-control\" placeholder=\"Yout Experience\"></textarea></div><div class=\"form-group\"><button type=\"submit\" ng-disabled=\"review_is_submitting==true\" class=\"btn\"><span ng-show=\"review_is_submitting==true\" class=\"spinner-border spinner-border-sm\" role=\"status\" aria-hidden=\"true\"></span> Submit Review</button></div></form></div></div></div><div class=\"col-md-4\"><div class=\"ElemoListing_sidebar\"><div class=\"sidebar_wrap listing_contact_info\" ng-if=\"$root.isCustomerLoggedIn()\"><div class=\"widget_title\"><h6>Contact Info</h6></div><ul><li><i class=\"fa fa-map-marker\"></i> {{ detail.address.addressLine1 || \"\" }}</li><li ng-if=\"detail.address.addressLine2\">{{ detail.address.addressLine2 }}</li><li><i class=\"fa fa-phone\"></i> <a href>{{ detail.vendor.mobile }}</a></li><li><i class=\"fa fa-envelope\"></i> <a href>{{ detail.vendor.email }}</a></li><li><i class=\"fa fa-link\"></i> <a href>{{ detail.vendor.siteUrl }}</a></li></ul><div class=\"social_links\"><a href class=\"facebook_link\"><i class=\"fa fa-facebook-f\"></i></a> <a href class=\"linkedin_link\"><i class=\"fa fa-linkedin\"></i></a> <a href class=\"twitter_link\"><i class=\"fa fa-twitter\"></i></a> <a href class=\"google_plus_link\"><i class=\"fa fa-google-plus\"></i></a></div></div><div class=\"sidebar_wrap\"><div class=\"widget_title\"><h4>Watch Video</h4></div><div class=\"listing_video\"><iframe class=\"mfp-iframe\" ng-src=\"{{trustSrc(videos[0].presentationUrl)}}\" allowfullscreen></iframe></div></div></div></div></div></div></section></div><div class=\"modal fade bd-example-modal-lg\" id=\"report_modal\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"exampleModalLabel\" aria-hidden=\"true\"><div class=\"modal-dialog modal-lg\" role=\"document\"><div class=\"modal-content\"><div class=\"modal-header\"><h5 class=\"modal-title\" id=\"exampleModalLabel\">Report Inaccurate Info</h5><button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button></div><div class=\"modal-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-6\"><fieldset id=\"c-group-filled\"><label for=\"cf1\"><input type=\"checkbox\" id=\"cf1\" name=\"c-group-filled\" class=\"filled\" checked=\"checked\"> <span class=\"label-text\">Vendor Pricing Incorrect</span></label> <label for=\"cf2\"><input type=\"checkbox\" id=\"cf2\" name=\"c-group-filled\" class=\"filled\"> <span class=\"label-text\">vendor address/city is incorrect</span></label></fieldset></div><div class=\"col-6\"><fieldset id=\"c-group-filled\"><label for=\"cf4\"><input type=\"checkbox\" id=\"cf4\" name=\"c-group-filled\" class=\"filled\"> <span class=\"label-text\">Vendor phone number is Incorrect</span></label> <label for=\"cf5\"><input type=\"checkbox\" id=\"cf4\" name=\"c-group-filled\" class=\"filled\" checked=\"checked\"> <span class=\"label-text\">This vendor has plagiarised images</span></label></fieldset></div></div><textarea rows=\"3\" cols=\"3\" placeholder=\"If there is any additional feedback in terms of incorrect or missing information/pictures that needs to be added or removed from this profile.Please mention here.\">                 </textarea></div></div><div class=\"modal-footer\"><button type=\"button\" class=\"btn btn-secondary\" data-dismiss=\"modal\">Close</button> <button type=\"button\" class=\"btn btn-primary\">Save changes</button></div></div></div></div>",
-        "/templates/pages/vendor/vendor-search.html": "<section id=\"inner_pages\" ng-init=\"init()\"><div class=\"container\"><div class=\"listing_header mt-4\"><div class=\"pull-left\"><h5><span ng-bind=\"title | capitalize\"></span></h5><div class=\"clear\"><small class=\"font-italic\" ng-bind=\"'Showing ' + (vendors.pageRecords.length || 0) + ' results as per your search'\"></small></div></div><div class=\"layout-switcher\"><a href=\"\" ng-class=\"{'active':view == 'grid'}\" ng-click=\"view = 'grid'\"><i class=\"fa fa-th\"></i></a> <a href=\"\" ng-class=\"{'active':view == 'list'}\" ng-click=\"view = 'list'\"><i class=\"fa fa-align-justify\"></i></a></div><div class=\"pull-right col-4\"><input type=\"text\" class=\"form-control\" placeholder=\"Search\" ng-change=\"refresh()\" ng-model=\"searchQuery.search\"> <button type=\"button\" class=\"btn mr-3 btn-link btn-icon btn-clear-text\" tabindex=\"-1\" ng-if=\"searchQuery.search\" ng-click=\"clearSearch($event)\"><i class=\"fa fa-close text-danger\"></i></button></div></div><div class=\"vendor-explorer-container\"><fic-vendor-grid-explorer ng-model=\"vendors\" select-vendor=\"toggleVendorSelection($vendor)\" ng-disabled=\"isDisabled()\" ng-if=\"view == 'grid'\"></fic-vendor-grid-explorer><fic-vendor-list-explorer ng-model=\"vendors\" select-vendor=\"toggleVendorSelection($vendor)\" ng-disabled=\"isDisabled()\" ng-if=\"view == 'list'\"></fic-vendor-list-explorer></div><nav class=\"pagination_nav\"><ul class=\"pagination\"><li class=\"disabled\"><a href=\"#\" aria-label=\"Previous\"><span aria-hidden=\"true\">&laquo;</span></a></li><li class=\"active\"><a href=\"#\">1</a></li><li class=\"disabled\"><a href=\"#\" aria-label=\"Next\"><span aria-hidden=\"true\">&raquo;</span></a></li></ul></nav></div></section>",
+        "/templates/pages/customer/projects/customer-project-view.html": "<section id=\"inner_pages\" ng-init=\"init()\"><div class=\"container\" ng-if=\"ready\"><div class=\"listing_header mt-4\"><h5 class=\"w-100\"><span ng-bind=\"project.projectName\"></span> <span ng-if=\"needApproval()\" class=\"pull-right\"><button class=\"btn btn-sm btn-primary mr-2\" ng-click=\"saveSelection()\"><i class=\"fa fa-save mr-2\"></i> SAVE</button> <button class=\"btn btn-sm bg-success\" ng-click=\"confirmSelection()\"><i class=\"fa fa-check mr-2\"></i> CONFIRM</button></span> <span ng-if=\"$root.isVendorLoggedIn() && project.status=='New' && project.photographer==0\" class=\"pull-right\"><button data-toggle=\"modal\" data-target=\"#assignProjectModal\" class=\"btn btn-sm btn-warning\">Assign a Second Shooter</button></span> <span ng-if=\"$root.isVendorLoggedIn() && project.status=='New' && project.photographer!=0\" class=\"pull-right\"><button data-toggle=\"modal\" data-target=\"#assignProjectModal\" class=\"btn btn-sm btn-warning\">Update a Second Shooter</button></span></h5><div class=\"clear\"><small>Customer Name <b>{{project.customerName}}</b></small><br/><small>Customer Email <b>{{project.customerEmail}}</b></small><br/><small>Customer Location <b>{{project.customerCity}}</b></small><br/><small ng-show=\"assignedFreelancer.id>0\">Assigned To <b>{{assignedFreelancer.freeLancer.name}}</b></small><br/><small>{{files.length || 0}} Photos</small></div></div><div class=\"project-detail-container\"><fic-customer-project-file-explorer ng-model=\"files\" ng-disabled=\"isDisabled()\" options=\"{project:project,isSelectable:needApproval()}\"></fic-customer-project-file-explorer></div><nav class=\"pagination_nav\"><ul class=\"pagination\"><li class=\"disabled\"><a href=\"\" href=\"\" aria-label=\"Previous\"><span aria-hidden=\"true\">&laquo;</span></a></li><li class=\"active\"><a href=\"\" href=\"\">1</a></li><li class=\"disabled\"><a href=\"\" href=\"\" aria-label=\"Next\"><span aria-hidden=\"true\">&raquo;</span></a></li></ul></nav></div><div class=\"container\" ng-if=\"!ready\"><div class=\"listing_header mt-4\"><h5 class=\"w-100\"><span ng-bind=\"'Loading...'\" class=\"font-italic\"></span></h5></div></div><div class=\"modal fade\" id=\"assignProjectModal\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"exampleModalLongTitle\" aria-hidden=\"true\"><div class=\"modal-dialog\" role=\"document\"><div class=\"modal-content\"><div class=\"modal-header\"><h5 class=\"modal-title\" id=\"exampleModalLongTitle\">Assign a Project</h5><button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button></div><div class=\"modal-body\"><form><div class=\"form-group row\"><label for=\"staticProjectName\" class=\"col-sm-4 col-form-label\">Project Name</label><div class=\"col-sm-8\"><input type=\"text\" readonly=\"readonly\" class=\"form-control-plaintext\" id=\"staticProjectName\" ng-model=\"project.projectName\"></div></div><div class=\"form-group row\"><label for=\"staticCustomerName\" class=\"col-sm-4 col-form-label\">Customer Name</label><div class=\"col-sm-8\"><input type=\"text\" readonly=\"readonly\" class=\"form-control-plaintext\" id=\"staticCustomerName\" ng-model=\"project.customerName\"></div></div><div class=\"card\"><div class=\"card-body\"><div class=\"card-title\">List of Shortlisted Second Shooters</div><fic-vendor-home-freelancer-view view=\"view\" ng-model=\"freelancers\" ng-disabled=\"isDisabled()\"></fic-vendor-home-freelancer-view></div></div></form></div><div class=\"modal-footer\"><button type=\"button\" class=\"btn btn-secondary\" data-dismiss=\"modal\">Close</button> <button type=\"button\" class=\"btn btn-primary\" ng-click=\"assignProject()\">Save changes</button></div></div></div></div></section>",
+        "/templates/pages/customer/projects/customer-projects.html": "<section id=\"inner_pages\" ng-init=\"init()\"><div class=\"container\"><div class=\"listing_header mt-4\"><h5><span ng-bind=\"'Your Projects (' + (projects.length || 0) + ')'\"></span></h5></div><div class=\"customer-projects-container\"><fic-customer-project-grid-explorer view-project=\"viewProject($projectId)\" ng-model=\"projects\" ng-disabled=\"isDisabled()\"></fic-customer-project-grid-explorer></div><nav class=\"pagination_nav\"><ul class=\"pagination\"><li class=\"disabled\"><a href=\"\" href=\"\" aria-label=\"Previous\"><span aria-hidden=\"true\">&laquo;</span></a></li><li class=\"active\"><a href=\"\" href=\"\">1</a></li><li class=\"disabled\"><a href=\"\" href=\"\" aria-label=\"Next\"><span aria-hidden=\"true\">&raquo;</span></a></li></ul></nav></div></section>",
+        "/templates/pages/freelancer/freelancer-detail.html": "<div class=\"vendor-detail\" ng-init=\"init()\" ng-show=\"ready\"><section class=\"listing_detail_header style2_header parallex-bg\"><div class=\"container\"><div class=\"div_zindex white-text\"><div class=\"row\"><div class=\"col-md-8\"><h1><span ng-bind=\"detail.freeLancer.name\"></span></h1><p></p><div class=\"listing_rating\"><p><span class=\"review_score\" ng-bind=\"detail.rating.value + '/5'\"></span> <i ng-class=\"{'active':detail.rating.value >= 1}\" class=\"fa fa-star\"></i> <i ng-class=\"{'active':detail.rating.value >= 2}\" class=\"fa fa-star\"></i> <i ng-class=\"{'active':detail.rating.value >= 3}\" class=\"fa fa-star\"></i> <i ng-class=\"{'active':detail.rating.value >= 4}\" class=\"fa fa-star\"></i> <i ng-class=\"{'active':detail.rating.value == 5}\" class=\"fa fa-star\"></i> <span ng-bind=\"'(' + detail.rating.totalReviews + ' Reviews)'\"></span></p><p class=\"listing_like\"><a href ng-click=\"toggleFreeLancerSelection(detail)\"><i class=\"fa\" ng-class=\"{'fa-heart':detail.isShortlisted,'fa-heart-o':!detail.isShortlisted}\"></i> {{ detail.totalLikes }} Likes</a></p></div></div><div class=\"col-md-4\" ng-if=\"detail.pricePerDay && detail.pricePerDay > 0\"><div class=\"pricing_info\"><p class=\"listing_price\"><span><i class=\"fa fa-rupee\"></i> {{detail.pricePerDay | number:2}}</span></p><div class=\"listing_message\" ng-if=\"false\"><a class=\"btn\" data-toggle=\"modal\" data-target=\"#message_modal\"><i class=\"fa fa-envelope-o\"></i> Send Message</a></div></div></div></div></div></div><div class=\"dark-overlay\"></div></section><section class=\"listing_info_wrap listing_detail_2\"><div class=\"container\"><div class=\"sidebar_wrap listing_action_btn\"><ul><li><a href=\"#writereview\" class=\"js-target-scroll\"><i class=\"fa fa-star\"></i> Write a Review</a></li></ul></div><div class=\"image_slider_wrap\"><div id=\"listing_img_slider\"></div></div><div class=\"view_map\"><a href class=\"js-target-scroll\"><i class=\"fa fa-map-marker\"></i></a></div><div class=\"row\"><div class=\"col-md-8\"><div class=\"ElemoListing_detail\"><div class=\"accordion\" id=\"accordionExample\"><div class=\"card\"><div class=\"card-header\" id=\"headingOne\"><h2 class=\"mb-0\"><a class=\"btn btn-link text-left\" type=\"button\" data-toggle=\"collapse\" data-target=\"#collapseOne\" aria-expanded=\"true\" aria-controls=\"collapseOne\"><i class=\"fa fa-file-text-o\"></i> Projects</a></h2></div><div id=\"collapseOne\" class=\"collapse show\" aria-labelledby=\"headingOne\" data-parent=\"#accordionExample\"><div class=\"card-body\"><section id=\"nav-detail\" style=\"background:none;\"><ul class=\"nav nav-tabs\"><li class=\"active\"><a data-toggle=\"tab\" data-target=\"#portfolio\">Portfolios ({{photos.length}})</a></li><li><a data-toggle=\"tab\" data-target=\"#videos\">Videos ({{videos.length}})</a></li></ul><div class=\"tab-content\"><div id=\"portfolio\" class=\"tab-pane in active\"><a href class=\"d-block pull-left\" tabindex=\"-1\" ng-repeat=\"photo in photos\"><div class=\"p-2\"><img ng-src=\"{{photo.presentationUrl}}\" options=\"{ selectable:options.isSelectable }\" style=\"height: 100px !important;                                                                             width: 100px !important;                                                                             right: 5rem;                                                                             left: 2rem;\"/></div></a></div><div id=\"albums\" class=\"tab-pane fade\"></div><div id=\"videos\" class=\"tab-pane fade\"><div class=\"col-4 pull-left\" ng-repeat=\"video in videos\"><div class=\"listing_video\"><iframe class=\"mfp-iframe\" ng-src=\"{{trustSrc(video.presentationUrl)}}\" allowfullscreen></iframe></div></div></div></div></section></div></div></div><div class=\"card mt-5\"><div class=\"card-header\" id=\"headingThree\"><h2 class=\"mb-0\"><a class=\"btn btn-link text-left collapsed\" type=\"button\" data-toggle=\"collapse\" data-target=\"#collapseThree\" aria-expanded=\"false\" aria-controls=\"collapseThree\"><i class=\"fa fa-rupee pr-2\"></i> Estimated Pricing</a></h2></div><div id=\"collapseThree\" class=\"collapse\" aria-labelledby=\"headingThree\" data-parent=\"#accordionExample\"><div class=\"card-body\"><div class=\"w-100 py-3 ng-scope\" ng-repeat=\"package in detail.packages\"><label class=\"text-dark col-6 pull-left pl-0\">{{ package.description }}</label> <label class=\"text-dark font-weight-bold col-6 pull-right pr-0\"><span class=\"pull-right\"><i class=\"fa fa-rupee\"></i> {{ package.pricePerDay | number:2 }} per day</span></label></div></div></div></div></div><div class=\"reviews_list\"><div class=\"widget_title\"><h4><span>{{totalReviews}} Reviews for</span> {{detail.freeLancer.name}}</h4></div><div class=\"review_wrap\" ng-repeat=\"review in reviews\"><div class=\"review_author\"><img src=\"assets/images/13.jpg\" alt=\"image\"><figcaption><h6>{{ review.customerName}}</h6></figcaption></div><div class=\"review_detail\"><h5>{{ review.title }}</h5><p>{{ review.body }}</p><div class=\"listing_rating\"><p><span class=\"review_score\" ng-bind=\"review.ratings + '/5'\"></span> <i ng-class=\"{'active':review.ratings >= 1}\" class=\"fa fa-star\"></i> <i ng-class=\"{'active':review.ratings >= 2}\" class=\"fa fa-star\"></i> <i ng-class=\"{'active':review.ratings >= 3}\" class=\"fa fa-star\"></i> <i ng-class=\"{'active':review.ratings >= 4}\" class=\"fa fa-star\"></i> <i ng-class=\"{'active':review.ratings == 5}\" class=\"fa fa-star\"></i> (5 Reviews)</p><p><i class=\"fa fa-clock-o\"></i>{{ review.createdDate | date:'MMM d, y hh:mm a' }}</p></div><div class=\"reply pl-3 ml-3 text-justify\" ng-show=\"review.reply!='' &&review.reply!=null \"><p><span class=\"mr-2 font-weight-bold text-primary\"><i class=\"fa fa-comments\" aria-hidden=\"true\"></i></span> <span class=\"pr-2 font-weight-bold text-primary\">Reply :</span> {{review.reply}}</div></div></div></div><div id=\"writereview\" class=\"review_form\"><div class=\"widget_title\"><h4>Write a Review</h4></div><form ng-submit=\"storeReview()\" method=\"post\"><div class=\"form-group\"><label class=\"form-label\">Your Rating for this listing</label><div class=\"listing_rating\"><input required name=\"rating\" ng-model=\"review.ratings\" id=\"rating-5\" value=\"5\" type=\"radio\"> <label for=\"rating-5\" class=\"fa fa-star\"></label> <input required name=\"rating\" ng-model=\"review.ratings\" id=\"rating-4\" value=\"4\" type=\"radio\"> <label for=\"rating-4\" class=\"fa fa-star\"></label> <input required name=\"rating\" ng-model=\"review.ratings\" id=\"rating-3\" value=\"3\" type=\"radio\"> <label for=\"rating-3\" class=\"fa fa-star\"></label> <input required name=\"rating\" ng-model=\"review.ratings\" id=\"rating-2\" value=\"2\" type=\"radio\"> <label for=\"rating-2\" class=\"fa fa-star\"></label> <input required name=\"rating\" ng-model=\"review.ratings\" id=\"rating-1\" value=\"1\" type=\"radio\"> <label for=\"rating-1\" class=\"fa fa-star\"></label></div></div><div class=\"form-group\"><label class=\"form-label\">Email</label> <input name=\"\" required type=\"email\" ng-readonly=\"review.email!=''\" ng-model=\"review.email\" placeholder=\"you@website.com\" class=\"form-control\"></div><div class=\"form-group\"><label class=\"form-label\">Title</label> <input name=\"\" required type=\"text\" ng-model=\"review.title\" placeholder=\"Title of Your Review\" class=\"form-control\"></div><div class=\"form-group\"><label class=\"form-label\">Review</label> <textarea required name=\"\" ng-model=\"review.body\" cols=\"\" rows=\"\" class=\"form-control\" placeholder=\"Yout Experience\"></textarea></div><div class=\"form-group\"><button type=\"submit\" ng-disabled=\"review_is_submitting==true\" class=\"btn\"><span ng-show=\"review_is_submitting==true\" class=\"spinner-border spinner-border-sm\" role=\"status\" aria-hidden=\"true\"></span> Submit Review</button></div></form></div></div></div><div class=\"col-md-4\"><div class=\"ElemoListing_sidebar\"><div class=\"sidebar_wrap listing_contact_info\"><div class=\"widget_title\"><h6>Contact Info</h6></div><ul><li><i class=\"fa fa-map-marker\"></i> {{ detail.address.addressLine1 || \"\" }}</li><li ng-if=\"detail.address.addressLine2\">{{ detail.address.addressLine2 }}</li><li><i class=\"fa fa-phone\"></i> <a href>{{ detail.freeLancer.mobile }}</a></li><li><i class=\"fa fa-envelope\"></i> <a href>{{ detail.freeLancer.email }}</a></li><li><i class=\"fa fa-link\"></i> <a href>{{ detail.freeLancer.siteUrl }}</a></li></ul><div class=\"social_links\"><a href class=\"facebook_link\"><i class=\"fa fa-facebook-f\"></i></a> <a href class=\"linkedin_link\"><i class=\"fa fa-linkedin\"></i></a> <a href class=\"twitter_link\"><i class=\"fa fa-twitter\"></i></a> <a href class=\"google_plus_link\"><i class=\"fa fa-google-plus\"></i></a></div></div><div class=\"sidebar_wrap\"><div class=\"widget_title\"><h4>Watch Video</h4></div><div class=\"listing_video\"><iframe class=\"mfp-iframe\" ng-src=\"{{trustSrc(videos[0].presentationUrl)}}\" allowfullscreen></iframe></div></div></div></div></div></div></section></div><div class=\"modal fade bd-example-modal-lg\" id=\"report_modal\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"exampleModalLabel\" aria-hidden=\"true\"><div class=\"modal-dialog modal-lg\" role=\"document\"><div class=\"modal-content\"><div class=\"modal-header\"><h5 class=\"modal-title\" id=\"exampleModalLabel\">Report Inaccurate Info</h5><button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button></div><div class=\"modal-body\"><div class=\"container\"><div class=\"row\"><div class=\"col-6\"><fieldset id=\"c-group-filled\"><label for=\"cf1\"><input type=\"checkbox\" id=\"cf1\" name=\"c-group-filled\" class=\"filled\" checked=\"checked\"> <span class=\"label-text\">Photographer Pricing Incorrect</span></label> <label for=\"cf2\"><input type=\"checkbox\" id=\"cf2\" name=\"c-group-filled\" class=\"filled\"> <span class=\"label-text\">Photographer address/city is incorrect</span></label></fieldset></div><div class=\"col-6\"><fieldset id=\"c-group-filled\"><label for=\"cf4\"><input type=\"checkbox\" id=\"cf4\" name=\"c-group-filled\" class=\"filled\"> <span class=\"label-text\">Vendor phone number is Incorrect</span></label> <label for=\"cf5\"><input type=\"checkbox\" id=\"cf4\" name=\"c-group-filled\" class=\"filled\" checked=\"checked\"> <span class=\"label-text\">This vendor has plagiarised images</span></label></fieldset></div></div><textarea rows=\"3\" cols=\"3\" placeholder=\"If there is any additional feedback in terms of incorrect or missing information/pictures that needs to be added or removed from this profile.Please mention here.\">                 </textarea></div></div><div class=\"modal-footer\"><button type=\"button\" class=\"btn btn-secondary\" data-dismiss=\"modal\">Close</button> <button type=\"button\" class=\"btn btn-primary\">Save changes</button></div></div></div></div>",
+        "/templates/pages/vendor/vendor-detail.html": "<div class=\"vendor-detail\" ng-init=\"init()\" ng-show=\"ready\"><section class=\"listing_detail_header style2_header parallex-bg\"><div class=\"container\"><div class=\"div_zindex white-text\"><div class=\"row\"><div class=\"col-md-8\"><h1><span ng-bind=\"detail.vendor.name\"></span></h1><p></p><div class=\"listing_rating\"><p><span class=\"review_score\" ng-bind=\"detail.rating.value + '/5'\"></span> <i ng-class=\"{'active':detail.rating.value >= 1}\" class=\"fa fa-star\"></i> <i ng-class=\"{'active':detail.rating.value >= 2}\" class=\"fa fa-star\"></i> <i ng-class=\"{'active':detail.rating.value >= 3}\" class=\"fa fa-star\"></i> <i ng-class=\"{'active':detail.rating.value >= 4}\" class=\"fa fa-star\"></i> <i ng-class=\"{'active':detail.rating.value == 5}\" class=\"fa fa-star\"></i> <span ng-bind=\"'(' + detail.rating.totalReviews + ' Reviews)'\"></span></p><p ng-if=\"$root.isCustomerLoggedIn()\" class=\"listing_like\"><a href=\"\" href=\"\"><i class=\"fa fa-heart-o\"></i> {{ detail.totalLikes }} Likes</a></p></div></div><div class=\"col-md-4\" ng-if=\"detail.pricePerDay && detail.pricePerDay > 0\"><div class=\"pricing_info\"><p class=\"listing_price\"><span><i class=\"fa fa-rupee\"></i> {{detail.pricePerDay | number:2}}</span></p><div class=\"listing_message\" ng-if=\"false\"><a class=\"btn\" data-toggle=\"modal\" data-target=\"#message_modal\"><i class=\"fa fa-envelope-o\"></i> Send Message</a></div></div></div></div></div></div><div class=\"dark-overlay\"></div></section><section class=\"listing_info_wrap listing_detail_2\"><div class=\"container\"><div class=\"sidebar_wrap listing_action_btn\"><ul><li class=\"dropdown\" style=\"z-index:3;position:initial\"><a class=\"dropdown-toggle\" data-toggle=\"dropdown\" href=\"#\"><i class=\"fa fa-share-alt\"></i>Share This <span class=\"caret\"></span></a><ul class=\"dropdown-menu\"><li><a href=\"\" ng-click=\"shareViaFacebook()\"><i class=\"fa fa-facebook\" aria-hidden=\"true\"></i></a></li></ul></li><li><a href ng-click=\"showLoginAlert()\" class=\"js-target-scroll\"><i class=\"fa fa-star\"></i> Write a Review</a></li><li><a data-toggle=\"modal\" data-target=\".bd-example-modal-lg\"><i class=\"fa fa-exclamation-triangle\"></i> Report</a></li></ul></div><div id=\"listing_img_slider_vendor_detail\"><div class=\"owl-carousel owl-theme\"><div class=\"item\" ng-repeat=\"photo in photos\" ng-init=\"$last && initCarousel()\"><img ng-src=\"{{photo.presentationUrl}}\" height=\"220\" alt=\"image\"></div></div></div><div class=\"row\"><div class=\"col-md-8\"><div class=\"ElemoListing_detail\"><div class=\"accordion\" id=\"accordionExample\"><div class=\"card\"><div class=\"card-header\" id=\"headingOne\"><h2 class=\"mb-0\"><a class=\"btn btn-link text-left\" type=\"button\" data-toggle=\"collapse\" data-target=\"#collapseOne\" aria-expanded=\"true\" aria-controls=\"collapseOne\"><i class=\"fa fa-file-text-o\"></i> Projects</a></h2></div><div id=\"collapseOne\" class=\"collapse show\" aria-labelledby=\"headingOne\" data-parent=\"#accordionExample\"><div class=\"card-body\"><section id=\"nav-detail\" style=\"background:none;\"><ul class=\"nav nav-tabs\"><li class=\"active\"><a data-toggle=\"tab\" data-target=\"#portfolio\">Portfolios ({{photos.length}})</a></li><li><a data-toggle=\"tab\" data-target=\"#videos\">Videos ({{videos.length}})</a></li></ul><div class=\"tab-content\"><div id=\"portfolio\" class=\"tab-pane in active\"><a href class=\"d-block pull-left\" tabindex=\"-1\" ng-repeat=\"photo in photos\"><div class=\"p-2\"><fic-thumbnail src=\"photo.presentationUrl\" style=\"height: 100px !important;                                                         width: 100px !important;                                                         right: 5rem;                                                         left: 2rem;                                                         position: relative;\"/></div></a></div><div id=\"albums\" class=\"tab-pane fade\"></div><div id=\"videos\" class=\"tab-pane fade\"><div class=\"col-4 pull-left\" ng-repeat=\"video in videos\"><div class=\"listing_video\"><iframe class=\"mfp-iframe\" ng-src=\"{{trustSrc(video.presentationUrl)}}\" allowfullscreen></iframe></div></div></div></div></section></div></div></div><div class=\"card mt-5\"><div class=\"card-header\" id=\"headingTwo\"><h2 class=\"mb-0\"><a class=\"btn btn-link text-left collapsed\" type=\"button\" data-toggle=\"collapse\" data-target=\"#collapseTwo\" aria-expanded=\"false\" aria-controls=\"collapseTwo\"><i class=\"fa fa-align-left\"></i> Services Offered</a></h2></div><div id=\"collapseTwo\" class=\"collapse\" aria-labelledby=\"headingTwo\" data-parent=\"#accordionExample\"><div class=\"card-body\"><div class=\"features-li\"><ul><li ng-repeat=\"service in detail.services\"><span>{{ service.desc }}</span></li></ul></div></div></div></div><div class=\"card mt-5\"><div class=\"card-header\" id=\"headingThree\"><h2 class=\"mb-0\"><a class=\"btn btn-link text-left collapsed\" type=\"button\" data-toggle=\"collapse\" data-target=\"#collapseThree\" aria-expanded=\"false\" aria-controls=\"collapseThree\"><i class=\"fa fa-rupee pr-2\"></i> Estimated Pricing</a></h2></div><div id=\"collapseThree\" class=\"collapse\" aria-labelledby=\"headingThree\" data-parent=\"#accordionExample\"><div class=\"card-body\"><div class=\"w-100 py-3 ng-scope\" ng-repeat=\"package in detail.packages\"><label class=\"text-dark col-6 pull-left pl-0\">{{ package.description }}</label> <label class=\"text-dark font-weight-bold col-6 pull-right pr-0\"><span class=\"pull-right\"><i class=\"fa fa-rupee\"></i> {{ package.pricePerDay | number:2 }} per day</span></label></div></div></div></div></div><div class=\"reviews_list\"><div class=\"widget_title\"><h4><span>{{totalReviews}} Reviews for</span> {{detail.vendor.name}}</h4></div><div class=\"review_wrap\" ng-repeat=\"review in reviews\"><div class=\"review_author\"><img src=\"assets/images/13.jpg\" alt=\"image\"><figcaption><h6>{{ review.customerName}}</h6></figcaption></div><div class=\"review_detail\"><h5>{{ review.title }}</h5><p>{{ review.body }}</p><div class=\"listing_rating\"><p><span class=\"review_score\" ng-bind=\"review.ratings + '/5'\"></span> <i ng-class=\"{'active':review.ratings >= 1}\" class=\"fa fa-star\"></i> <i ng-class=\"{'active':review.ratings >= 2}\" class=\"fa fa-star\"></i> <i ng-class=\"{'active':review.ratings >= 3}\" class=\"fa fa-star\"></i> <i ng-class=\"{'active':review.ratings >= 4}\" class=\"fa fa-star\"></i> <i ng-class=\"{'active':review.ratings == 5}\" class=\"fa fa-star\"></i> (5 Reviews)</p><p><i class=\"fa fa-clock-o\"></i>{{ review.createdDate | date:'MMM d, y hh:mm a' }}</p></div><div class=\"reply pl-3 ml-3 text-justify\" ng-show=\"review.reply!='' &&review.reply!=null \"><p><span class=\"mr-2 font-weight-bold text-primary\"><i class=\"fa fa-comments\" aria-hidden=\"true\"></i></span> <span class=\"pr-2 font-weight-bold text-primary\">Reply :</span> {{review.reply}}</div></div></div></div><div id=\"writereview\" class=\"review_form\" ng-show=\"$root.isCustomerLoggedIn()\"><div class=\"widget_title\"><h4>Write a Review</h4></div><form ng-submit=\"storeReview()\" method=\"post\"><div class=\"form-group\"><label class=\"form-label\">Your Rating for this listing</label><div class=\"listing_rating\"><input required name=\"rating\" ng-model=\"review.ratings\" id=\"rating-5\" value=\"5\" type=\"radio\"> <label for=\"rating-5\" class=\"fa fa-star\"></label> <input required name=\"rating\" ng-model=\"review.ratings\" id=\"rating-4\" value=\"4\" type=\"radio\"> <label for=\"rating-4\" class=\"fa fa-star\"></label> <input required name=\"rating\" ng-model=\"review.ratings\" id=\"rating-3\" value=\"3\" type=\"radio\"> <label for=\"rating-3\" class=\"fa fa-star\"></label> <input required name=\"rating\" ng-model=\"review.ratings\" id=\"rating-2\" value=\"2\" type=\"radio\"> <label for=\"rating-2\" class=\"fa fa-star\"></label> <input required name=\"rating\" ng-model=\"review.ratings\" id=\"rating-1\" value=\"1\" type=\"radio\"> <label for=\"rating-1\" class=\"fa fa-star\"></label></div></div><div class=\"form-group\"><label class=\"form-label\">Email</label> <input name=\"\" required type=\"email\" ng-readonly=\"review.email!=''\" ng-model=\"review.email\" placeholder=\"you@website.com\" class=\"form-control\"></div><div class=\"form-group\"><label class=\"form-label\">Title</label> <input name=\"\" required type=\"text\" ng-model=\"review.title\" placeholder=\"Title of Your Review\" class=\"form-control\"></div><div class=\"form-group\"><label class=\"form-label\">Review</label> <textarea required name=\"\" ng-model=\"review.body\" cols=\"\" rows=\"\" class=\"form-control\" placeholder=\"Yout Experience\"></textarea></div><div class=\"form-group\"><button type=\"submit\" ng-disabled=\"review_is_submitting==true\" class=\"btn\"><span ng-show=\"review_is_submitting==true\" class=\"spinner-border spinner-border-sm\" role=\"status\" aria-hidden=\"true\"></span> Submit Review</button></div></form></div></div></div><div class=\"col-md-4\"><div class=\"ElemoListing_sidebar\"><div class=\"sidebar_wrap listing_contact_info\" ng-if=\"$root.isCustomerLoggedIn()\"><div class=\"widget_title\"><h6>Contact Info</h6></div><ul><li><i class=\"fa fa-map-marker\"></i> {{ detail.address.addressLine1 || \"\" }}</li><li ng-if=\"detail.address.addressLine2\">{{ detail.address.addressLine2 }}</li><li><i class=\"fa fa-phone\"></i> <a href>{{ detail.vendor.mobile }}</a></li><li><i class=\"fa fa-envelope\"></i> <a href>{{ detail.vendor.email }}</a></li><li><i class=\"fa fa-link\"></i> <a href>{{ detail.vendor.siteUrl }}</a></li></ul><div class=\"social_links\"><a href class=\"facebook_link\"><i class=\"fa fa-facebook-f\"></i></a> <a href class=\"linkedin_link\"><i class=\"fa fa-linkedin\"></i></a> <a href class=\"twitter_link\"><i class=\"fa fa-twitter\"></i></a> <a href class=\"google_plus_link\"><i class=\"fa fa-google-plus\"></i></a></div></div><div class=\"sidebar_wrap\"><div class=\"widget_title\"><h4>Watch Video</h4></div><div class=\"listing_video\"><iframe class=\"mfp-iframe\" ng-src=\"{{trustSrc(videos[0].presentationUrl)}}\" allowfullscreen></iframe></div></div></div></div></div></div></section></div><div class=\"modal fade bd-example-modal-lg\" id=\"report_modal\" tabindex=\"-1\" role=\"dialog\" aria-labelledby=\"exampleModalLabel\" aria-hidden=\"true\"><div class=\"modal-dialog modal-lg\" role=\"document\"><div class=\"modal-content\"><div class=\"modal-header\"><h5 class=\"modal-title\" id=\"exampleModalLabel\">Report Inaccurate Info</h5><button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button></div><div class=\"modal-body\"><div class=\"row\"><div class=\"col-12 text-center\">Coming Soon</div></div></div><div class=\"modal-footer\"><button type=\"button\" class=\"btn btn-secondary\" data-dismiss=\"modal\">Close</button> <button type=\"button\" class=\"btn btn-primary\">Save changes</button></div></div></div></div>",
+        "/templates/pages/vendor/vendor-search.html": "<section id=\"inner_pages\" ng-init=\"init()\"><div class=\"container\"><div class=\"listing_header mt-4\"><div class=\"pull-left\"><h5><span ng-bind=\"title | capitalize\"></span></h5><div class=\"clear\"><small class=\"font-italic\" ng-bind=\"'Showing ' + (vendors.pageRecords.length || 0) + ' results as per your search'\"></small></div></div><div class=\"layout-switcher\"><a href=\"\" ng-class=\"{'active':view == 'grid'}\" ng-click=\"view = 'grid'\"><i class=\"fa fa-th\"></i></a> <a href=\"\" ng-class=\"{'active':view == 'list'}\" ng-click=\"view = 'list'\"><i class=\"fa fa-align-justify\"></i></a></div><div class=\"pull-right col-4\"><input type=\"text\" class=\"form-control\" placeholder=\"Search\" ng-change=\"refresh()\" ng-model=\"searchQuery.search\"> <button type=\"button\" class=\"btn mr-3 btn-link btn-icon btn-clear-text\" tabindex=\"-1\" ng-if=\"searchQuery.search\" ng-click=\"clearSearch($event)\"><i class=\"fa fa-close text-danger\"></i></button><br/></div></div><p class=\"vendor-search-filter\"><button class=\"btn\" ng-class=\"{'collapsed':!isFilterApplied()}\" data-toggle=\"collapse\" data-target=\"#collapseOne\" aria-expanded=\"true\" aria-controls=\"collapseOne\"><i class=\"fa\" aria-hidden=\"true\"></i> Filter</button> <button class=\"btn btn-filter\" ng-if=\"isFilterApplied()\" ng-click=\"clearFilter()\">Clear Filter</button></p><div id=\"collapseOne\" ng-class=\"{'show':isFilterApplied()}\" class=\"collapse\" aria-labelledby=\"headingOne\"><div class=\"card-body\"><form class=\"form-inline\"><span class=\"col-4 ng-hide\"><div class=\"form-group\"><label for=\"vendorType\">Choose a Vendor Type</label><selectize id=\"vendorType\" class=\"col-12\" config=\"vendorTypeConfig\" options=\"vendorTypes\" ng-model=\"vendorTypeIdTV\"></selectize></div></span><span class=\"col-md-5 col-lg-4\"><div class=\"form-group\"><label for=\"cityId\">Choose a City</label><selectize id=\"cityId\" class=\"col-12\" config=\"cityConfig\" options=\"geoCities\" ng-model=\"geoCityIdTV\"></selectize></div></span><div class=\"form-group search_btn\"><input type=\"button\" value=\"Apply\" class=\"btn btn-block\" ng-click=\"refreshPage()\"></div></form></div></div><div class=\"vendor-explorer-container\"><fic-vendor-grid-explorer ng-model=\"vendors\" select-vendor=\"toggleVendorSelection($vendor)\" ng-disabled=\"isDisabled()\" ng-if=\"view == 'grid'\"></fic-vendor-grid-explorer><fic-vendor-list-explorer ng-model=\"vendors\" select-vendor=\"toggleVendorSelection($vendor)\" ng-disabled=\"isDisabled()\" ng-if=\"view == 'list'\"></fic-vendor-list-explorer></div><nav class=\"pagination_nav\"><ul class=\"pagination\"><li class=\"disabled\"><a href=\"\" href=\"\" aria-label=\"Previous\"><span aria-hidden=\"true\">&laquo;</span></a></li><li class=\"active\"><a href=\"\" href=\"\">1</a></li><li class=\"disabled\"><a href=\"\" href=\"\" aria-label=\"Next\"><span aria-hidden=\"true\">&raquo;</span></a></li></ul></nav></div></section>",
         "/templates/pages/vendor/home/dashboard.html": "<div class=\"vendor-dashboard\"><h4 class=\"mb-4\">Dashboard</h4></div>",
         "/templates/pages/vendor/home/freelancer.html": "<div class=\"vendor-freelancer\" ng-init=\"init()\"><div ng-if=\"!isEditMode\"><h4 class=\"mb-4\">Second Shooters</h4><div class=\"row\"><div class=\"col-12\"><form class=\"form-inline\"><label class=\"sr-only\" for=\"inlineFormInputName2\">FreeLancer Type</label> <select name=\"type\" class=\"form-control mb-2 mr-sm-2\" ng-model=\"searchQuery.freeLancerTypeId\" ng-options=\"vendorType.id as vendorType.type for vendorType in vendorTypes\"></select> <label class=\"sr-only\" for=\"inlineFormInputGroupUsername2\">Username</label> <select name=\"city\" class=\"form-control mb-2 mr-sm-2\" ng-model=\"searchQuery.geoCityId\" ng-options=\"geoCity.id as geoCity.geoName for geoCity in geoCities\"></select><div class=\"input-group mb-2 mr-sm-2\"><input ng-model=\"searchQuery.search\" type=\"text\" class=\"form-control\" id=\"inlineFormInputGroupUsername2\" placeholder=\"Username\"><div class=\"input-group-prepend\"><div class=\"input-group-text\"><i class=\"fa fa-search\"></i></div></div></div><button type=\"submit\" ng-click=\"refresh()\" class=\"btn btn-primary mb-2\">Submit</button></form></div></div><fic-vendor-home-freelancer-view view=\"view\" ng-model=\"freelancers\" ng-disabled=\"isDisabled()\"></fic-vendor-home-freelancer-view></div></div>",
         "/templates/pages/vendor/home/home-subscription.html": "<div class=\"vendor-subscription\" ng-init=\"init()\"><h4 class=\"mb-4\">Subscription</h4><div class=\"row\"><div class=\"col-md-6\"><div class=\"alert mt-4\"><strong>Subscription Details :</strong><br/><span ng-show=\"activeSubscription.id>0\">Package Name : <span>{{activeSubscription.description}}</span><br/>Expiry On : <span>{{activeVendorSubscription.validTill | date:'MMM d, y hh:mm a'}}</span> </span><span ng-show=\"activeSubscription.id==0\">No Valid Subscription Found!</span></div></div><div class=\"col-md-6 mt-5 pr-5\"><a class=\"float-right btn btn-block btn-success\" target=\"_blank\" href=\"https://fic-windows.s3.us-east-2.amazonaws.com/FrameInCam1.0.1/FrameInCam.exe\"><i class=\"fa fa-download\"></i> Download EXE</a></div></div><div class=\"row\"><div class=\"col-md-4\" ng-repeat=\"subscription in subscriptions\"><div class=\"pricing_wrap\"><div class=\"pricing_header\"><h2>{{ subscription.name || 'No name' }}</h2></div><div class=\"plan_info\"><div class=\"plan_price\"><i class=\"fa fa-rupee mr-2\"></i> {{ subscription.price | number:2 }}</div><ul><li><span><i class=\"fa fa-rupee mr-2\"></i>{{ subscription.description }}</span></li><li>Unlimited Projects</li><li>Customer Relationship Module</li><li>Accounting Module</li><li>Reporting</li><li>Free Upgrade on new Features</li></ul><button class=\"btn bg-primary\" ng-if=\"!isSusbcriptionSelected(subscription)\" ng-disabled=\"activeVendorSubscription.id>0\" ng-click=\"selectSubscription(subscription)\">Select</button> <button class=\"btn bg-success\" disabled=\"disabled\" ng-if=\"isSusbcriptionSelected(subscription)\">Selected</button></div></div></div></div></div>",
-        "/templates/pages/vendor/home/portfolio.html": "<div class=\"vendor-portfolio\" ng-init=\"init()\"><h4 class=\"mb-4\">Portfolio</h4><div class=\"row\"><div class=\"col-md-10\"><div class=\"tab-content\" id=\"v-pills-tabContent\"><div class=\"tab-pane bg-white show active\" id=\"v-pills-photo\" role=\"tabpanel\" aria-labelledby=\"v-pills-photo-tab\"><div class=\"widget_title\"><label class=\"font-weight-bold\">Photos</label> <span class=\"btn btn-sm bg-white text-primary text-capitalize p-0 pull-right\" data-toggle=\"modal\" data-target=\"#photoUploadModel\" aria-expanded=\"false\" aria-controls=\"photoUploadModel\"><i class=\"fa fa-plus\"></i> UPLOAD PHOTOS</span></div><div class=\"row\"><div class=\"col-12\"><a href class=\"d-block pull-left\" tabindex=\"-1\" ng-repeat=\"photo in photos\"><div class=\"p-2\"><fic-thumbnail src=\"photo.presentationUrl\" style=\"height: 200px !important;                                         width: 200px !important;                                         right: 5rem;                                         left: 2rem;                                         position: relative;\"/></div></a></div></div></div><div class=\"tab-pane bg-white\" id=\"v-pills-album\" role=\"tabpanel\" aria-labelledby=\"v-pills-album-tab\"><div class=\"widget_title\"><label class=\"font-weight-bold\">Albums</label> <span class=\"btn btn-sm bg-white text-primary text-capitalize p-0 pull-right\" data-toggle=\"collapse\" data-target=\"#personal-info\" aria-expanded=\"false\" aria-controls=\"personal-info\"><i class=\"fa fa-plus\"></i> NEW ALBUM</span></div><div class=\"row\"><div class=\"col-12\"><div class=\"customer-projects-container\"><fic-customer-project-grid-explorer ng-model=\"albums\" ng-disabled=\"isDisabled()\"></fic-customer-project-grid-explorer></div><div class=\"clear\"><nav class=\"pagination_nav\"><ul class=\"pagination\"><li class=\"disabled\"><a href=\"#\" aria-label=\"Previous\"><span aria-hidden=\"true\">&laquo;</span></a></li><li class=\"active\"><a href=\"#\">1</a></li><li class=\"disabled\"><a href=\"#\" aria-label=\"Next\"><span aria-hidden=\"true\">&raquo;</span></a></li></ul></nav></div></div></div></div><div class=\"tab-pane bg-white\" id=\"v-pills-video\" role=\"tabpanel\" aria-labelledby=\"v-pills-video-tab\"><div class=\"widget_title\"><label class=\"font-weight-bold\">Videos</label> <span class=\"btn btn-sm bg-white text-primary text-capitalize p-0 pull-right\" data-toggle=\"modal\" data-target=\"#videoUploadModel\" aria-expanded=\"false\" aria-controls=\"videoUploadModel\"><i class=\"fa fa-plus\"></i> UPLOAD VIDEOS</span></div><div class=\"row\"><div class=\"col-12\"><div class=\"col-4 pull-left\" ng-repeat=\"video in videos\"><div class=\"listing_video\"><iframe class=\"mfp-iframe\" ng-src=\"{{trustSrc(video.presentationUrl)}}\" allowfullscreen></iframe></div></div></div></div></div></div></div><div class=\"col-md-2\"><div class=\"nav flex-column nav-pills nav-pills-custom\" id=\"v-pills-tab\" role=\"tablist\" aria-orientation=\"vertical\"><a href=\"#v-pills-photo\" class=\"nav-link mb-3 p-3 shadow active\" id=\"v-pills-photo-tab\" data-toggle=\"pill\" role=\"tab\" aria-controls=\"v-pills-photo\" aria-selected=\"true\"><i class=\"fa fa-photo mr-2\"></i> <span class=\"font-weight-bold small text-uppercase\">Photos</span> </a><a href=\"#v-pills-video\" class=\"nav-link mb-3 p-3 shadow\" id=\"v-pills-videos-tab\" data-toggle=\"pill\" role=\"tab\" aria-controls=\"v-pills-video\" aria-selected=\"false\"><i class=\"fa fa-file-video-o mr-2\"></i> <span class=\"font-weight-bold small text-uppercase\">Videos</span></a></div></div></div></div><div class=\"modal\" id=\"photoUploadModel\" tabindex=\"-1\"><div class=\"modal-dialog modal-xl\"><div class=\"modal-content\"><div class=\"modal-header\"><h5 class=\"modal-title\" id=\"exampleModalLabel\">Upload a Photos</h5><button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button></div><div class=\"modal-body\"><ng-dropzone class=\"dropzone\" options=\"dzOptions\" callbacks=\"dzCallbacks\" methods=\"dzMethods\"></ng-dropzone></div><div class=\"modal-footer\"><button type=\"button\" class=\"btn btn-secondary\" data-dismiss=\"modal\">Close</button> <button type=\"button\" id=\"sbmtbtn\" class=\"btn btn-primary\">Save changes</button></div></div></div></div><div class=\"modal\" id=\"videoUploadModel\" tabindex=\"-1\"><div class=\"modal-dialog modal-xl\"><div class=\"modal-content\"><div class=\"modal-header\"><h5 class=\"modal-title\" id=\"exampleModalLabel\">Embed a Videos</h5><button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button></div><div class=\"modal-body\"><form ng-submit=\"submitVideos()\" id=\"submitVideoForm\"><div class=\"form-group\" ng-repeat=\"input in videoFormsInput\"><label for=\"email\">Video #{{$index+1}}:</label> <input ng-model=\"input.fileName\" type=\"text\" class=\"form-control\" placeholder=\"Enter a Embed Youtube or Vimeo Link\"></div></form></div><div class=\"modal-footer\"><button type=\"button\" class=\"btn btn-secondary\" data-dismiss=\"modal\">Close</button> <button type=\"button\" ng-click=\"submitVideos()\" class=\"btn btn-primary\">Save changes</button></div></div></div></div>",
-        "/templates/pages/vendor/home/profile.html": "<div class=\"vendor-profile\" ng-init=\"init()\"><form name=\"updateProfileForm\" ng-submit=\"updateProfile(updateProfileForm)\" ng-validate=\"profileUpdateValidationOptions\" ng-if=\"ready\"><h4 class=\"mb-4\">Profile <button type=\"submit\" class=\"btn btn-sm bg-success pull-right\"><i class=\"fa fa-save mr-2\"></i> SAVE</button></h4><div class=\"info-container\"><div class=\"widget_title\"><label class=\"font-weight-bold\">Personal Information</label> <span class=\"btn btn-sm bg-white text-primary text-capitalize p-0 pull-right\" data-toggle=\"collapse\" data-target=\"#personal-info\" aria-expanded=\"false\" aria-controls=\"personal-info\"><i class=\"fa fa-minus\"></i></span></div><div class=\"collapse show\" id=\"personal-info\"><div class=\"row\"><div class=\"form-group col-6\"><label class=\"form-label\">Email</label> <label name=\"email\" class=\"form-label\" ng-bind=\"profile.vendor.email\"></label></div><div class=\"form-group col-6\"><label class=\"form-label\">Mobile</label> <input name=\"mobile\" type=\"tel\" class=\"form-control\" ng-model=\"profile.vendor.mobile\"></div></div><div class=\"row\"><div class=\"form-group col-6\"><label class=\"form-label\">Name</label> <input name=\"name\" type=\"text\" class=\"form-control\" ng-model=\"profile.vendor.name\"></div><div class=\"form-group col-6\"><label class=\"form-label\">Type</label> <select name=\"type\" class=\"form-control\" ng-model=\"profile.vendor.typeId\" ng-options=\"vendorType.id as vendorType.type for vendorType in vendorTypes\"></select></div></div><div class=\"row\"><div class=\"form-group col-6\"><label class=\"form-label\">Website Url</label> <input name=\"websiteUrl\" ng-model=\"profile.vendor.siteUrl\" type=\"text\" class=\"form-control\"></div><div class=\"form-group col-6\"><label class=\"form-label\">Facebook Url</label> <input type=\"text\" class=\"form-control\" name=\"fbUrl\" ng-model=\"profile.vendor.fbUrl\"></div></div><div class=\"row\"><div class=\"form-group col-6\"><label class=\"form-label\">Instagram Url</label> <input type=\"text\" class=\"form-control\" name=\"instagramUrl\" ng-model=\"profile.vendor.instagramUrl\"></div><div class=\"form-group col-6\"><label class=\"form-label\">Youtube Url</label> <input type=\"text\" class=\"form-control\" name=\"youtubeUrl\" ng-model=\"profile.vendor.youtubeUrl\"></div></div><div class=\"form-group\"><label class=\"form-label\">About</label> <textarea name=\"description\" cols=\"\" rows=\"\" class=\"form-control\" ng-model=\"profile.vendor.description\"></textarea></div></div><div class=\"widget_title\"><label class=\"font-weight-bold\">Address</label> <span class=\"btn btn-sm bg-white text-primary text-capitalize p-0 pull-right\" data-toggle=\"collapse\" data-target=\"#address-info\" aria-expanded=\"false\" aria-controls=\"address-info\"><i class=\"fa fa-minus\"></i></span></div><div class=\"collapse show\" id=\"address-info\"><div class=\"row\"><div class=\"form-group col-6\"><label class=\"form-label\">PIN code</label> <input type=\"text\" class=\"form-control\" name=\"pincode\" ng-model=\"profile.address.pincode\"></div><div class=\"form-group col-6\"><label class=\"form-label\">Door no., Building</label> <input type=\"text\" class=\"form-control\" name=\"addressLine1\" ng-model=\"profile.address.addressLine1\"></div></div><div class=\"row\"><div class=\"form-group col-6\"><label class=\"form-label\">Street, Sector, Area, Colony</label> <input type=\"text\" class=\"form-control\" name=\"addressLine2\" ng-model=\"profile.address.addressLine2\"></div><div class=\"form-group col-6\"><label class=\"form-label\">Landmark</label> <input type=\"text\" class=\"form-control\" name=\"landmark\" ng-model=\"profile.address.landmark\"></div></div><div class=\"row\"><div class=\"form-group col-6\"><label class=\"form-label\">State</label> <select name=\"state\" class=\"form-control\" ng-model=\"profile.address.stateGeoId\" ng-change=\"getCities();profile.address.cityGeoId = 0;\" ng-options=\"geoState.id as geoState.geoName for geoState in geoStates\"></select></div><div class=\"form-group col-6\"><label class=\"form-label\">City</label> <select name=\"city\" class=\"form-control\" ng-model=\"profile.address.cityGeoId\" ng-options=\"geoCity.id as geoCity.geoName for geoCity in geoCities\"></select></div></div></div><div class=\"widget_title\"><label class=\"font-weight-bold\">Services Offered</label> <span class=\"btn btn-sm bg-white text-primary text-capitalize p-0 pull-right\" data-toggle=\"collapse\" data-target=\"#services-offered\" aria-expanded=\"false\" aria-controls=\"services-offered\"><i class=\"fa fa-minus\"></i></span></div><div id=\"services-offered\" class=\"collapse show\"><div class=\"row\"><div class=\"form-group col-4\"><div class=\"custom-control custom-checkbox\"><input class=\"custom-control-input\" id=\"allServiceCheck\" type=\"checkbox\" ng-checked=\"allServiceSelected\" ng-click=\"toggleAllServiceSelection()\"> <label class=\"cursor-pointer font-italic d-block custom-control-label\" for=\"allServiceCheck\">All</label></div></div><div class=\"form-group col-4\" ng-repeat=\"service in vendorServices track by $index\"><div class=\"custom-control custom-checkbox\"><input class=\"custom-control-input\" type=\"checkbox\" id=\"{{'serviceCheck' + ($index + 1) }}\" ng-click=\"toggleServiceSelection(service)\" ng-checked=\"isServiceSelected(service)\"> <label class=\"cursor-pointer font-italic d-block custom-control-label\" for=\"{{'serviceCheck' + ($index + 1) }}\" ng-bind=\"service.desc\"></label></div></div></div></div><div class=\"widget_title\"><label class=\"font-weight-bold\">Packages</label> <button type=\"button\" class=\"btn btn-sm btn-success ml-2\" ng-click=\"addPackage()\">Add</button> <span class=\"btn btn-sm bg-white text-primary text-capitalize p-0 pull-right\" data-toggle=\"collapse\" data-target=\"#package-info\" aria-expanded=\"false\" aria-controls=\"package-info\"><i class=\"fa fa-minus\"></i></span></div><div class=\"collapse show\" id=\"package-info\"><div class=\"row\"><div class=\"form-group col-6\"><label class=\"form-label\">Name</label></div><div class=\"form-group col-4\"><label class=\"form-label\">Price per day</label></div><div class=\"form-group col-2\"></div></div><div class=\"row\" ng-repeat=\"package in profile.packages\"><div class=\"form-group col-6\"><input type=\"text\" class=\"form-control\" ng-model=\"package.description\"/></div><div class=\"form-group col-4\"><input type=\"number\" class=\"form-control\" ng-model=\"package.pricePerDay\"/></div><div class=\"form-group col-2\"><button type=\"button\" class=\"btn btn-sm btn-danger pull-right ml-2\" ng-click=\"removePackage(package)\">Remove</button></div></div></div><div class=\"widget_title\"><label class=\"font-weight-bold\">Additional Information</label> <span class=\"btn btn-sm bg-white text-primary text-capitalize p-0 pull-right\" data-toggle=\"collapse\" data-target=\"#additional-info\" aria-expanded=\"false\" aria-controls=\"additional-info\"><i class=\"fa fa-minus\"></i></span></div><div id=\"additional-info\" class=\"collapse show\"><div class=\"row\"><div class=\"form-group col-12\"><label class=\"form-label\">How long you have been into photography?</label><div class=\"form-check col-2 pull-left\" ng-repeat=\"vendorExp in vendorExpList track by $index\"><input style=\"width:15px;height:15px;\" class=\"form-check-input\" id=\"{{'customRadio' + $index }}\" type=\"radio\" ng-checked=\"isVendorExpSelected(vendorExp)\" ng-click=\"selectVendorExp(vendorExp)\"> <label class=\"form-check-label\" for=\"{{'customRadio' + $index }}\" ng-bind=\"vendorExp.desc\"></label></div></div></div><div class=\"row\"><div class=\"form-group col-6\"><label class=\"form-label\">Payment terms</label> <textarea name=\"paymentTerms\" cols=\"\" rows=\"\" class=\"form-control\" ng-model=\"profile.vendor.paymentTerms\"></textarea></div><div class=\"form-group col-6\"><label class=\"form-label\">Additional costs</label> <textarea name=\"addCost\" cols=\"\" rows=\"\" class=\"form-control\" ng-model=\"profile.vendor.additionalCost\"></textarea></div></div></div></div></form></div>",
+        "/templates/pages/vendor/home/portfolio.html": "<div class=\"vendor-portfolio\" ng-init=\"init()\"><h4 class=\"mb-4\">Portfolio</h4><div class=\"row\"><div class=\"col-md-10\"><div class=\"tab-content\" id=\"v-pills-tabContent\"><div class=\"tab-pane bg-white show active\" id=\"v-pills-photo\" role=\"tabpanel\" aria-labelledby=\"v-pills-photo-tab\"><div class=\"widget_title\"><label class=\"font-weight-bold\">Photos</label> <span class=\"btn btn-sm bg-white text-primary text-capitalize p-0 pull-right\" data-toggle=\"modal\" data-target=\"#photoUploadModel\" aria-expanded=\"false\" aria-controls=\"photoUploadModel\"><i class=\"fa fa-plus\"></i> UPLOAD PHOTOS</span></div><div class=\"row\"><div class=\"col-12\"><span class=\"apps-container-header-text\"><p>Profile Image (Drag & Drop Below)</p></span><span class=\"apps-container profile-photos\" ui-sortable=\"sortableOptions\" ng-model=\"profile_photos\"><a href class=\"d-block pull-left\" tabindex=\"-1\" ng-repeat=\"photo in profile_photos\"><div class=\"p-2\"><fic-thumbnail src=\"photo.presentationUrl\" style=\"height: 200px !important;                                         width: 200px !important;                                         right: 5rem;                                         left: 2rem;                                         position: relative;\"/></div></a></span></div></div><div class=\"row\"><div class=\"col-12\"><span ui-sortable=\"sortableOptions\" class=\"uploaded-photos\" ng-model=\"photos\"><a href class=\"d-block pull-left\" tabindex=\"-1\" ng-repeat=\"photo in photos\"><div class=\"p-2\"><fic-thumbnail src=\"photo.presentationUrl\" style=\"height: 200px !important;                                         width: 200px !important;                                         right: 5rem;                                         left: 2rem;                                         position: relative;\"/></div></a></span></div></div></div><div class=\"tab-pane bg-white\" id=\"v-pills-album\" role=\"tabpanel\" aria-labelledby=\"v-pills-album-tab\"><div class=\"widget_title\"><label class=\"font-weight-bold\">Albums</label> <span class=\"btn btn-sm bg-white text-primary text-capitalize p-0 pull-right\" data-toggle=\"collapse\" data-target=\"#personal-info\" aria-expanded=\"false\" aria-controls=\"personal-info\"><i class=\"fa fa-plus\"></i> NEW ALBUM</span></div><div class=\"row\"><div class=\"col-12\"><div class=\"customer-projects-container\"><fic-customer-project-grid-explorer ng-model=\"albums\" ng-disabled=\"isDisabled()\"></fic-customer-project-grid-explorer></div><div class=\"clear\"><nav class=\"pagination_nav\"><ul class=\"pagination\"><li class=\"disabled\"><a href=\"\" href=\"\" aria-label=\"Previous\"><span aria-hidden=\"true\">&laquo;</span></a></li><li class=\"active\"><a href=\"\" href=\"\">1</a></li><li class=\"disabled\"><a href=\"\" href=\"\" aria-label=\"Next\"><span aria-hidden=\"true\">&raquo;</span></a></li></ul></nav></div></div></div></div><div class=\"tab-pane bg-white\" id=\"v-pills-video\" role=\"tabpanel\" aria-labelledby=\"v-pills-video-tab\"><div class=\"widget_title\"><label class=\"font-weight-bold\">Videos</label> <span class=\"btn btn-sm bg-white text-primary text-capitalize p-0 pull-right\" data-toggle=\"modal\" data-target=\"#videoUploadModel\" aria-expanded=\"false\" aria-controls=\"videoUploadModel\"><i class=\"fa fa-plus\"></i> UPLOAD VIDEOS</span></div><div class=\"row\"><div class=\"col-12\"><div class=\"col-4 pull-left\" ng-repeat=\"video in videos\"><div class=\"listing_video\"><iframe class=\"mfp-iframe\" ng-src=\"{{trustSrc(video.presentationUrl)}}\" allowfullscreen></iframe></div></div></div></div></div></div></div><div class=\"col-md-2\"><div class=\"nav flex-column nav-pills nav-pills-custom\" id=\"v-pills-tab\" role=\"tablist\" aria-orientation=\"vertical\"><a href=\"#v-pills-photo\" class=\"nav-link mb-3 p-3 shadow active\" id=\"v-pills-photo-tab\" data-toggle=\"pill\" role=\"tab\" aria-controls=\"v-pills-photo\" aria-selected=\"true\"><i class=\"fa fa-photo mr-2\"></i> <span class=\"font-weight-bold small text-uppercase\">Photos</span> </a><a href=\"#v-pills-video\" class=\"nav-link mb-3 p-3 shadow\" id=\"v-pills-videos-tab\" data-toggle=\"pill\" role=\"tab\" aria-controls=\"v-pills-video\" aria-selected=\"false\"><i class=\"fa fa-file-video-o mr-2\"></i> <span class=\"font-weight-bold small text-uppercase\">Videos</span></a></div></div></div></div><div class=\"modal\" id=\"photoUploadModel\" tabindex=\"-1\"><div class=\"modal-dialog modal-xl\"><div class=\"modal-content\"><div class=\"modal-header\"><h5 class=\"modal-title\" id=\"exampleModalLabel\">Upload a Photos</h5><button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button></div><div class=\"modal-body\"><ng-dropzone class=\"dropzone\" options=\"dzOptions\" callbacks=\"dzCallbacks\" methods=\"dzMethods\"></ng-dropzone></div><div class=\"modal-footer\"><button type=\"button\" class=\"btn btn-secondary\" data-dismiss=\"modal\">Close</button> <button type=\"button\" id=\"sbmtbtn\" class=\"btn btn-primary\">Save changes</button></div></div></div></div><div class=\"modal\" id=\"videoUploadModel\" tabindex=\"-1\"><div class=\"modal-dialog modal-xl\"><div class=\"modal-content\"><div class=\"modal-header\"><h5 class=\"modal-title\" id=\"exampleModalLabel\">Embed a Videos</h5><button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-label=\"Close\"><span aria-hidden=\"true\">&times;</span></button></div><div class=\"modal-body\"><form ng-submit=\"submitVideos()\" id=\"submitVideoForm\"><div class=\"form-group\" ng-repeat=\"input in videoFormsInput\"><label for=\"email\">Video #{{$index+1}}:</label> <input ng-paste=\"handlePaste($index,$event)\" ng-model=\"input.fileName\" type=\"text\" class=\"form-control\" placeholder=\"Enter a Embed Youtube or Vimeo Link\"></div></form></div><div class=\"modal-footer\"><button type=\"button\" class=\"btn btn-secondary\" data-dismiss=\"modal\">Close</button> <button type=\"button\" ng-click=\"submitVideos()\" class=\"btn btn-primary\">Save changes</button></div></div></div></div>",
+        "/templates/pages/vendor/home/profile.html": "<div class=\"vendor-profile\" ng-init=\"init()\"><form name=\"updateProfileForm\" id=\"updateProfileForm\" ng-submit=\"updateProfile(updateProfileForm)\" ng-validate=\"profileUpdateValidationOptions\" ng-if=\"ready\"><h4 class=\"mb-4\">Profile</h4><div class=\"info-container\"><div class=\"widget_title\"><label class=\"font-weight-bold\">Personal Information</label> <span class=\"btn btn-sm bg-white text-primary text-capitalize p-0 pull-right\" data-toggle=\"collapse\" data-target=\"#personal-info\" aria-expanded=\"false\" aria-controls=\"personal-info\"><i class=\"fa fa-minus\"></i></span></div><div class=\"collapse show\" id=\"personal-info\"><div class=\"row\"><div class=\"form-group col-6\"><label class=\"form-label\">Email</label> <label name=\"email\" class=\"form-label\" ng-bind=\"profile.vendor.email\"></label></div><div class=\"form-group col-6\"><label class=\"form-label\">Mobile</label> <input name=\"mobile\" type=\"tel\" class=\"form-control\" ng-model=\"profile.vendor.mobile\"></div></div><div class=\"row\"><div class=\"form-group col-6\"><label class=\"form-label\">Name</label> <input name=\"name\" type=\"text\" class=\"form-control\" ng-model=\"profile.vendor.name\"></div><div class=\"form-group col-6\"><label class=\"form-label\">Type</label> <select name=\"type\" class=\"form-control\" ng-model=\"profile.vendor.typeId\" ng-options=\"vendorType.id as vendorType.type for vendorType in vendorTypes\"></select></div></div><div class=\"row\"><div class=\"form-group col-6\"><label class=\"form-label\">Website Url</label> <input name=\"websiteUrl\" ng-model=\"profile.vendor.siteUrl\" type=\"text\" class=\"form-control\"></div><div class=\"form-group col-6\"><label class=\"form-label\">Facebook Url</label> <input type=\"text\" class=\"form-control\" name=\"fbUrl\" ng-model=\"profile.vendor.fbUrl\"></div></div><div class=\"row\"><div class=\"form-group col-6\"><label class=\"form-label\">Instagram Url</label> <input type=\"text\" class=\"form-control\" name=\"instagramUrl\" ng-model=\"profile.vendor.instagramUrl\"></div><div class=\"form-group col-6\"><label class=\"form-label\">Youtube Url</label> <input type=\"text\" class=\"form-control\" name=\"youtubeUrl\" ng-model=\"profile.vendor.youtubeUrl\"></div></div><div class=\"form-group\"><label class=\"form-label\">About</label> <textarea name=\"description\" cols=\"\" rows=\"\" class=\"form-control\" ng-model=\"profile.vendor.description\"></textarea></div></div><div class=\"widget_title\"><label class=\"font-weight-bold\">Address</label> <span class=\"btn btn-sm bg-white text-primary text-capitalize p-0 pull-right\" data-toggle=\"collapse\" data-target=\"#address-info\" aria-expanded=\"false\" aria-controls=\"address-info\"><i class=\"fa fa-minus\"></i></span></div><div class=\"collapse show\" id=\"address-info\"><div class=\"row\"><div class=\"form-group col-6\"><label class=\"form-label\">PIN code</label> <input type=\"text\" class=\"form-control\" name=\"pincode\" ng-model=\"profile.address.pincode\"></div><div class=\"form-group col-6\"><label class=\"form-label\">Door no., Building</label> <input type=\"text\" class=\"form-control\" name=\"addressLine1\" ng-model=\"profile.address.addressLine1\"></div></div><div class=\"row\"><div class=\"form-group col-6\"><label class=\"form-label\">Street, Sector, Area, Colony</label> <input type=\"text\" class=\"form-control\" name=\"addressLine2\" ng-model=\"profile.address.addressLine2\"></div><div class=\"form-group col-6\"><label class=\"form-label\">Landmark</label> <input type=\"text\" class=\"form-control\" name=\"landmark\" ng-model=\"profile.address.landmark\"></div></div><div class=\"row\"><div class=\"form-group col-6\"><label class=\"form-label\">State</label> <select name=\"state\" class=\"form-control\" ng-model=\"profile.address.stateGeoId\" ng-change=\"getCities();profile.address.cityGeoId = 0;\" ng-options=\"geoState.id as geoState.geoName for geoState in geoStates\"></select></div><div class=\"form-group col-6\"><label class=\"form-label\">City</label> <select name=\"city\" class=\"form-control\" ng-model=\"profile.address.cityGeoId\" ng-options=\"geoCity.id as geoCity.geoName for geoCity in geoCities\"></select></div></div></div><div class=\"widget_title\"><label class=\"font-weight-bold\">Services Offered</label> <span class=\"btn btn-sm bg-white text-primary text-capitalize p-0 pull-right\" data-toggle=\"collapse\" data-target=\"#services-offered\" aria-expanded=\"false\" aria-controls=\"services-offered\"><i class=\"fa fa-minus\"></i></span></div><div id=\"services-offered\" class=\"collapse show\"><div class=\"row\"><div class=\"form-group col-4\"><div class=\"custom-control custom-checkbox\"><input class=\"custom-control-input\" id=\"allServiceCheck\" type=\"checkbox\" ng-checked=\"allServiceSelected\" ng-click=\"toggleAllServiceSelection()\"> <label class=\"cursor-pointer font-italic d-block custom-control-label\" for=\"allServiceCheck\">All</label></div></div><div class=\"form-group col-4\" ng-repeat=\"service in vendorServices track by $index\"><div class=\"custom-control custom-checkbox\"><input class=\"custom-control-input\" type=\"checkbox\" id=\"{{'serviceCheck' + ($index + 1) }}\" ng-click=\"toggleServiceSelection(service)\" ng-checked=\"isServiceSelected(service)\"> <label class=\"cursor-pointer font-italic d-block custom-control-label\" for=\"{{'serviceCheck' + ($index + 1) }}\" ng-bind=\"service.desc\"></label></div></div></div></div><div class=\"widget_title\"><label class=\"font-weight-bold\">Packages</label> <button type=\"button\" class=\"btn btn-sm btn-success ml-2\" ng-click=\"addPackage()\">Add</button> <span class=\"btn btn-sm bg-white text-primary text-capitalize p-0 pull-right\" data-toggle=\"collapse\" data-target=\"#package-info\" aria-expanded=\"false\" aria-controls=\"package-info\"><i class=\"fa fa-minus\"></i></span></div><div class=\"collapse show\" id=\"package-info\"><div class=\"row\"><div class=\"form-group col-6\"><label class=\"form-label\">Name</label></div><div class=\"form-group col-4\"><label class=\"form-label\">Price per day</label></div><div class=\"form-group col-2\"></div></div><div class=\"row\" ng-repeat=\"package in profile.packages\"><div class=\"form-group col-6\"><input type=\"text\" class=\"form-control\" ng-model=\"package.description\"/></div><div class=\"form-group col-4\"><input type=\"number\" class=\"form-control\" ng-model=\"package.pricePerDay\"/></div><div class=\"form-group col-2\"><button type=\"button\" class=\"btn btn-sm btn-danger pull-right ml-2\" ng-click=\"removePackage(package)\">Remove</button></div></div></div><div class=\"widget_title\"><label class=\"font-weight-bold\">Additional Information</label> <span class=\"btn btn-sm bg-white text-primary text-capitalize p-0 pull-right\" data-toggle=\"collapse\" data-target=\"#additional-info\" aria-expanded=\"false\" aria-controls=\"additional-info\"><i class=\"fa fa-minus\"></i></span></div><div id=\"additional-info\" class=\"collapse show\"><div class=\"row\"><div class=\"form-group col-12\"><label class=\"form-label\">How long you have been into photography?</label><div class=\"form-check col-2 pull-left\" ng-repeat=\"vendorExp in vendorExpList track by $index\"><input style=\"width:15px;height:15px;\" class=\"form-check-input\" id=\"{{'customRadio' + $index }}\" type=\"radio\" ng-checked=\"isVendorExpSelected(vendorExp)\" ng-click=\"selectVendorExp(vendorExp)\"> <label class=\"form-check-label\" for=\"{{'customRadio' + $index }}\" ng-bind=\"vendorExp.desc\"></label></div></div></div><div class=\"row\"><div class=\"form-group col-6\"><label class=\"form-label\">Payment terms</label> <textarea name=\"paymentTerms\" cols=\"\" rows=\"\" class=\"form-control\" ng-model=\"profile.vendor.paymentTerms\"></textarea></div><div class=\"form-group col-6\"><label class=\"form-label\">Additional costs</label> <textarea name=\"addCost\" cols=\"\" rows=\"\" class=\"form-control\" ng-model=\"profile.vendor.additionalCost\"></textarea></div></div></div><div class=\"row\"><div class=\"col-12\"><button type=\"submit\" class=\"btn btn-sm bg-success pull-right\"><i class=\"fa fa-save mr-2\"></i> SAVE</button></div></div></div></form></div>",
         "/templates/pages/vendor/home/projects.html": "<div class=\"vendor-projects\" ng-init=\"init()\"><div ng-if=\"!isEditMode\"><div class=\"row\"><div class=\"col-md-10\"><div class=\"tab-content\"><div class=\"tab-pane bg-white show active\" id=\"v-pills-ownproject\" role=\"tabpanel\" aria-labelledby=\"v-pills-ownproject\"><div class=\"widget_title\"><label class=\"font-weight-bold\">Owned Projects</label> <span class=\"btn btn-sm bg-white text-primary text-capitalize p-0 pull-right\" ng-click=\"newProject()\" aria-expanded=\"false\" aria-controls=\"photoUploadModel\"><i class=\"fa fa-plus\"></i> ADD Project</span></div><fic-vendor-home-projects-view ng-model=\"projects\" ng-disabled=\"isDisabled()\"></fic-vendor-home-projects-view></div><div class=\"tab-pane bg-white\" id=\"v-pills-assignedproject\" role=\"tabpanel\" aria-labelledby=\"v-pills-assignedproject\"><div class=\"widget_title\"><label class=\"font-weight-bold\">Assigned Projects</label> <span class=\"btn btn-sm bg-white text-primary text-capitalize p-0 pull-right\" ng-click=\"newProject()\" aria-expanded=\"false\" aria-controls=\"photoUploadModel\"><i class=\"fa fa-plus\"></i> ADD Project</span></div><fic-vendor-home-projects-view ng-model=\"assignedProjects\" ng-disabled=\"isDisabled()\"></fic-vendor-home-projects-view></div></div></div><div class=\"col-md-2\"><div class=\"nav flex-column nav-pills nav-pills-custom\" id=\"v-pills-tab\" role=\"tablist\" aria-orientation=\"vertical\"><a href=\"#v-pills-ownproject\" class=\"nav-link mb-3 p-3 shadow active\" id=\"v-pills-ownproject-tab\" data-toggle=\"pill\" role=\"tab\" aria-controls=\"v-pills-ownproject\" aria-selected=\"true\"><i class=\"fa fa-photo mr-2\"></i> <span class=\"font-weight-bold small text-uppercase\">Own Projects</span> </a><a href=\"#v-pills-assignedproject\" class=\"nav-link mb-3 p-3 shadow\" id=\"v-pills-assignedproject-tab\" data-toggle=\"pill\" role=\"tab\" aria-controls=\"v-pills-assignedproject\" aria-selected=\"false\"><i class=\"fa fa-file-video-o mr-2\"></i> <span class=\"font-weight-bold small text-uppercase\">Assigned Projects</span></a></div></div></div></div><div ng-if=\"isEditMode\"><div class=\"mt-2 mb-2 p-3 bg-danger\" ng-if=\"errorMsgs && errorMsgs.length > 0\"><div class=\"clear\" ng-repeat=\"errorMsg in errorMsgs\"><small class=\"text-white\" ng-bind=\"errorMsg\"></small></div></div><fic-vendor-home-projects-edit-form ng-model=\"selectedProject\" save-project=\"save($project)\" cancel-edit=\"completeEdit()\" ng-disabled=\"isDisabled()\"></fic-vendor-home-projects-edit-form></div></div>",
         "/templates/pages/vendor/home/reviews.html": "<div class=\"vendor-reviews\" ng-init=\"init()\"><h4 class=\"mb-4\">Reviews</h4><div class=\"row\"><div class=\"col-lg-12 col-md-12\"><div class=\"dashboard-list-box\"><ul><li class=\"listing-reviews\" ng-repeat=\"review in reviews\"><div class=\"review_img\"><img src=\"assets/images/11.jpg\" alt=\"image\"></div><div class=\"review_comments\"><div class=\"comment-by\">{{ review.customerName || review.createdBy }}<div class=\"listing_review_info\"><p><span class=\"review_score\" ng-bind=\"review.ratings + '/5'\"></span> <i ng-class=\"{'active':review.ratings >= 1}\" class=\"fa fa-star\"></i> <i ng-class=\"{'active':review.ratings >= 2}\" class=\"fa fa-star\"></i> <i ng-class=\"{'active':review.ratings >= 3}\" class=\"fa fa-star\"></i> <i ng-class=\"{'active':review.ratings >= 4}\" class=\"fa fa-star\"></i> <i ng-class=\"{'active':review.ratings == 5}\" class=\"fa fa-star\"></i></p></div></div><span class=\"date\">{{ review.createdDate | date:'MMM d,y' }}</span><div class=\"star-rating\"></div><h5>{{ review.title }}</h5><p>{{ review.body }}</p><a href=\"javascript:;\" data-target=\"#demo{{$index}}\" data-toggle=\"collapse\" class=\"button gray\"><i class=\"fa fa-reply\"></i> Reply to this review</a><div id=\"demo{{$index}}\" class=\"collapse\"><form ng-submit=\"postReplay(review)\"><div class=\"row\"><div class=\"col-12\"><textarea name=\"new_replay\" class=\"form-control\" ng-model=\"review.new_replay\" rows=\"6\" required></textarea></div></div><br/><div class=\"row\"><div class=\"offset-8 col-2\"><button ng-disabled=\"review.is_submitting===true\" class=\"btn btn-success btn-sm\" type=\"submit\"><span ng-show=\"review.is_submitting===true\" class=\"spinner-border spinner-border-sm\" role=\"status\" aria-hidden=\"true\"></span> Reply</button></div><div class=\"col-2\"><a href=\"javascript:;\" data-target=\"#demo{{$index}}\" data-toggle=\"collapse\" class=\"button gray\">Cancel</a></div></div></form></div></div></li></ul></div></div></div></div>",
         "/templates/pages/vendor/home/subscription.html": "<div class=\"vendor-subscription\" ng-init=\"init()\"><h4 class=\"mb-4\">Subscription</h4><div class=\"row\"><div class=\"col-md-12\"><div class=\"alert alert-danger mt-4\"><strong>Subscription Details :</strong><br/><span ng-show=\"activeSubscription.id>0\">Package Name : <span>{{activeSubscription.name}}</span><br/>Expiry On : <span>{{activeVendorSubscription.validTill | date:'MMM d, y hh:mm a'}}</span> </span><span ng-show=\"activeSubscription.id==0\">No Valid Subscription Found!</span></div></div><div class=\"col-md-4\" ng-repeat=\"subscription in subscriptions\"><div class=\"pricing_wrap\"><div class=\"pricing_header\"><h2>{{ subscription.name || 'No name' }}</h2></div><div class=\"plan_info\"><div class=\"plan_price\"><i class=\"fa fa-rupee mr-2\"></i> {{ subscription.price | number:2 }}</div><ul><li><span><i class=\"fa fa-rupee mr-2\"></i>{{ subscription.description }}</span></li><li>Unlimited Projects</li><li>Customer Relationship Module</li><li>Accounting Module</li><li>Reporting</li><li>Free Upgrade on new Features</li></ul><button class=\"btn bg-primary\" ng-if=\"!isSusbcriptionSelected(subscription)\" ng-disabled=\"activeVendorSubscription.id>0\" ng-click=\"selectSubscription(subscription)\">Select</button> <button class=\"btn bg-success\" disabled=\"disabled\" ng-if=\"isSusbcriptionSelected(subscription)\">Selected</button></div></div></div></div></div>",
@@ -236,7 +236,7 @@
 (function ($, ng, debugMode, undefined) {
     "use strict";
 
-    ng.module("app", ['ui.router', 'ngResource', 'angular-loading-bar', 'ngValidate', 'thatisuday.dropzone', 'ui.bootstrap.carousel','ui.bootstrap.tpls']);
+    ng.module("app", ['ui.router', 'ngResource', 'angular-loading-bar', 'ngValidate', 'thatisuday.dropzone', 'ui.bootstrap.carousel', 'ui.bootstrap.tpls', 'selectize', 'ui.sortable', 'ui.carousel']);
 
     // --------------------------------------------------------------------------------
     // Run
@@ -356,6 +356,7 @@
                     requireBase: true,
                     rewriteLinks: false
                 });
+                //$.fn.select2.defaults.set("theme", "bootstrap4");
             }]);
 })(jQuery, angular, document.children[0].hasAttribute("debug"));
 (function ($, ng, debugMode, undefined) {
@@ -383,7 +384,7 @@
 
                 // Search
                 .state("vendor-search", {
-                    url: "/vendors/:vendorTypeId/:cityGeoId",
+                    url: "/vendors/:vendorTypeId/:cityGeoId/:searchText",
                     template: ng.fincam.template("/templates/pages/vendor/vendor-search.html"),
                     controller: "vendorSearchController"
                 })
@@ -3246,8 +3247,11 @@
                     vendorId: {
                         name: "int",
                         nullable: true
+                    },
+                    maxProfilePhotoSizeInMB: {
+                        name: "int",
+                        nullable: true
                     }
-
                 },
                 prototype: new function () {
                     var self = this;
@@ -4477,230 +4481,6 @@
             // Namespace
             // --------------------------------------------------------------------------------
             var fincam = p_models.namespace("fincam");
-            var customer = p_models.namespace("fincam.master.customer");
-
-            // --------------------------------------------------------------------------------
-            // Model
-            // --------------------------------------------------------------------------------
-            p_models.class({
-                namespace: customer,
-                name: "masterCustomer",
-                base: {
-                    namespace: fincam,
-                    name: "logModel"
-                },
-                properties: {
-                    id: "int",
-                    code: "int",
-                    name: "string",
-                    email: "string",
-                    mobile: "string",
-                    alternateMobile: "string",
-                    pincode: "string",
-                    addressLine1: "string",
-                    addressLine2: "string",
-                    cityGeoId: "int",
-                    city: "string",
-                    stateGeoId: "int",
-                    state: "string",
-                    isactive: "int",
-                    password:"string"
-                },
-                prototype: new function () {
-                    var self = this;
-                    return self;
-                }
-            });
-        }
-    ]);
-
-})(jQuery, angular, document.children[0].hasAttribute("debug"));
-(function ($, ng, debugMode, undefined) {
-    "use strict";
-
-    // --------------------------------------------------------------------------------
-    // Dependencies
-    // --------------------------------------------------------------------------------
-    var module = ng.module("app");
-
-    // --------------------------------------------------------------------------------
-    // Model
-    // --------------------------------------------------------------------------------
-    module.run([
-        "services.utils",
-        "services.models",
-        function (
-            p_utils,
-            p_models
-        ) {
-            // --------------------------------------------------------------------------------
-            // Namespace
-            // --------------------------------------------------------------------------------
-            var fincam = p_models.namespace("fincam");
-            var geo = p_models.namespace("fincam.master.geo");
-
-            // --------------------------------------------------------------------------------
-            // Model
-            // --------------------------------------------------------------------------------
-            p_models.class({
-                namespace: geo,
-                name: "masterGeo",
-                base: {
-                    namespace: fincam,
-                    name: "model"
-                },
-                properties: {
-                    id:  "int",
-                    geoCode: "string",
-                    geoName:  "string",
-                    geoHead: "string",
-                    geoLevel: "string",
-                    geoType: "string",
-                    geoTinNo: {
-                        name: "int",
-                        nullable: true
-                    },
-                    geoStateCode: "string",
-                    geoLatitude:
-                    {
-                        name: "number",
-                        nullable: true
-                    },
-                    geoLongitude: {
-                        name: "number",
-                        nullable: true
-                    },
-                    isactive: "int"
-                },
-                prototype: new function () {
-                    var self = this;
-                    return self;
-                }
-            });
-        }
-    ]);
-
-})(jQuery, angular, document.children[0].hasAttribute("debug"));
-(function ($, ng, debugMode, undefined) {
-    "use strict";
-
-    // --------------------------------------------------------------------------------
-    // Dependencies
-    // --------------------------------------------------------------------------------
-    var module = ng.module("app");
-
-    // --------------------------------------------------------------------------------
-    // Model
-    // --------------------------------------------------------------------------------
-    module.run([
-        "services.utils",
-        "services.models",
-        function (
-            p_utils,
-            p_models
-        ) {
-            // --------------------------------------------------------------------------------
-            // Namespace
-            // --------------------------------------------------------------------------------
-            var fincam = p_models.namespace("fincam");
-            var geo = p_models.namespace("fincam.master.geo");
-
-            // --------------------------------------------------------------------------------
-            // Model
-            // --------------------------------------------------------------------------------
-            p_models.class({
-                namespace: geo,
-                name: "masterGeoLevel",
-                base: {
-                    namespace: fincam,
-                    name: "model"
-                },
-                properties: {
-                    id:  "int",
-                    geoLevelCode: "int",
-                    geoLevelName:  "string",
-                    geoLevelIsactive: "int"
-                },
-                prototype: new function () {
-                    var self = this;
-                    return self;
-                }
-            });
-        }
-    ]);
-
-})(jQuery, angular, document.children[0].hasAttribute("debug"));
-(function ($, ng, debugMode, undefined) {
-    "use strict";
-
-    // --------------------------------------------------------------------------------
-    // Dependencies
-    // --------------------------------------------------------------------------------
-    var module = ng.module("app");
-
-    // --------------------------------------------------------------------------------
-    // Model
-    // --------------------------------------------------------------------------------
-    module.run([
-        "services.utils",
-        "services.models",
-        function (
-            p_utils,
-            p_models
-        ) {
-            // --------------------------------------------------------------------------------
-            // Namespace
-            // --------------------------------------------------------------------------------
-            var fincam = p_models.namespace("fincam");
-            var geo = p_models.namespace("fincam.master.geo");
-
-            // --------------------------------------------------------------------------------
-            // Model
-            // --------------------------------------------------------------------------------
-            p_models.class({
-                namespace: geo,
-                name: "masterGeoType",
-                base: {
-                    namespace: fincam,
-                    name: "model"
-                },
-                properties: {
-                    id:  "int",
-                    geoTypeCode: "int",
-                    geoTypeName:  "string",
-                    geoTypeIsactive: "int"
-                },
-                prototype: new function () {
-                    var self = this;
-                    return self;
-                }
-            });
-        }
-    ]);
-
-})(jQuery, angular, document.children[0].hasAttribute("debug"));
-(function ($, ng, debugMode, undefined) {
-    "use strict";
-
-    // --------------------------------------------------------------------------------
-    // Dependencies
-    // --------------------------------------------------------------------------------
-    var module = ng.module("app");
-
-    // --------------------------------------------------------------------------------
-    // Model
-    // --------------------------------------------------------------------------------
-    module.run([
-        "services.utils",
-        "services.models",
-        function (
-            p_utils,
-            p_models
-        ) {
-            // --------------------------------------------------------------------------------
-            // Namespace
-            // --------------------------------------------------------------------------------
-            var fincam = p_models.namespace("fincam");
             var freelancer = p_models.namespace("fincam.master.freelancer");
 
             // --------------------------------------------------------------------------------
@@ -5015,6 +4795,338 @@
             // Namespace
             // --------------------------------------------------------------------------------
             var fincam = p_models.namespace("fincam");
+            var customer = p_models.namespace("fincam.master.customer");
+
+            // --------------------------------------------------------------------------------
+            // Model
+            // --------------------------------------------------------------------------------
+            p_models.class({
+                namespace: customer,
+                name: "masterCustomer",
+                base: {
+                    namespace: fincam,
+                    name: "logModel"
+                },
+                properties: {
+                    id: "int",
+                    code: "int",
+                    name: "string",
+                    email: "string",
+                    mobile: "string",
+                    alternateMobile: "string",
+                    pincode: "string",
+                    addressLine1: "string",
+                    addressLine2: "string",
+                    cityGeoId: "int",
+                    city: "string",
+                    stateGeoId: "int",
+                    state: "string",
+                    isactive: "int",
+                    password:"string"
+                },
+                prototype: new function () {
+                    var self = this;
+                    return self;
+                }
+            });
+        }
+    ]);
+
+})(jQuery, angular, document.children[0].hasAttribute("debug"));
+(function ($, ng, debugMode, undefined) {
+    "use strict";
+
+    // --------------------------------------------------------------------------------
+    // Dependencies
+    // --------------------------------------------------------------------------------
+    var module = ng.module("app");
+
+    // --------------------------------------------------------------------------------
+    // Model
+    // --------------------------------------------------------------------------------
+    module.run([
+        "services.utils",
+        "services.models",
+        function (
+            p_utils,
+            p_models
+        ) {
+            // --------------------------------------------------------------------------------
+            // Namespace
+            // --------------------------------------------------------------------------------
+            var fincam = p_models.namespace("fincam");
+            var geo = p_models.namespace("fincam.master.geo");
+
+            // --------------------------------------------------------------------------------
+            // Model
+            // --------------------------------------------------------------------------------
+            p_models.class({
+                namespace: geo,
+                name: "masterGeo",
+                base: {
+                    namespace: fincam,
+                    name: "model"
+                },
+                properties: {
+                    id:  "int",
+                    geoCode: "string",
+                    geoName:  "string",
+                    geoHead: "string",
+                    geoLevel: "string",
+                    geoType: "string",
+                    geoTinNo: {
+                        name: "int",
+                        nullable: true
+                    },
+                    geoStateCode: "string",
+                    geoLatitude:
+                    {
+                        name: "number",
+                        nullable: true
+                    },
+                    geoLongitude: {
+                        name: "number",
+                        nullable: true
+                    },
+                    isactive: "int"
+                },
+                prototype: new function () {
+                    var self = this;
+                    return self;
+                }
+            });
+        }
+    ]);
+
+})(jQuery, angular, document.children[0].hasAttribute("debug"));
+(function ($, ng, debugMode, undefined) {
+    "use strict";
+
+    // --------------------------------------------------------------------------------
+    // Dependencies
+    // --------------------------------------------------------------------------------
+    var module = ng.module("app");
+
+    // --------------------------------------------------------------------------------
+    // Model
+    // --------------------------------------------------------------------------------
+    module.run([
+        "services.utils",
+        "services.models",
+        function (
+            p_utils,
+            p_models
+        ) {
+            // --------------------------------------------------------------------------------
+            // Namespace
+            // --------------------------------------------------------------------------------
+            var fincam = p_models.namespace("fincam");
+            var geo = p_models.namespace("fincam.master.geo");
+
+            // --------------------------------------------------------------------------------
+            // Model
+            // --------------------------------------------------------------------------------
+            p_models.class({
+                namespace: geo,
+                name: "masterGeoLevel",
+                base: {
+                    namespace: fincam,
+                    name: "model"
+                },
+                properties: {
+                    id:  "int",
+                    geoLevelCode: "int",
+                    geoLevelName:  "string",
+                    geoLevelIsactive: "int"
+                },
+                prototype: new function () {
+                    var self = this;
+                    return self;
+                }
+            });
+        }
+    ]);
+
+})(jQuery, angular, document.children[0].hasAttribute("debug"));
+(function ($, ng, debugMode, undefined) {
+    "use strict";
+
+    // --------------------------------------------------------------------------------
+    // Dependencies
+    // --------------------------------------------------------------------------------
+    var module = ng.module("app");
+
+    // --------------------------------------------------------------------------------
+    // Model
+    // --------------------------------------------------------------------------------
+    module.run([
+        "services.utils",
+        "services.models",
+        function (
+            p_utils,
+            p_models
+        ) {
+            // --------------------------------------------------------------------------------
+            // Namespace
+            // --------------------------------------------------------------------------------
+            var fincam = p_models.namespace("fincam");
+            var geo = p_models.namespace("fincam.master.geo");
+
+            // --------------------------------------------------------------------------------
+            // Model
+            // --------------------------------------------------------------------------------
+            p_models.class({
+                namespace: geo,
+                name: "masterGeoType",
+                base: {
+                    namespace: fincam,
+                    name: "model"
+                },
+                properties: {
+                    id:  "int",
+                    geoTypeCode: "int",
+                    geoTypeName:  "string",
+                    geoTypeIsactive: "int"
+                },
+                prototype: new function () {
+                    var self = this;
+                    return self;
+                }
+            });
+        }
+    ]);
+
+})(jQuery, angular, document.children[0].hasAttribute("debug"));
+(function ($, ng, debugMode, undefined) {
+    "use strict";
+
+    // --------------------------------------------------------------------------------
+    // Dependencies
+    // --------------------------------------------------------------------------------
+    var module = ng.module("app");
+
+    // --------------------------------------------------------------------------------
+    // Model
+    // --------------------------------------------------------------------------------
+    module.run([
+        "services.utils",
+        "services.models",
+        function (
+            p_utils,
+            p_models
+        ) {
+            // --------------------------------------------------------------------------------
+            // Namespace
+            // --------------------------------------------------------------------------------
+            var fincam = p_models.namespace("fincam");
+            var lov = p_models.namespace("fincam.master.lov");
+
+            // --------------------------------------------------------------------------------
+            // Model
+            // --------------------------------------------------------------------------------
+            p_models.class({
+                namespace: lov,
+                name: "masterLov",
+                base: {
+                    namespace: fincam,
+                    name: "model"
+                },
+                properties: {
+                    id:  "int",
+                    desc: "string",
+                    type:  "string",
+                    parentId: "int",
+                    isactive: "int"
+                },
+                prototype: new function () {
+                    var self = this;
+                    return self;
+                }
+            });
+        }
+    ]);
+
+})(jQuery, angular, document.children[0].hasAttribute("debug"));
+(function ($, ng, debugMode, undefined) {
+    "use strict";
+
+    // --------------------------------------------------------------------------------
+    // Dependencies
+    // --------------------------------------------------------------------------------
+    var module = ng.module("app");
+
+    // --------------------------------------------------------------------------------
+    // Model
+    // --------------------------------------------------------------------------------
+    module.run([
+        "services.utils",
+        "services.models",
+        function (
+            p_utils,
+            p_models
+        ) {
+            // --------------------------------------------------------------------------------
+            // Namespace
+            // --------------------------------------------------------------------------------
+            var fincam = p_models.namespace("fincam");
+            var subscription = p_models.namespace("fincam.master.subscription");
+
+            // --------------------------------------------------------------------------------
+            // Model
+            // --------------------------------------------------------------------------------
+            p_models.class({
+                namespace: subscription,
+                name: "masterSubscription",
+                base: {
+                    namespace: fincam,
+                    name: "model"
+                },
+                properties: {
+                    id: "int",
+                    name: "string",
+                    price: "decimal",
+                    projectCount: "int",
+                    pricePerProject:
+                    {
+                        name: "decimal",
+                        nullable: true
+                    },
+                    durationMonths: "int",
+                    description: "string",
+                    durationDays: "int",
+                    isActive:"bool"
+                },
+                prototype: new function () {
+                    var self = this;
+                    return self;
+                }
+            });
+        }
+    ]);
+
+})(jQuery, angular, document.children[0].hasAttribute("debug"));
+(function ($, ng, debugMode, undefined) {
+    "use strict";
+
+    // --------------------------------------------------------------------------------
+    // Dependencies
+    // --------------------------------------------------------------------------------
+    var module = ng.module("app");
+
+    // --------------------------------------------------------------------------------
+    // Model
+    // --------------------------------------------------------------------------------
+    module.run([
+        "services.utils",
+        "services.models",
+        function (
+            p_utils,
+            p_models
+        ) {
+            // --------------------------------------------------------------------------------
+            // Namespace
+            // --------------------------------------------------------------------------------
+            var fincam = p_models.namespace("fincam");
             var vendor = p_models.namespace("fincam.master.vendor");
 
             // --------------------------------------------------------------------------------
@@ -5147,7 +5259,8 @@
                     fileName: "string",
                     contentLength: "int",
                     contentType: "string",
-                    fileType: "string"
+                    fileType: "string",
+                    isSelectedForProfile:"bool"
                 },
                 prototype: new function () {
                     var self = this;
@@ -5392,114 +5505,6 @@
                     id:"int",
                     type: "string",
                     isactive: "int"
-                },
-                prototype: new function () {
-                    var self = this;
-                    return self;
-                }
-            });
-        }
-    ]);
-
-})(jQuery, angular, document.children[0].hasAttribute("debug"));
-(function ($, ng, debugMode, undefined) {
-    "use strict";
-
-    // --------------------------------------------------------------------------------
-    // Dependencies
-    // --------------------------------------------------------------------------------
-    var module = ng.module("app");
-
-    // --------------------------------------------------------------------------------
-    // Model
-    // --------------------------------------------------------------------------------
-    module.run([
-        "services.utils",
-        "services.models",
-        function (
-            p_utils,
-            p_models
-        ) {
-            // --------------------------------------------------------------------------------
-            // Namespace
-            // --------------------------------------------------------------------------------
-            var fincam = p_models.namespace("fincam");
-            var lov = p_models.namespace("fincam.master.lov");
-
-            // --------------------------------------------------------------------------------
-            // Model
-            // --------------------------------------------------------------------------------
-            p_models.class({
-                namespace: lov,
-                name: "masterLov",
-                base: {
-                    namespace: fincam,
-                    name: "model"
-                },
-                properties: {
-                    id:  "int",
-                    desc: "string",
-                    type:  "string",
-                    parentId: "int",
-                    isactive: "int"
-                },
-                prototype: new function () {
-                    var self = this;
-                    return self;
-                }
-            });
-        }
-    ]);
-
-})(jQuery, angular, document.children[0].hasAttribute("debug"));
-(function ($, ng, debugMode, undefined) {
-    "use strict";
-
-    // --------------------------------------------------------------------------------
-    // Dependencies
-    // --------------------------------------------------------------------------------
-    var module = ng.module("app");
-
-    // --------------------------------------------------------------------------------
-    // Model
-    // --------------------------------------------------------------------------------
-    module.run([
-        "services.utils",
-        "services.models",
-        function (
-            p_utils,
-            p_models
-        ) {
-            // --------------------------------------------------------------------------------
-            // Namespace
-            // --------------------------------------------------------------------------------
-            var fincam = p_models.namespace("fincam");
-            var subscription = p_models.namespace("fincam.master.subscription");
-
-            // --------------------------------------------------------------------------------
-            // Model
-            // --------------------------------------------------------------------------------
-            p_models.class({
-                namespace: subscription,
-                name: "masterSubscription",
-                base: {
-                    namespace: fincam,
-                    name: "model"
-                },
-                properties: {
-                    id: "int",
-                    name: "string",
-                    price: "decimal",
-                    projectCount: "int",
-                    pricePerProject:
-                    {
-                        name: "decimal",
-                        nullable: true
-                    },
-                    durationMonths: "int",
-                    description: "string",
-                    durationDays: "int",
-                    isActive:"bool"
                 },
                 prototype: new function () {
                     var self = this;
@@ -6669,104 +6674,6 @@
     // --------------------------------------------------------------------------------
     // Private
     // --------------------------------------------------------------------------------
-    var apiName = "masterGeoApi";
-    var url = "/api/master/geo";
-
-    // --------------------------------------------------------------------------------
-    // Resources
-    // --------------------------------------------------------------------------------
-    module.factory("api." + apiName + "Resources", [
-        "$resource",
-        function (p_$resource) {
-            var actions = ng.fincam.resource.apply({}, [url, {
-                getByParams: { method: "GET", url: "get-by-params/:levelId/:parentId", isArray: true },
-                getOperationalCityList: { method: "GET", url: "get-operational-city-list", isArray: true },
-                getOperationalCityListForFreeLancer: { method: "GET", url: "get-operational-city-list-for-freelancer", isArray: true }
-            }]);
-
-            return p_$resource(url, {}, actions);
-        }
-    ]);
-
-    // --------------------------------------------------------------------------------
-    // Modules
-    // --------------------------------------------------------------------------------
-    module.factory("api." + apiName, [
-        "$rootScope",
-        "$q",
-        "$window",
-        "$stateParams",
-        "$state",
-        "$timeout",
-        "$interval",
-        "services.utils",
-        "services.models",
-        "api." + apiName + "Resources",
-        function (
-            p_$rootScope,
-            p_$q,
-            p_$window,
-            p_$stateParams,
-            p_$state,
-            p_$timeout,
-            p_$interval,
-            p_utils,
-            p_models,
-            p_resources,
-            undefined
-        ) {
-            // --------------------------------------------------------------------------------
-            // Namespace
-            // --------------------------------------------------------------------------------
-            var fincam = p_models.namespace("fincam");
-            var geo = p_models.namespace("fincam.master.geo");
-
-            // --------------------------------------------------------------------------------
-            // Modules
-            // --------------------------------------------------------------------------------
-            var self = ng.fincam.api.apply(this, [
-                p_$rootScope,
-                p_$q,
-                p_$window,
-                p_$stateParams,
-                p_$state,
-                p_$timeout,
-                p_$interval,
-                p_utils,
-                p_models,
-                p_resources,
-                geo.masterGeo
-            ]);
-
-            self.getByParams = function (p_levelId, p_parentId) {
-                return p_resources.getByParams({ levelId: p_levelId, parentId: p_parentId }).$promise
-                    .then(self.array, self.handleError, self.handleNotify);
-            };
-
-            self.getOperationalCityList = function () {
-                return p_resources.getOperationalCityList({ }).$promise
-                    .then(self.array, self.handleError, self.handleNotify);
-            };
-            self.getOperationalCityListForFreeLancer = function () {
-                return p_resources.getOperationalCityListForFreeLancer({}).$promise
-                    .then(self.array, self.handleError, self.handleNotify);
-            }
-            return self;
-        }]);
-
-})(jQuery, angular, document.children[0].hasAttribute("debug"));
-(function ($, ng, debugMode, undefined) {
-    "use strict";
-
-    // --------------------------------------------------------------------------------
-    // Dependencies
-    // --------------------------------------------------------------------------------
-    var module = ng.module("app");
-    var fincam = ng.fincam;
-
-    // --------------------------------------------------------------------------------
-    // Private
-    // --------------------------------------------------------------------------------
     var apiName = "masterFreeLancerApi";
     var url = "/api/master/freelancer";
 
@@ -7103,6 +7010,104 @@
                 freelancer.masterFreeLancerType
             ]);
 
+            return self;
+        }]);
+
+})(jQuery, angular, document.children[0].hasAttribute("debug"));
+(function ($, ng, debugMode, undefined) {
+    "use strict";
+
+    // --------------------------------------------------------------------------------
+    // Dependencies
+    // --------------------------------------------------------------------------------
+    var module = ng.module("app");
+    var fincam = ng.fincam;
+
+    // --------------------------------------------------------------------------------
+    // Private
+    // --------------------------------------------------------------------------------
+    var apiName = "masterGeoApi";
+    var url = "/api/master/geo";
+
+    // --------------------------------------------------------------------------------
+    // Resources
+    // --------------------------------------------------------------------------------
+    module.factory("api." + apiName + "Resources", [
+        "$resource",
+        function (p_$resource) {
+            var actions = ng.fincam.resource.apply({}, [url, {
+                getByParams: { method: "GET", url: "get-by-params/:levelId/:parentId", isArray: true },
+                getOperationalCityList: { method: "GET", url: "get-operational-city-list", isArray: true },
+                getOperationalCityListForFreeLancer: { method: "GET", url: "get-operational-city-list-for-freelancer", isArray: true }
+            }]);
+
+            return p_$resource(url, {}, actions);
+        }
+    ]);
+
+    // --------------------------------------------------------------------------------
+    // Modules
+    // --------------------------------------------------------------------------------
+    module.factory("api." + apiName, [
+        "$rootScope",
+        "$q",
+        "$window",
+        "$stateParams",
+        "$state",
+        "$timeout",
+        "$interval",
+        "services.utils",
+        "services.models",
+        "api." + apiName + "Resources",
+        function (
+            p_$rootScope,
+            p_$q,
+            p_$window,
+            p_$stateParams,
+            p_$state,
+            p_$timeout,
+            p_$interval,
+            p_utils,
+            p_models,
+            p_resources,
+            undefined
+        ) {
+            // --------------------------------------------------------------------------------
+            // Namespace
+            // --------------------------------------------------------------------------------
+            var fincam = p_models.namespace("fincam");
+            var geo = p_models.namespace("fincam.master.geo");
+
+            // --------------------------------------------------------------------------------
+            // Modules
+            // --------------------------------------------------------------------------------
+            var self = ng.fincam.api.apply(this, [
+                p_$rootScope,
+                p_$q,
+                p_$window,
+                p_$stateParams,
+                p_$state,
+                p_$timeout,
+                p_$interval,
+                p_utils,
+                p_models,
+                p_resources,
+                geo.masterGeo
+            ]);
+
+            self.getByParams = function (p_levelId, p_parentId) {
+                return p_resources.getByParams({ levelId: p_levelId, parentId: p_parentId }).$promise
+                    .then(self.array, self.handleError, self.handleNotify);
+            };
+
+            self.getOperationalCityList = function () {
+                return p_resources.getOperationalCityList({ }).$promise
+                    .then(self.array, self.handleError, self.handleNotify);
+            };
+            self.getOperationalCityListForFreeLancer = function () {
+                return p_resources.getOperationalCityListForFreeLancer({}).$promise
+                    .then(self.array, self.handleError, self.handleNotify);
+            }
             return self;
         }]);
 
@@ -7470,9 +7475,10 @@
         function (p_$resource) {
             var actions = ng.fincam.resource.apply({}, [url, {
                 getPhotos: { method: "GET", url: "get-photos/:vendorId", isArray: true },
-                clearOldFiles: { method: "POST", "url": 'clear-old-photos' },
+                clearOldFiles: { method: "POST", "url": 'clear-old-photos/:fileId' },
                 storeVideos: { method: "POST", url: "store-videos" },
-                getVideos: { method: "POST", url: "get-videos/:vendorId", isArray: true  }
+                getVideos: { method: "POST", url: "get-videos/:vendorId", isArray: true },
+                setProfileImage: { method: "POST", url: "select-profile-photo/:fileId"}
             }]);
 
             return p_$resource(url, {}, actions);
@@ -7540,8 +7546,8 @@
             self.getDefaultPresentationSrc = function (vendorId,p_fileId) {
                 return (p_clientConfig.fincamApiUrl + url + "/get-default-presentation/" + vendorId+"/"+ p_fileId + "?t="+p_$rootScope.token);
             }
-            self.clearOldFiles = function () {
-                return p_resources.clearOldFiles({}).$promise
+            self.clearOldFiles = function (id) {
+                return p_resources.clearOldFiles({'fileId':id},null).$promise
                     .then(self.handleSuccess, self.handleError, self.handleNotify);
             }
             self.storeVideos = function (req) {
@@ -7551,6 +7557,10 @@
             self.getVideos = function (vendor_id) {
                 return p_resources.getVideos({ 'vendorId': vendor_id },null).$promise
                     .then(self.array, self.handleError, self.handleNotify);
+            }
+            self.setProfileImage = function (fileId) {
+                return p_resources.setProfileImage({ 'fileId': fileId }, null).$promise
+                    .then(self.handleSuccess, self.handleError, self.handleNotify);
             }
             return self;
         }]);
@@ -8147,8 +8157,9 @@
                         var paths = s_path.split("/");
                         var last_path = paths[(paths.length) - 1];
                         if (last_path == "")
-                            p_$window.location.href = "/subscription";
-                            //return p_$state.go("home");
+                            return p_$state.go("home");
+                            //p_$window.location.href = "/subscription";
+                            
                     });
                 }).finally(function () {
                     p_$scope.ready = true;
@@ -8329,6 +8340,203 @@
     // --------------------------------------------------------------------------------
     // Private
     // --------------------------------------------------------------------------------
+    var pageName = "freeLancerDetail";
+    var controllerName = pageName + "Controller";
+
+    // --------------------------------------------------------------------------------
+    // Controller
+    // --------------------------------------------------------------------------------
+    module.controller(controllerName, [
+        "$rootScope",
+        "$scope",
+        "$stateParams",
+        "$state",
+        "$q",
+        "$window",
+        "$timeout",
+        "$interval",
+        "services.models",
+        "services.localStorage",
+        "api.masterFreeLancerApi",
+        "api.masterFreeLancerFilesApi",
+        "$sce",
+        function (
+            p_$rootScope,
+            p_$scope,
+            p_$stateParams,
+            p_$state,
+            p_$q,
+            p_$window,
+            p_$timeout,
+            p_$interval,
+            p_models,
+            p_localStorage,
+            p_masterFreeLancerApi,
+            p_masterFreeLancerFileApi,
+            p_$sce,
+            undefined
+        ) {
+            ng.fincam.pageController(
+                p_$rootScope,
+                p_$scope,
+                p_$stateParams,
+                p_$state,
+                p_$q,
+                p_$window,
+                p_$timeout,
+                p_$interval,
+                p_models,
+                p_localStorage,
+                controllerName,
+                undefined
+            );
+
+            // --------------------------------------------------------------------------------
+            // Namespace
+            // --------------------------------------------------------------------------------
+            var common = p_models.namespace("fincam.common");
+            var commonFreeLancer = p_models.namespace("fincam.common.freelancer");
+            var transaction = p_models.namespace("fincam.transaction");
+            // --------------------------------------------------------------------------------
+            // Functions
+            // --------------------------------------------------------------------------------
+            p_$scope.toggleFreeLancerSelection = function (freeLancer) {
+                freeLancer.isShortlisted = !freeLancer.isShortlisted;
+
+                return p_masterFreeLancerApi.toggleFreeLancerSelection(freeLancer.id).then(function () {
+                });
+            }
+            p_$scope.refresh = function () {
+                var freelancerId = parseInt(p_$stateParams.freelancerId);
+                p_$scope.review = p_models.new(commonFreeLancer.freeLancerVendorReviewRequest, {});
+                $('.listing_detail_header').css({
+                    "background-image": "url('assets/images/freelancers/1/cover.png')"
+                });
+                var asyncTasks = [];
+                /*asyncTasks.push(p_masterFreeLancerApi.getReview({ freelancerId: freelancerId, page: 1 })
+                    .then(function (res) {
+                        var records = res.pageRecords;
+                        p_$scope.totalReviews = res.recordsTotal;
+                        p_$scope.reviews = records;
+                    }, err => {
+                            console.log(err);
+                    }))*/
+                asyncTasks.push(p_masterFreeLancerApi.getDetail(freelancerId, p_$rootScope.userProfile.vendorId).then(function (p_freelancerDetail) {
+                    p_$scope.detail = p_freelancerDetail;
+                    return p_$q.resolve();
+                }));
+                return p_$q.all(asyncTasks).then(function () {
+
+                });
+            }
+            p_$scope.storeReview = function () {
+                p_$scope.review_is_submitting = true;
+                p_$scope.review.freelancer_id =parseInt(p_$stateParams.freelancerId);
+                return p_masterFreeLancerApi.storeReview(p_$scope.review).then(function (res) {
+                    p_$scope.review_is_submitting = false;
+                    if (res.result == true) {
+                        $.alert({
+                            title: "Success!",
+                            content: "Review Posted Successfully"
+                        })
+                        return p_$scope.refresh().then(function () {
+                        });
+                    }
+                    else {
+                        $.alert({
+                            title: "Error!",
+                            content: res.errorMsgs.join(',')
+                        })
+                    }
+                }, err => {
+                    p_$scope.review_is_submitting = false;
+                });
+            }
+            p_$scope.showLoginAlert = function () {
+                if (!p_$rootScope.isCustomerLoggedIn()) {
+                    $.confirm({
+                        title: "Alert!",
+                        content: "Sign in as a customer to write a review!",
+                        buttons: {
+                            yes: {
+                                text: "Sign in",
+                                btnClass: "btn-green",
+                                action: function () {
+                                    return window.location.href = "/customer-signin";
+
+                                }
+                            },
+                            no: {
+                                text: "Cancel",
+                                btnClass: "btn-red",
+                                action: function () {
+
+                                }
+                            }
+                        }
+                    });
+                }
+            }
+            p_$scope.trustSrc = function (src) {
+                return p_$sce.trustAsResourceUrl(src);
+            };
+
+            p_$scope.init = function () {
+                /*if (!p_$rootScope.isUserLoggedIn()) {
+                    window.location.href = "/customer-signin";
+                    return;
+                }*/
+                p_$scope.totalReviews = 0;
+                p_$scope.review_is_submitting = false;
+                p_$scope.detail = p_models.new(commonFreeLancer.freelancerDetailSearchResult, {});
+                p_$scope.review = p_models.new(commonFreeLancer.freeLancerVendorReviewRequest, {});
+                p_$scope.photos = [];
+                p_$scope.videos = [];
+               // p_$scope.review.created_by = p_$rootScope.
+                var freelancerId = parseInt(p_$stateParams.freelancerId);
+                var tasks = [];
+                tasks.push(
+                    p_masterFreeLancerFileApi.getPhotos(p_$stateParams.freelancerId).then(function (res) {
+                        var projectFiles = res;
+                        p_$scope.photos = projectFiles.map(function (r) {
+                            var obj = { presentationUrl: '' };
+                            obj.presentationUrl = p_masterFreeLancerFileApi.getDefaultPresentationSrc(freelancerId,r.id);
+                            return obj;
+                        });
+                    })
+                );
+                tasks.push(
+                    p_masterFreeLancerFileApi.getVideos(p_$stateParams.freelancerId).then(function (res) {
+                        var projectFiles = res;
+                        p_$scope.videos = projectFiles.map(function (r) {
+                            var obj = { presentationUrl: '' };
+                            obj.presentationUrl = r.fileName;
+                            return obj;
+                        });
+                    })
+                );
+                return p_$q.all(tasks).then(function () {
+                    return p_$scope.refresh().then(function () {
+                    });
+                }).finally(function () {
+                    p_$scope.ready = true;
+                });
+            }
+        }
+    ]);
+
+})(jQuery, angular, document.children[0].hasAttribute("debug"));
+(function ($, ng, debugMode, undefined) {
+    "use strict";
+
+    // --------------------------------------------------------------------------------
+    // Dependencies
+    // --------------------------------------------------------------------------------
+    var module = ng.module("app");
+
+    // --------------------------------------------------------------------------------
+    // Private
+    // --------------------------------------------------------------------------------
     var pageName = "customerLogin";
     var controllerName = pageName + "Controller";
 
@@ -8401,6 +8609,8 @@
             p_$scope.init = function () {
                 var tasks = [];
 
+                p_$scope.is_processing = false;
+
                 p_$scope.errorMsgs = [];
                 p_$scope.user = {
                     username: "",
@@ -8432,7 +8642,51 @@
                     p_$scope.ready = true;
                 });
             }
-
+            p_$scope.forgotPassword = function () {
+                $.confirm({
+                    title: 'Forgot Password',
+                    content: '' +
+                        '<form action="" class="formName">' +
+                        '<div class="form-group">' +
+                        '<label>Enter Email or Mobile No</label>' +
+                        '<input type="text" placeholder="Enter Here" class="name form-control" required />' +
+                        '</div>' +
+                        '</form>',
+                    buttons: {
+                        formSubmit: {
+                            text: 'Submit',
+                            btnClass: 'btn-blue',
+                            action: function () {
+                                var name = this.$content.find('.name').val();
+                                if (!name) {
+                                    $.alert('Email is Required');
+                                    return false;
+                                }
+                                return p_accountApi.forgotPassword(name).then(res => {
+                                    if (res.result == true) {
+                                        $.alert({
+                                            title: "Alert!!",
+                                            content: "Password Reset Mail Sent!"
+                                        });
+                                    }
+                                    else {
+                                        $.alert({
+                                            title: "Error!!",
+                                            content: res.errorMsgs
+                                        });
+                                    }
+                                });
+                            }
+                        },
+                        cancel: function () {
+                            //close
+                        },
+                    },
+                    onContentReady: function () {
+                        // bind to events
+                    }
+                });
+            }
             p_$scope.initValidationOptions = function () {
                 p_$scope.signinValidationOptions = {
                     rules: {
@@ -8452,7 +8706,9 @@
 
             p_$scope.signin = function (p_customerSigninForm) {
                 if (p_customerSigninForm.validate()) {
+                    p_$scope.is_processing = true;
                     return p_accountApi.connect(p_$scope.user).then(function (p_authResult) {
+                        p_$scope.is_processing = false;
                         if (p_utils.isArray(p_authResult.errorMsgs) && p_authResult.errorMsgs.length > 0) {
                             p_$scope.errorMsgs = p_authResult.errorMsgs;
                             return p_$q.reject();
@@ -8475,6 +8731,8 @@
                                 });
                             });
                         });
+                    }, err => {
+                       p_$scope.is_processing = false;
                     });
                 }
             }
@@ -8890,6 +9148,40 @@
             // --------------------------------------------------------------------------------
             // Functions
             // --------------------------------------------------------------------------------
+            p_$scope.vendorTypeConfig = {
+                create: false,
+                plugins: ['remove_button'],
+                valueField: 'id',
+                labelField: 'type',
+                searchField: ['type'],
+                placeholder: 'What you are looking for?',
+                onInitialize: function (selectize) {
+                    // receives the selectize object as an argument
+                },
+                onChange: function (selectize) {
+                    if (selectize == null) {
+                        p_$scope.searchQuery.vendorTypeId = '';
+                    }
+                },
+                maxItems: 1
+            };
+            p_$scope.cityConfig = {
+                create: false,
+                valueField: 'id',
+                plugins: ['remove_button'],
+                labelField: 'geoName',
+                searchField: ['geoName'],
+                placeholder: 'Select City',
+                onInitialize: function (selectize) {
+                    // receives the selectize object as an argument
+                },
+                onChange: function (selectize) {
+                    if (selectize == null) {
+                        p_$scope.searchQuery.vendorTypeId = '';
+                    }
+                },
+                maxItems: 1
+            };
 
             p_$scope.refresh = function () {
                 var asyncTasks = [];
@@ -8900,7 +9192,8 @@
                         type: "What you are looking for?"
                     });
 
-                    p_$scope.vendorTypes = [emptyVendorType].concat(p_vendorTypes || []);
+                    //p_$scope.vendorTypes = [emptyVendorType].concat(p_vendorTypes || []);
+                    p_$scope.vendorTypes = p_vendorTypes || [];
                 }));
 
                 asyncTasks.push(p_masterGeoApi.getOperationalCityList().then(function (p_cities) {
@@ -8909,7 +9202,8 @@
                         geoName: "Select City"
                     });
 
-                    p_$scope.geoCities = [emptyCity].concat(p_cities || []);
+                    //p_$scope.geoCities = [emptyCity].concat(p_cities || []);
+                    p_$scope.geoCities = p_cities || [];
                 }));
                 asyncTasks.push(p_projectFilesApi.getLatestProjectFiles().then(function (p_files) {
                     p_$scope.latestProjectFiles = p_files;
@@ -8922,6 +9216,7 @@
             p_$scope.init = function () {
                 var tasks = [];
                 tasks.push(p_$scope.initPage());
+                //$.fn.select2.defaults.set("height", "60px");
                 p_$scope.searchQuery = p_models.new(commonVendor.vendorSearchQuery, {
                     vendorTypeId: 0,
                     geoCityId: 0,
@@ -8944,17 +9239,15 @@
                 $('.customer-home #listing_img_slider .owl-carousel').owlCarousel({
                     loop: true,
                     margin: 0,
-                    nav: true,
                     dots: false,
                     autoplay: true,
-                    autoplayTimeout: 5000,
+                    autoplayTimeout: 3000,
                     responsive: {
                         0: { items: 1 },
                         650: { items: 2 },
                         1300: { items: 3 },
                         1950: { items: 4 },
-                        2600: { items: 5 },
-                        3250: { items: 6 }
+                        2600: { items: 5 }
                     }
                 })
 
@@ -8969,7 +9262,8 @@
             p_$scope.searchVendors = function () {
                 return p_$state.go("vendor-search", {
                     vendorTypeId: p_$scope.searchQuery.vendorTypeId,
-                    cityGeoId: p_$scope.searchQuery.cityGeoId
+                    cityGeoId: p_$scope.searchQuery.cityGeoId,
+                    searchText:0
                 });
             }
         }
@@ -9092,203 +9386,6 @@
     // --------------------------------------------------------------------------------
     // Private
     // --------------------------------------------------------------------------------
-    var pageName = "freeLancerDetail";
-    var controllerName = pageName + "Controller";
-
-    // --------------------------------------------------------------------------------
-    // Controller
-    // --------------------------------------------------------------------------------
-    module.controller(controllerName, [
-        "$rootScope",
-        "$scope",
-        "$stateParams",
-        "$state",
-        "$q",
-        "$window",
-        "$timeout",
-        "$interval",
-        "services.models",
-        "services.localStorage",
-        "api.masterFreeLancerApi",
-        "api.masterFreeLancerFilesApi",
-        "$sce",
-        function (
-            p_$rootScope,
-            p_$scope,
-            p_$stateParams,
-            p_$state,
-            p_$q,
-            p_$window,
-            p_$timeout,
-            p_$interval,
-            p_models,
-            p_localStorage,
-            p_masterFreeLancerApi,
-            p_masterFreeLancerFileApi,
-            p_$sce,
-            undefined
-        ) {
-            ng.fincam.pageController(
-                p_$rootScope,
-                p_$scope,
-                p_$stateParams,
-                p_$state,
-                p_$q,
-                p_$window,
-                p_$timeout,
-                p_$interval,
-                p_models,
-                p_localStorage,
-                controllerName,
-                undefined
-            );
-
-            // --------------------------------------------------------------------------------
-            // Namespace
-            // --------------------------------------------------------------------------------
-            var common = p_models.namespace("fincam.common");
-            var commonFreeLancer = p_models.namespace("fincam.common.freelancer");
-            var transaction = p_models.namespace("fincam.transaction");
-            // --------------------------------------------------------------------------------
-            // Functions
-            // --------------------------------------------------------------------------------
-            p_$scope.toggleFreeLancerSelection = function (freeLancer) {
-                freeLancer.isShortlisted = !freeLancer.isShortlisted;
-
-                return p_masterFreeLancerApi.toggleFreeLancerSelection(freeLancer.id).then(function () {
-                });
-            }
-            p_$scope.refresh = function () {
-                var freelancerId = parseInt(p_$stateParams.freelancerId);
-                p_$scope.review = p_models.new(commonFreeLancer.freeLancerVendorReviewRequest, {});
-                $('.listing_detail_header').css({
-                    "background-image": "url('assets/images/freelancers/1/cover.png')"
-                });
-                var asyncTasks = [];
-                /*asyncTasks.push(p_masterFreeLancerApi.getReview({ freelancerId: freelancerId, page: 1 })
-                    .then(function (res) {
-                        var records = res.pageRecords;
-                        p_$scope.totalReviews = res.recordsTotal;
-                        p_$scope.reviews = records;
-                    }, err => {
-                            console.log(err);
-                    }))*/
-                asyncTasks.push(p_masterFreeLancerApi.getDetail(freelancerId, p_$rootScope.userProfile.vendorId).then(function (p_freelancerDetail) {
-                    p_$scope.detail = p_freelancerDetail;
-                    return p_$q.resolve();
-                }));
-                return p_$q.all(asyncTasks).then(function () {
-
-                });
-            }
-            p_$scope.storeReview = function () {
-                p_$scope.review_is_submitting = true;
-                p_$scope.review.freelancer_id =parseInt(p_$stateParams.freelancerId);
-                return p_masterFreeLancerApi.storeReview(p_$scope.review).then(function (res) {
-                    p_$scope.review_is_submitting = false;
-                    if (res.result == true) {
-                        $.alert({
-                            title: "Success!",
-                            content: "Review Posted Successfully"
-                        })
-                        return p_$scope.refresh().then(function () {
-                        });
-                    }
-                    else {
-                        $.alert({
-                            title: "Error!",
-                            content: res.errorMsgs.join(',')
-                        })
-                    }
-                }, err => {
-                    p_$scope.review_is_submitting = false;
-                });
-            }
-            p_$scope.showLoginAlert = function () {
-                if (!p_$rootScope.isCustomerLoggedIn()) {
-                    $.confirm({
-                        title: "Alert!",
-                        content: "Sign in as a customer to write a review!",
-                        buttons: {
-                            yes: {
-                                text: "Sign in",
-                                btnClass: "btn-green",
-                                action: function () {
-                                    return window.location.href = "/customer-signin";
-
-                                }
-                            },
-                            no: {
-                                text: "Cancel",
-                                btnClass: "btn-red",
-                                action: function () {
-
-                                }
-                            }
-                        }
-                    });
-                }
-            }
-            p_$scope.trustSrc = function (src) {
-                return p_$sce.trustAsResourceUrl(src);
-            };
-
-            p_$scope.init = function () {
-                /*if (!p_$rootScope.isUserLoggedIn()) {
-                    window.location.href = "/customer-signin";
-                    return;
-                }*/
-                p_$scope.totalReviews = 0;
-                p_$scope.review_is_submitting = false;
-                p_$scope.detail = p_models.new(commonFreeLancer.freelancerDetailSearchResult, {});
-                p_$scope.review = p_models.new(commonFreeLancer.freeLancerVendorReviewRequest, {});
-                p_$scope.photos = [];
-                p_$scope.videos = [];
-               // p_$scope.review.created_by = p_$rootScope.
-                var freelancerId = parseInt(p_$stateParams.freelancerId);
-                var tasks = [];
-                tasks.push(
-                    p_masterFreeLancerFileApi.getPhotos(p_$stateParams.freelancerId).then(function (res) {
-                        var projectFiles = res;
-                        p_$scope.photos = projectFiles.map(function (r) {
-                            var obj = { presentationUrl: '' };
-                            obj.presentationUrl = p_masterFreeLancerFileApi.getDefaultPresentationSrc(freelancerId,r.id);
-                            return obj;
-                        });
-                    })
-                );
-                tasks.push(
-                    p_masterFreeLancerFileApi.getVideos(p_$stateParams.freelancerId).then(function (res) {
-                        var projectFiles = res;
-                        p_$scope.videos = projectFiles.map(function (r) {
-                            var obj = { presentationUrl: '' };
-                            obj.presentationUrl = r.fileName;
-                            return obj;
-                        });
-                    })
-                );
-                return p_$q.all(tasks).then(function () {
-                    return p_$scope.refresh().then(function () {
-                    });
-                }).finally(function () {
-                    p_$scope.ready = true;
-                });
-            }
-        }
-    ]);
-
-})(jQuery, angular, document.children[0].hasAttribute("debug"));
-(function ($, ng, debugMode, undefined) {
-    "use strict";
-
-    // --------------------------------------------------------------------------------
-    // Dependencies
-    // --------------------------------------------------------------------------------
-    var module = ng.module("app");
-
-    // --------------------------------------------------------------------------------
-    // Private
-    // --------------------------------------------------------------------------------
     var pageName = "vendorDetail";
     var controllerName = pageName + "Controller";
 
@@ -9374,6 +9471,10 @@
 
                 });
             }
+            p_$scope.shareViaFacebook = function () {
+                var fblink = "https://facebook.com/sharer/sharer.php?u=" + encodeURIComponent(window.location.href);
+                p_$window.open(fblink, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600'); return false;
+            }
             p_$scope.storeReview = function () {
                 p_$scope.review_is_submitting = true;
                 p_$scope.review.vendor_id =parseInt(p_$stateParams.vendorId);
@@ -9385,20 +9486,7 @@
                             content: "Review Posted Successfully"
                         })
                         return p_$scope.refresh().then(function () {
-                            $('#listing_img_slider .owl-carousel').owlCarousel({
-                                loop: true,
-                                margin: 0,
-                                nav: true,
-                                dots: false,
-                                autoplay: true,
-                                autoplayTimeout: 5000,
-                                responsive: {
-                                    0: { items: 1 },
-                                    400: { items: 2 },
-                                    768: { items: 3 },
-                                    992: { items: 4 }
-                                }
-                            })
+                            //p_$scope.initCarousel();
                         });
                     }
                     else {
@@ -9440,21 +9528,31 @@
                 return p_$sce.trustAsResourceUrl(src);
             };
             p_$scope.initCarousel = function () {
-                console.log($('#listing_img_slider .owl-carousel'));
-                $('#listing_img_slider .owl-carousel').owlCarousel({
-                    loop: true,
+                var carousel = [];
+                var width = 0;
+                p_$scope.photos.forEach((photo, index) => {
+                    carousel[width] ={ items: (index + 1) };
+                    width += 400;
+                });
+                $('#listing_img_slider_vendor_detail .owl-carousel').owlCarousel({
+                    loop: false,
                     margin: 0,
+                    items: (p_$scope.photos.length-1),
                     nav: true,
+                    responsive: {
+                        0: { items: 2 },
+                        650: { items: 4 },
+                        1300: { items: 5 },
+                        1950: { items: 6, autoplay: false },
+                        2600: { items: 7, autoplay: false }
+                    },
                     dots: false,
                     autoplay: true,
-                    autoplayTimeout: 5000,
-                    responsive: {
-                        0: { items: 1 },
-                        400: { items: 2 },
-                        768: { items: 3 },
-                        992: { items: 4 }
-                    }
-                })
+                    autoplayTimeout: 2000
+                });
+                /*p_$timeout(function () {
+
+                }, 10000)*/
             }
             p_$scope.init = function () {
                 /*if (!p_$rootScope.isUserLoggedIn()) {
@@ -9475,6 +9573,7 @@
                         var projectFiles = res;
                         p_$scope.photos = projectFiles.map(function (r) {
                             var obj = { presentationUrl: '' };
+                            obj.id = r.id;
                             obj.presentationUrl = p_masterVendorFileApi.getDefaultPresentationSrc(vendorId,r.id);
                             return obj;
                         });
@@ -9691,6 +9790,7 @@
                     password: "",
                     scope:"Vendor"
                 };
+                p_$scope.is_processing = false;
                 var searchObject = p_$location.search();
                 if (p_utils.isObject(searchObject)) {
                     p_$location.search({});
@@ -9788,7 +9888,9 @@
             }
             p_$scope.signin = function (p_vendorSigninForm) {
                 if (p_vendorSigninForm.validate()) {
+                    p_$scope.is_processing = true;
                     return p_accountApi.connect(p_$scope.user).then(function (p_authResult) {
+                        p_$scope.is_processing = false;
                         if (p_utils.isArray(p_authResult.errorMsgs) && p_authResult.errorMsgs.length > 0) {
                             p_$scope.errorMsgs = p_authResult.errorMsgs;
                             return p_$q.reject();
@@ -9811,6 +9913,8 @@
                                 });
                             });
                         });
+                    }, err => {
+                            p_$scope.is_processing = false;
                     });
                 }
             }
@@ -10104,13 +10208,66 @@
             // Functions
             // --------------------------------------------------------------------------------
 
+            p_$scope.vendorTypeConfig = {
+                create: false,
+                plugins: ['remove_button'],
+                valueField: 'id',
+                labelField: 'type',
+                searchField:['type'],
+                placeholder: 'What you are looking for?',
+                onInitialize: function (selectize) {
+                    // receives the selectize object as an argument
+                },
+                onChange: function (selectize) {
+                    if (selectize == null) {
+                        p_$scope.searchQuery.vendorTypeId = '';
+                    }
+                },
+                maxItems: 1
+            };
+            p_$scope.cityConfig = {
+                create: false,
+                valueField: 'id',
+                plugins:['remove_button'],
+                labelField: 'geoName',
+                searchField: ['geoName'],
+                placeholder: 'Select City',
+                onInitialize: function (selectize) {
+                    // receives the selectize object as an argument
+                },
+                onChange: function (selectize) {
+                    if (selectize == null) {
+                        p_$scope.searchQuery.vendorTypeId = '';
+                    }
+                },
+                maxItems: 1
+            };
             p_$scope.refresh = function () {
-                return p_masterVendorApi.queryVendor(p_$scope.searchQuery).then(function (p_vendorSearchResults) {
-                    if (p_utils.isObject(p_vendorSearchResults))
-                        p_$scope.vendors = p_vendorSearchResults;
+                var asyncTasks = [];
 
-                    return p_$q.resolve();
-                });
+                asyncTasks.push(p_masterVendorTypeApi.getAll().then(function (p_vendorTypes) {
+                    var emptyVendorType = p_models.new(vendor.masterVendorType, {
+                        id: 0,
+                        type: "What you are looking for?"
+                    });
+
+                    //p_$scope.vendorTypes = [emptyVendorType].concat(p_vendorTypes || []);
+                    p_$scope.vendorTypes = p_vendorTypes;
+                }));
+
+                asyncTasks.push(p_masterGeoApi.getOperationalCityList().then(function (p_cities) {
+                    var emptyCity = p_models.new(geo.masterGeo, {
+                        id: 0,
+                        geoName: "Select City"
+                    });
+
+                    p_$scope.geoCities = p_cities;
+                }));
+                asyncTasks.push(p_masterVendorApi.queryVendor(p_$scope.searchQuery).then(function (p_vendorSearchResults) {
+                    if (p_utils.isObject(p_vendorSearchResults))
+                        p_$scope.vendors = p_vendorSearchResults
+                }));
+                return p_$q.all(asyncTasks).then(function () { });
             }
 
             p_$scope.clearSearch = function (p_event) {
@@ -10120,16 +10277,39 @@
                 p_$scope.searchQuery.search = "";
                 p_$scope.refresh();
             }
-
+            p_$scope.clearFilter = function () {
+                p_$scope.vendorTypeIdTV = 0;
+                p_$scope.geoCityIdTV = 0;
+                p_$scope.searchQuery.search = 0;
+                p_$scope.refreshPage();
+            }
+            p_$scope.refreshPage = function () {
+                return p_$state.go("vendor-search", {
+                    vendorTypeId: p_$scope.vendorTypeIdTV||0,
+                    cityGeoId: p_$scope.geoCityIdTV||0,
+                    searchText: p_$scope.searchQuery.search == "" ? 0 : p_$scope.searchQuery.search
+                });
+            }
+            p_$scope.isFilterApplied = function () {
+                console.log(p_utils.isNullOrEmpty(p_$scope.searchQuery.vendorTypeId) == false, p_utils.isNullOrEmpty(p_$scope.searchQuery.geoCityId) == false, p_utils.isNullOrEmpty(p_$scope.searchQuery.search) == false
+                    , p_utils.isNullOrUndefined(p_$scope.searchQuery.vendorTypeId) == false, p_utils.isNullOrUndefined(p_$scope.searchQuery.geoCityId) == false);
+                return (p_utils.isNullOrEmpty(p_$scope.searchQuery.vendorTypeId) == false || p_utils.isNullOrEmpty(p_$scope.searchQuery.geoCityId) == false || p_utils.isNullOrEmpty(p_$scope.searchQuery.search) == false
+                    || (p_utils.isNullOrUndefined(p_$scope.searchQuery.vendorTypeId) == false && p_$scope.searchQuery.vendorTypeId != 0) || p_utils.isNullOrUndefined(p_$scope.searchQuery.geoCityId) == false && p_$scope.searchQuery.geoCityId!=0)
+                    ;
+            }
             p_$scope.init = function () {
                 var tasks = [];
+                p_$scope.vendorTypes = p_models.array([], vendor.masterVendorType);
+                p_$scope.geoCities = p_models.array([], geo.masterGeo);
+                
                 p_$scope.searchQuery = p_models.new(commonVendor.vendorSearchQuery, {
                     vendorTypeId: p_$stateParams.vendorTypeId,
                     geoCityId: p_$stateParams.cityGeoId,
-                    search: "",
+                    search: p_$stateParams.searchText == 0 ? "" : p_$stateParams.searchText,
                     customerId: (p_$rootScope.userProfile ? p_$rootScope.userProfile.customerId : null)
                 });
-
+                p_$scope.vendorTypeIdTV = p_$scope.searchQuery.vendorTypeId;
+                p_$scope.geoCityIdTV = p_$scope.searchQuery.geoCityId;
                 p_$scope.vendors = p_models.new(fincam.paginationResults, {});
 
                 p_$scope.view = "grid";
@@ -10157,7 +10337,16 @@
                     p_$scope.ready = true;
                 });
             }
-
+            p_$scope.initializeVendorTypeSelect = function () {
+                p_$timeout(function () {
+                    $("#vendorType").selectize();
+                }, 2000);
+            }
+            p_$scope.initializeCityIdSelect = function () {
+                p_$timeout(function () {
+                    $("#cityId").selectize();
+                }, 2000);
+            }
             p_$scope.toggleVendorSelection = function (p_vendor) {
                 p_vendor.isShortlisted = !p_vendor.isShortlisted;
 
@@ -11283,6 +11472,7 @@
         'clientConfig',
         "api.masterVendorFilesApi",
         "$sce",
+        "api.masterVendorApi",
         function (
             p_$rootScope,
             p_$scope,
@@ -11298,6 +11488,7 @@
             p_clientConfig,
             p_masterVendorFileApi,
             p_$sce,
+            p_masterVendorApi,
             undefined
         ) {
             ng.fincam.pageController(
@@ -11319,19 +11510,110 @@
             // Namespace
             // --------------------------------------------------------------------------------
             var vendor = p_models.namespace("fincam.master.vendor");
+
+            var currentlyScrolling = false;
+
+            var SCROLL_AREA_HEIGHT = 40;
+
             // --------------------------------------------------------------------------------
             // Functions
             // --------------------------------------------------------------------------------
+            p_$scope.sortableOptions = {
+                placeholder: "app",
+                connectWith: ".apps-container",
+                scroll: true,
+                sort: function (event, ui) {
 
+                    if (p_$scope.currentlyScrolling) {
+                        return;
+                    }
+
+                    var windowHeight = $(window).height();
+                    var mouseYPosition = event.clientY;
+
+                    if (mouseYPosition < SCROLL_AREA_HEIGHT) {
+                        p_$scope.currentlyScrolling = true;
+
+                        $('html, body').animate({
+                            scrollTop: "-=" + windowHeight / 2 + "px" // Scroll up half of window height.
+                        },
+                            400, // 400ms animation.
+                            function () {
+                                p_$scope.currentlyScrolling = false;
+                            });
+
+                    } else if (mouseYPosition > (windowHeight - SCROLL_AREA_HEIGHT)) {
+
+                        p_$scope.currentlyScrolling = true;
+
+                        $('html, body').animate({
+                            scrollTop: "+=" + windowHeight / 2 + "px" // Scroll down half of window height.
+                        },
+                            400, // 400ms animation.
+                            function () {
+                                p_$scope.currentlyScrolling = false;
+                            });
+
+                    }
+                },
+                start: function (e, ui) {
+                    p_$scope.sourceModelClone = ui.item.sortable.sourceModel.slice();
+                    p_$scope.startPos = ui.item.index();
+                    console.log(p_$scope.startPos);
+                },
+                stop: function (e, ui) {
+                    // if the element is removed from the first container
+                    if (
+                        $(e.target).hasClass("uploaded-photos") &&
+                        ui.item.sortable.droptarget &&
+                        e.target != ui.item.sortable.droptarget[0]
+                    ) {
+                        ui.item.sortable.sourceModel.length = 0;
+                        // clone the original model to restore the removed item
+                        Array.prototype.push.apply(
+                            ui.item.sortable.sourceModel,
+                            p_$scope.sourceModelClone
+                        );
+                        //p_$scope.profile_photos = [];
+                        p_$scope.sourceModelClone = null;
+
+                        var selectedFile = p_$scope.photos[p_$scope.startPos];
+                        console.log(selectedFile, p_$scope.photos);
+                        p_masterVendorFileApi.setProfileImage(selectedFile.id).then(res => {
+                            if (res.result == true) {
+                                p_$scope.profile_photos = [{ presentationUrl: selectedFile.presentationUrl }];
+                                $.alert({ title: 'Success', 'content': "Profile Picture Changed Successfully!" });
+                            }
+                            else {
+                                p_$scope.profile_photos = [];
+                                $.alert({ title: 'Error', content: 'Failed To Change a Profile Image' });
+                            }
+                        }, err => {
+                            p_$scope.profile_photos = [];
+                            $.alert({ title: 'Error', content: 'Failed To Change a Profile Image' });
+                        })
+                    }
+                },
+                receive: function (event, ui) {
+
+                }
+            };
+
+            p_$scope.profileImg = 'http://localhost:5000/api/master/vendor/portfolio/get-default-presentation/19/124?t=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIyNCIsImp0aSI6Ijc4MzUyYTMyLWY3NzktNGZkNi04NjAwLThlZDMzYmM5NzgyZSIsIm5hbWUiOiJTdXJpeWEgRmxpbXMiLCJ1c2VybmFtZSI6InN1cml5YXByYWthc2hAbWF6ZXdvcmtzc29sdXRpb25zLmNvbSIsImVtYWlsIjoic3VyaXlhcHJha2FzaEBtYXpld29ya3Nzb2x1dGlvbnMuY29tIiwiSXNWZW5kb3IiOiJUcnVlIiwiVmVuZG9ySWQiOiIxOSIsIlZlbmRvcklkZW50aWZpZXIiOiIxZWNiYTE4My00ODIzLTQxYmItOGIyMC00OGI3NTE0ODVkMHMiLCJhdWQiOlsiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzOTMvIiwiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzOTMvIl0sImV4cCI6MTYyNjUzNjkyMCwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNDgvIn0.hfvsIQFkqJl5HsimptBLFO-oslZQJiUN5z9F6JI60TM';
             p_$scope.refresh = function () {
                 //p_$scope.mockRecords();
                 var tasks = [];
+                p_$scope.profile_photos = [];
+                tasks.push(p_masterVendorApi.getDefaultPresentationSrc(p_$rootScope.userProfile.vendorId).then(function (p_presentationUrl) {
+                    p_$scope.profile_photos.push({ 'presentationUrl': p_presentationUrl + "?ver=" + (Math.floor(Math.random() * 100) + 1) });
+                }));
                 tasks.push(
                     p_masterVendorFileApi.getPhotos(p_$rootScope.userProfile.vendorId).then(function (res) {
-                        var projectFiles = res;
-                        p_$scope.photos = projectFiles.map(function (r) {
-                            var obj = { presentationUrl:''};
-                            obj.presentationUrl = p_masterVendorFileApi.getDefaultPresentationSrc(p_$rootScope.userProfile.vendorId,r.id);
+                        p_$scope.projectFiles = res;
+                        p_$scope.photos = res.map(function (r) {
+                            var obj = { presentationUrl: '', id: 0 };
+                            obj.presentationUrl = p_masterVendorFileApi.getDefaultPresentationSrc(p_$rootScope.userProfile.vendorId, r.id);
+                            obj.id = r.id;
                             return obj;
                         });
                     })
@@ -11347,7 +11629,7 @@
                     })
                 );
                 return p_$q.all(tasks).then(function () {
-                    
+
                 });
                 return p_$q.resolve();
             }
@@ -11359,10 +11641,39 @@
                 p_$scope.mockAlbums();
                 p_$scope.mockVideos();
             }
+            var fileMaxSize = 25;
+            if (p_$rootScope.userProfile.maxProfilePhotoSizeInMB != null) {
+                fileMaxSize = p_$rootScope.userProfile.maxProfilePhotoSizeInMB;
+            }
+            p_$scope.handlePaste = function (index, e) {
+                var videolink = e.originalEvent.clipboardData.getData('text/plain');
+                if (!p_$scope.isURL(videolink)) {
+                    e.preventDefault();
+                    var parser = new DOMParser();
+
+                    var parsedIframe = parser.parseFromString(videolink, "text/html");
+                    let iFrame = parsedIframe.getElementsByTagName("iframe");
+
+                    // Read URL:
+                    var src = iFrame[0].src;
+                    p_$timeout(() => { p_$scope.videoFormsInput[index].fileName = src;}, 100);
+                    
+                    //return src;
+                }
+            }
+            p_$scope.isURL = function(str) {
+                var pattern = new RegExp('^(https?:\\/\\/)?' + // protocol
+                    '((([a-z\\d]([a-z\\d-]*[a-z\\d])*)\\.?)+[a-z]{2,}|' + // domain name
+                    '((\\d{1,3}\\.){3}\\d{1,3}))' + // OR ip (v4) address
+                    '(\\:\\d+)?(\\/[-a-z\\d%_.~+]*)*' + // port and path
+                    '(\\?[;&a-z\\d%_.~+=-]*)?' + // query string
+                    '(\\#[-a-z\\d_]*)?$', 'i'); // fragment locator
+                return pattern.test(str);
+            }
             p_$scope.dzOptions = {
                 url: p_clientConfig.fincamApiUrl +"/api/master/vendor/portfolio/photos",
                 paramName: 'photo',
-                maxFilesize: 5,
+                maxFilesize: fileMaxSize,
                 acceptedFiles: 'image/jpeg, images/jpg, image/png',
                 addRemoveLinks: true,
                 autoProcessQueue: false,
@@ -11371,15 +11682,28 @@
                 headers: { 'Authorization': "Bearer " + p_$rootScope.token},
                 init: function () {
                     var myDropzone = this;
+                    p_$scope.myDropzone=myDropzone;
                     //now we will submit the form when the button is clicked
                     $("#sbmtbtn").on('click', function (e) {
                         e.preventDefault();
-                        p_masterVendorFileApi.clearOldFiles().then(function (res) {
-                            if (res.result == true) {
-                                myDropzone.processQueue();
-                            }
-                        })
+                        myDropzone.processQueue();
                     });
+                    myDropzone.on("removedfile", function(file) {
+                        if(!file.serverId) { return; }
+                        p_masterVendorFileApi.clearOldFiles(file.serverId).then(function (res) {
+                            if (res.result != true) {
+                                $.alert({
+                                    title: "Failed!",
+                                    content: "Photo deletion failed."
+                                });
+                            }
+                        },err=>{
+                            $.alert({
+                                title: "Failed!",
+                                content: "Photo deletion failed."
+                            });
+                        })
+                      });
                     myDropzone.on("complete", function (file) {
                         if (this.getUploadingFiles().length === 0 && this.getQueuedFiles().length === 0) {
                             p_$scope.refresh().then(function () {
@@ -11391,10 +11715,19 @@
                             });
                         }
                     });
+                    p_masterVendorFileApi.getPhotos(p_$rootScope.userProfile.vendorId).then(function (res) {
+                        res.forEach((photo,index)=>{
+                            var mockFile={name:photo.fileName,size:photo.contentLength,serverId:photo.id};
+                            var imageLink=p_masterVendorFileApi.getDefaultPresentationSrc(p_$rootScope.userProfile.vendorId,photo.id);
+                            myDropzone.options.addedfile.call(myDropzone,mockFile);
+                            myDropzone.options.thumbnail.call(myDropzone,mockFile, imageLink);
+                        });
+                    });
                 }
             };
             p_$scope.dzCallbacks = {
                 'addedfile': function (file) {
+
                 },
                 'success': function (file, xhr) {
                     
@@ -11451,6 +11784,13 @@
             p_$scope.mockVideos = function () {
 
             }
+            p_$scope.loadExistingPhotos=function(){
+                p_$scope.projectFiles.forEach((photo,index)=>{
+                    var mockFile={name:photo.fileName,size:photo.contentLength};
+                    p_$scope.myDropzone.options.addedfile(mockFile);
+                    p_$scope.myDropzone.options.thumbnail(mockFile, p_$scope.photos[index].presentationUrl);
+                });
+            }
             p_$scope.submitVideos = function () {
                 var videos = p_$scope.videoFormsInput.filter(function (r) {
                     if (r.fileName != "")
@@ -11471,11 +11811,18 @@
             }
             p_$scope.init = function () {
                 var tasks = [];
+                p_$scope.projectFiles=[];
                 p_$scope.videoFormsInput = [{ fileName: "" }, { fileName: "" }, { fileName: "" }];
                 $('.input-images').imageUploader();
 
                 return p_$q.all(tasks).then(function () {
                     return p_$scope.refresh().then(function () {
+                        if(p_$scope.videos.length>0)
+                        {
+                            p_$scope.videos.forEach((video,i)=>{
+                                p_$scope.videoFormsInput[i].fileName=video.presentationUrl
+                            });
+                        }
                     });
                 }).finally(function () {
                     p_$scope.ready = true;
@@ -11610,7 +11957,11 @@
                         id: 0,
                         geoName: "Select State"
                     });
-
+                    p_states.sort(function(a, b){
+                        if(a.geoName < b.geoName) { return -1; }
+                        if(a.geoName > b.geoName) { return 1; }
+                        return 0;
+                    });
                     p_$scope.geoStates = [emptyState].concat(p_states || []);
                 }));
                 asyncTasks.push(p_masterLovApi.getByType("vendor_experience").then(function (p_vendorExperiences) {
@@ -11800,6 +12151,10 @@
                             });
                         }
                     });
+                }
+                else{
+                    var validator = $("#updateProfileForm").data("validator");
+                    validator.focusInvalid();
                 }
             }
 
@@ -13909,6 +14264,13 @@
             p_$scope.goHome = function () {
                 p_$window.location.href = "/vendor-home";
             }
+            p_$scope.searchVendors = function () {
+                return p_$state.go("vendor-search", {
+                    vendorTypeId: p_$scope.searchQuery.vendorTypeId,
+                    cityGeoId: p_$scope.searchQuery.cityGeoId,
+                    searchText:0
+                });
+            }
         }
     ]);
 
@@ -14192,282 +14554,6 @@
     // --------------------------------------------------------------------------------
     // Variables
     // --------------------------------------------------------------------------------
-    var directiveName = "ficFreelancerGridExplorer";
-    var directiveControllerName = "directives." + directiveName + "Controller";
-    var templateUrl = "/templates/directives/freelancer/explorer/freelancer-grid-explorer.html";
-
-    // --------------------------------------------------------------------------------
-    // Controller
-    // --------------------------------------------------------------------------------
-    module.controller(directiveControllerName, [
-        "$rootScope",
-        "$scope",
-        "$stateParams",
-        "$state",
-        "$parse",
-        "$q",
-        "$window",
-        "$timeout",
-        "$interval",
-        "services.utils",
-        function (
-            p_$rootScope,
-            p_$scope,
-            p_$stateParams,
-            p_$state,
-            p_$parse,
-            p_$q,
-            p_$window,
-            p_$timeout,
-            p_$interval,
-            p_utils,
-            undefined
-        ) {
-            ng.fincam.directive(
-                p_$rootScope,
-                p_$scope,
-                p_$stateParams,
-                p_$state,
-                p_$parse,
-                p_$q,
-                p_$window,
-                p_$timeout,
-                p_$interval,
-                directiveControllerName
-            );
-
-            // --------------------------------------------------------------------------------
-            // Functions
-            // --------------------------------------------------------------------------------
-
-            p_$scope.isDisabled = function () {
-                return false;
-            }
-
-            p_$scope.init = function () {
-                return p_$q.all([]).then(function () {
-                }).finally(function () {
-                    p_$scope.ready = true;
-                    p_$scope.loading = false;
-                });
-            }
-
-            p_$scope.viewFreeLancer = function (p_vendor) {
-                if (p_$scope.isDisabled() || p_utils.isNullOrUndefined(p_$scope.viewFreeLancerHandler) || !p_utils.isString(p_$scope.viewFreeLancerHandler)) {
-                    return false;
-                }
-                return p_$scope.trigger(p_$scope.viewFreeLancerHandler, { $freelancer: p_vendor });
-            }
-
-            p_$scope.selectFreeLancer = function (p_vendor) {
-                if (p_$scope.isDisabled() || p_utils.isNullOrUndefined(p_$scope.selectFreeLancerHandler) || !p_utils.isString(p_$scope.selectFreeLancerHandler)) {
-                    return false;
-                }
-
-                return p_$scope.trigger(p_$scope.selectFreeLancerHandler, { $freelancer: p_vendor });
-            }
-        }
-    ]);
-
-    // --------------------------------------------------------------------------------
-    // Directive
-    // --------------------------------------------------------------------------------
-    module.directive(directiveName, [
-        "$rootScope",
-        "$stateParams",
-        "$state",
-        "$parse",
-        "$q",
-        "$timeout",
-        "$interval",
-        function (
-            p_$rootScope,
-            p_$stateParams,
-            p_$state,
-            p_$parse,
-            p_$q,
-            p_$timeout,
-            p_$interval,
-            undefined
-        ) {
-            return {
-                restrict: "E",
-                require: "^ngModel",
-                template: ng.fincam.template(templateUrl),
-                controller: directiveControllerName,
-                scope: {
-                    value: "=ngModel",
-                    selectFreeLancerHandler: "@selectFreelancer",
-                    viewFreeLancerHandler: "@viewFreelancer",
-                },
-                link: function (p_$scope, p_$element, p_$attrs, p_$ngModel) {
-                    // --------------------------------------------------------------------------------
-                    // Events
-                    // --------------------------------------------------------------------------------
-
-                    // --------------------------------------------------------------------------------
-                    // Render
-                    // --------------------------------------------------------------------------------
-                    p_$scope.init();
-                }
-            };
-        }
-    ]);
-})(jQuery, angular, document.children[0].hasAttribute("debug"));
-(function ($, ng, debugMode, undefined) {
-    "use strict";
-
-    // --------------------------------------------------------------------------------
-    // Dependencies
-    // --------------------------------------------------------------------------------
-    var module = ng.module("app");
-    var fincam = ng.fincam;
-
-    // --------------------------------------------------------------------------------
-    // Variables
-    // --------------------------------------------------------------------------------
-    var directiveName = "ficFreelancerListExplorer";
-    var directiveControllerName = "directives." + directiveName + "Controller";
-    var templateUrl = "/templates/directives/freelancer/explorer/freelancer-list-explorer.html";
-
-    // --------------------------------------------------------------------------------
-    // Controller
-    // --------------------------------------------------------------------------------
-    module.controller(directiveControllerName, [
-        "$rootScope",
-        "$scope",
-        "$stateParams",
-        "$state",
-        "$parse",
-        "$q",
-        "$window",
-        "$timeout",
-        "$interval",
-        "services.utils",
-        function (
-            p_$rootScope,
-            p_$scope,
-            p_$stateParams,
-            p_$state,
-            p_$parse,
-            p_$q,
-            p_$window,
-            p_$timeout,
-            p_$interval,
-            p_utils,
-            undefined
-        ) {
-            ng.fincam.directive(
-                p_$rootScope,
-                p_$scope,
-                p_$stateParams,
-                p_$state,
-                p_$parse,
-                p_$q,
-                p_$window,
-                p_$timeout,
-                p_$interval,
-                directiveControllerName
-            );
-
-            // --------------------------------------------------------------------------------
-            // Functions
-            // --------------------------------------------------------------------------------
-
-            p_$scope.isDisabled = function () {
-                return false;
-            }
-
-            p_$scope.init = function () {
-                return p_$q.all([]).then(function () {
-                }).finally(function () {
-                    p_$scope.ready = true;
-                    p_$scope.loading = false;
-                });
-            }
-
-            p_$scope.viewFreeLancer = function (p_vendor) {
-                if (p_$scope.isDisabled() || p_utils.isNullOrUndefined(p_$scope.viewFreeLancerHandler) || !p_utils.isString(p_$scope.viewFreeLancerHandler)) {
-                    return false;
-                }
-                return p_$scope.trigger(p_$scope.viewFreeLancerHandler, { $freelancer: p_vendor });
-            }
-
-            p_$scope.selectFreeLancer = function (p_vendor) {
-                if (p_$scope.isDisabled() || p_utils.isNullOrUndefined(p_$scope.selectFreeLancerHandler) || !p_utils.isString(p_$scope.selectFreeLancerHandler)) {
-                    return false;
-                }
-
-                return p_$scope.trigger(p_$scope.selectFreeLancerHandler, { $freelancer: p_vendor });
-            }
-            p_$scope.assignFreeLancer = function (p_freelancer) {
-                if (p_$scope.isDisabled() || p_utils.isNullOrUndefined(p_$scope.assignFreeLancerHandler) || !p_utils.isString(p_$scope.assignFreeLancerHandler)) {
-                    return false;
-                }
-
-                return p_$scope.trigger(p_$scope.assignFreeLancerHandler, { $freelancer: p_freelancer });
-            }
-        }
-    ]);
-
-    // --------------------------------------------------------------------------------
-    // Directive
-    // --------------------------------------------------------------------------------
-    module.directive(directiveName, [
-        "$rootScope",
-        "$stateParams",
-        "$state",
-        "$parse",
-        "$q",
-        "$timeout",
-        "$interval",
-        function (
-            p_$rootScope,
-            p_$stateParams,
-            p_$state,
-            p_$parse,
-            p_$q,
-            p_$timeout,
-            p_$interval,
-            undefined
-        ) {
-            return {
-                restrict: "E",
-                require: "^ngModel",
-                template: ng.fincam.template(templateUrl),
-                controller: directiveControllerName,
-                scope: {
-                    value: "=ngModel",
-                    selectFreeLancerHandler: "@selectFreelancer",
-                    viewFreeLancerHandler: "@viewFreelancer",
-                    assignFreeLancerHandler: "@assignFreelancer"
-                },
-                link: function (p_$scope, p_$element, p_$attrs, p_$ngModel) {
-                    // --------------------------------------------------------------------------------
-                    // Events
-                    // --------------------------------------------------------------------------------
-
-                    // --------------------------------------------------------------------------------
-                    // Render
-                    // --------------------------------------------------------------------------------
-                    p_$scope.init();
-                }
-            };
-        }
-    ]);
-})(jQuery, angular, document.children[0].hasAttribute("debug"));
-(function ($, ng, debugMode, undefined) {
-    "use strict";
-
-    // --------------------------------------------------------------------------------
-    // Dependencies
-    // --------------------------------------------------------------------------------
-    var module = ng.module("app");
-    var fincam = ng.fincam;
-
-    // --------------------------------------------------------------------------------
-    // Variables
-    // --------------------------------------------------------------------------------
     var directiveName = "ficFreelancerGridItemPresentation";
     var directiveControllerName = "directives." + directiveName + "Controller";
     var templateUrl = "/templates/directives/freelancer/presentation/freelancer-grid-item-presentation.html";
@@ -14697,6 +14783,282 @@
                 }
 
                 return p_$scope.trigger(p_$scope.viewFreeLancerHandler, { $freelancer: p_$scope.value });
+            }
+        }
+    ]);
+
+    // --------------------------------------------------------------------------------
+    // Directive
+    // --------------------------------------------------------------------------------
+    module.directive(directiveName, [
+        "$rootScope",
+        "$stateParams",
+        "$state",
+        "$parse",
+        "$q",
+        "$timeout",
+        "$interval",
+        function (
+            p_$rootScope,
+            p_$stateParams,
+            p_$state,
+            p_$parse,
+            p_$q,
+            p_$timeout,
+            p_$interval,
+            undefined
+        ) {
+            return {
+                restrict: "E",
+                require: "^ngModel",
+                template: ng.fincam.template(templateUrl),
+                controller: directiveControllerName,
+                scope: {
+                    value: "=ngModel",
+                    selectFreeLancerHandler: "@selectFreelancer",
+                    viewFreeLancerHandler: "@viewFreelancer",
+                    assignFreeLancerHandler: "@assignFreelancer"
+                },
+                link: function (p_$scope, p_$element, p_$attrs, p_$ngModel) {
+                    // --------------------------------------------------------------------------------
+                    // Events
+                    // --------------------------------------------------------------------------------
+
+                    // --------------------------------------------------------------------------------
+                    // Render
+                    // --------------------------------------------------------------------------------
+                    p_$scope.init();
+                }
+            };
+        }
+    ]);
+})(jQuery, angular, document.children[0].hasAttribute("debug"));
+(function ($, ng, debugMode, undefined) {
+    "use strict";
+
+    // --------------------------------------------------------------------------------
+    // Dependencies
+    // --------------------------------------------------------------------------------
+    var module = ng.module("app");
+    var fincam = ng.fincam;
+
+    // --------------------------------------------------------------------------------
+    // Variables
+    // --------------------------------------------------------------------------------
+    var directiveName = "ficFreelancerGridExplorer";
+    var directiveControllerName = "directives." + directiveName + "Controller";
+    var templateUrl = "/templates/directives/freelancer/explorer/freelancer-grid-explorer.html";
+
+    // --------------------------------------------------------------------------------
+    // Controller
+    // --------------------------------------------------------------------------------
+    module.controller(directiveControllerName, [
+        "$rootScope",
+        "$scope",
+        "$stateParams",
+        "$state",
+        "$parse",
+        "$q",
+        "$window",
+        "$timeout",
+        "$interval",
+        "services.utils",
+        function (
+            p_$rootScope,
+            p_$scope,
+            p_$stateParams,
+            p_$state,
+            p_$parse,
+            p_$q,
+            p_$window,
+            p_$timeout,
+            p_$interval,
+            p_utils,
+            undefined
+        ) {
+            ng.fincam.directive(
+                p_$rootScope,
+                p_$scope,
+                p_$stateParams,
+                p_$state,
+                p_$parse,
+                p_$q,
+                p_$window,
+                p_$timeout,
+                p_$interval,
+                directiveControllerName
+            );
+
+            // --------------------------------------------------------------------------------
+            // Functions
+            // --------------------------------------------------------------------------------
+
+            p_$scope.isDisabled = function () {
+                return false;
+            }
+
+            p_$scope.init = function () {
+                return p_$q.all([]).then(function () {
+                }).finally(function () {
+                    p_$scope.ready = true;
+                    p_$scope.loading = false;
+                });
+            }
+
+            p_$scope.viewFreeLancer = function (p_vendor) {
+                if (p_$scope.isDisabled() || p_utils.isNullOrUndefined(p_$scope.viewFreeLancerHandler) || !p_utils.isString(p_$scope.viewFreeLancerHandler)) {
+                    return false;
+                }
+                return p_$scope.trigger(p_$scope.viewFreeLancerHandler, { $freelancer: p_vendor });
+            }
+
+            p_$scope.selectFreeLancer = function (p_vendor) {
+                if (p_$scope.isDisabled() || p_utils.isNullOrUndefined(p_$scope.selectFreeLancerHandler) || !p_utils.isString(p_$scope.selectFreeLancerHandler)) {
+                    return false;
+                }
+
+                return p_$scope.trigger(p_$scope.selectFreeLancerHandler, { $freelancer: p_vendor });
+            }
+        }
+    ]);
+
+    // --------------------------------------------------------------------------------
+    // Directive
+    // --------------------------------------------------------------------------------
+    module.directive(directiveName, [
+        "$rootScope",
+        "$stateParams",
+        "$state",
+        "$parse",
+        "$q",
+        "$timeout",
+        "$interval",
+        function (
+            p_$rootScope,
+            p_$stateParams,
+            p_$state,
+            p_$parse,
+            p_$q,
+            p_$timeout,
+            p_$interval,
+            undefined
+        ) {
+            return {
+                restrict: "E",
+                require: "^ngModel",
+                template: ng.fincam.template(templateUrl),
+                controller: directiveControllerName,
+                scope: {
+                    value: "=ngModel",
+                    selectFreeLancerHandler: "@selectFreelancer",
+                    viewFreeLancerHandler: "@viewFreelancer",
+                },
+                link: function (p_$scope, p_$element, p_$attrs, p_$ngModel) {
+                    // --------------------------------------------------------------------------------
+                    // Events
+                    // --------------------------------------------------------------------------------
+
+                    // --------------------------------------------------------------------------------
+                    // Render
+                    // --------------------------------------------------------------------------------
+                    p_$scope.init();
+                }
+            };
+        }
+    ]);
+})(jQuery, angular, document.children[0].hasAttribute("debug"));
+(function ($, ng, debugMode, undefined) {
+    "use strict";
+
+    // --------------------------------------------------------------------------------
+    // Dependencies
+    // --------------------------------------------------------------------------------
+    var module = ng.module("app");
+    var fincam = ng.fincam;
+
+    // --------------------------------------------------------------------------------
+    // Variables
+    // --------------------------------------------------------------------------------
+    var directiveName = "ficFreelancerListExplorer";
+    var directiveControllerName = "directives." + directiveName + "Controller";
+    var templateUrl = "/templates/directives/freelancer/explorer/freelancer-list-explorer.html";
+
+    // --------------------------------------------------------------------------------
+    // Controller
+    // --------------------------------------------------------------------------------
+    module.controller(directiveControllerName, [
+        "$rootScope",
+        "$scope",
+        "$stateParams",
+        "$state",
+        "$parse",
+        "$q",
+        "$window",
+        "$timeout",
+        "$interval",
+        "services.utils",
+        function (
+            p_$rootScope,
+            p_$scope,
+            p_$stateParams,
+            p_$state,
+            p_$parse,
+            p_$q,
+            p_$window,
+            p_$timeout,
+            p_$interval,
+            p_utils,
+            undefined
+        ) {
+            ng.fincam.directive(
+                p_$rootScope,
+                p_$scope,
+                p_$stateParams,
+                p_$state,
+                p_$parse,
+                p_$q,
+                p_$window,
+                p_$timeout,
+                p_$interval,
+                directiveControllerName
+            );
+
+            // --------------------------------------------------------------------------------
+            // Functions
+            // --------------------------------------------------------------------------------
+
+            p_$scope.isDisabled = function () {
+                return false;
+            }
+
+            p_$scope.init = function () {
+                return p_$q.all([]).then(function () {
+                }).finally(function () {
+                    p_$scope.ready = true;
+                    p_$scope.loading = false;
+                });
+            }
+
+            p_$scope.viewFreeLancer = function (p_vendor) {
+                if (p_$scope.isDisabled() || p_utils.isNullOrUndefined(p_$scope.viewFreeLancerHandler) || !p_utils.isString(p_$scope.viewFreeLancerHandler)) {
+                    return false;
+                }
+                return p_$scope.trigger(p_$scope.viewFreeLancerHandler, { $freelancer: p_vendor });
+            }
+
+            p_$scope.selectFreeLancer = function (p_vendor) {
+                if (p_$scope.isDisabled() || p_utils.isNullOrUndefined(p_$scope.selectFreeLancerHandler) || !p_utils.isString(p_$scope.selectFreeLancerHandler)) {
+                    return false;
+                }
+
+                return p_$scope.trigger(p_$scope.selectFreeLancerHandler, { $freelancer: p_vendor });
+            }
+            p_$scope.assignFreeLancer = function (p_freelancer) {
+                if (p_$scope.isDisabled() || p_utils.isNullOrUndefined(p_$scope.assignFreeLancerHandler) || !p_utils.isString(p_$scope.assignFreeLancerHandler)) {
+                    return false;
+                }
+
+                return p_$scope.trigger(p_$scope.assignFreeLancerHandler, { $freelancer: p_freelancer });
             }
         }
     ]);
@@ -15431,139 +15793,6 @@
     // --------------------------------------------------------------------------------
     // Variables
     // --------------------------------------------------------------------------------
-    var directiveName = "ficCustomerProjectGridItemPresentation";
-    var directiveControllerName = "directives." + directiveName + "Controller";
-    var templateUrl = "/templates/directives/customer/project/presentation/customer-project-grid-item-presentation.html";
-
-    // --------------------------------------------------------------------------------
-    // Controller
-    // --------------------------------------------------------------------------------
-    module.controller(directiveControllerName, [
-        "$rootScope",
-        "$scope",
-        "$stateParams",
-        "$state",
-        "$parse",
-        "$q",
-        "$window",
-        "$timeout",
-        "$interval",
-        "api.projectApi",
-        function (
-            p_$rootScope,
-            p_$scope,
-            p_$stateParams,
-            p_$state,
-            p_$parse,
-            p_$q,
-            p_$window,
-            p_$timeout,
-            p_$interval,
-            p_projectApi,
-            undefined
-        ) {
-            ng.fincam.directive(
-                p_$rootScope,
-                p_$scope,
-                p_$stateParams,
-                p_$state,
-                p_$parse,
-                p_$q,
-                p_$window,
-                p_$timeout,
-                p_$interval,
-                directiveControllerName
-            );
-
-            // --------------------------------------------------------------------------------
-            // Functions
-            // --------------------------------------------------------------------------------
-
-            p_$scope.isDisabled = function () {
-                return false;
-            }
-
-            p_$scope.init = function () {
-                if (!p_$scope.value)
-                    return p_$q.reject();
-
-                var tasks = [];
-
-                //p_$scope.defaultPresentationUrl = "https://localhost:44348/api/transaction/project/get-default-presentation/1?t=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwianRpIjoiZmZlYzNmZTQtMWYyMy00NGQ1LWEzNTktMWYwOTQ2MWJmNDE2IiwibmFtZSI6IkZyYW1lIG4gc21pbGUiLCJ1c2VybmFtZSI6InNpdmEuZW52aXNpb25AZ21haWwuY29tIiwiZW1haWwiOiJzaXZhLmVudmlzaW9uQGdtYWlsLmNvbSIsIklzVmVuZG9yIjoiVHJ1ZSIsIlZlbmRvcklkIjoiMSIsIlZlbmRvcklkZW50aWZpZXIiOiJkMjUwNDM2NC01NTMyLTQ2MTItYjk4MS00NDk2NDkwODdhYmEiLCJhdWQiOlsiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzOTMvIiwiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzOTMvIl0sImV4cCI6MTYxMjEyMzc4NCwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNDgvIn0.0SndEjH6hBBoedLeTh_PtHJcIwaVgWrQsKe7GiXmDPs";
-
-                tasks.push(p_projectApi.getDefaultPresentationSrc(p_$scope.value.id).then(function (p_presentationUrl) {
-                    p_$scope.defaultPresentationUrl = p_presentationUrl;
-                }));
-
-                return p_$q.all(tasks).then(function () {
-                }).finally(function () {
-                    p_$scope.ready = true;
-                    p_$scope.loading = false;
-                });
-            }
-
-            p_$scope.isShareEnabled = function () {
-                return p_$scope.options && p_$scope.options.shareable;
-            }
-        }
-    ]);
-
-    // --------------------------------------------------------------------------------
-    // Directive
-    // --------------------------------------------------------------------------------
-    module.directive(directiveName, [
-        "$rootScope",
-        "$stateParams",
-        "$state",
-        "$parse",
-        "$q",
-        "$timeout",
-        "$interval",
-        function (
-            p_$rootScope,
-            p_$stateParams,
-            p_$state,
-            p_$parse,
-            p_$q,
-            p_$timeout,
-            p_$interval,
-            undefined
-        ) {
-            return {
-                restrict: "E",
-                require: "^ngModel",
-                template: ng.fincam.template(templateUrl),
-                controller: directiveControllerName,
-                scope: {
-                    value: "=ngModel",
-                    options:"="
-                },
-                link: function (p_$scope, p_$element, p_$attrs, p_$ngModel) {
-                    // --------------------------------------------------------------------------------
-                    // Events
-                    // --------------------------------------------------------------------------------
-
-                    // --------------------------------------------------------------------------------
-                    // Render
-                    // --------------------------------------------------------------------------------
-                    p_$scope.init();
-                }
-            };
-        }
-    ]);
-})(jQuery, angular, document.children[0].hasAttribute("debug"));
-(function ($, ng, debugMode, undefined) {
-    "use strict";
-
-    // --------------------------------------------------------------------------------
-    // Dependencies
-    // --------------------------------------------------------------------------------
-    var module = ng.module("app");
-    var fincam = ng.fincam;
-
-    // --------------------------------------------------------------------------------
-    // Variables
-    // --------------------------------------------------------------------------------
     var directiveName = "ficCustomerProjectFileExplorer";
     var directiveControllerName = "directives." + directiveName + "Controller";
     var templateUrl = "/templates/directives/customer/project/file/customer-project-file-explorer.html";
@@ -15644,6 +15873,139 @@
 
             p_$scope.getFilePresentation = function (p_file) {
                 return p_projectFilesApi.getDefaultPresentationSrc(p_file.id,"");
+            }
+        }
+    ]);
+
+    // --------------------------------------------------------------------------------
+    // Directive
+    // --------------------------------------------------------------------------------
+    module.directive(directiveName, [
+        "$rootScope",
+        "$stateParams",
+        "$state",
+        "$parse",
+        "$q",
+        "$timeout",
+        "$interval",
+        function (
+            p_$rootScope,
+            p_$stateParams,
+            p_$state,
+            p_$parse,
+            p_$q,
+            p_$timeout,
+            p_$interval,
+            undefined
+        ) {
+            return {
+                restrict: "E",
+                require: "^ngModel",
+                template: ng.fincam.template(templateUrl),
+                controller: directiveControllerName,
+                scope: {
+                    value: "=ngModel",
+                    options:"="
+                },
+                link: function (p_$scope, p_$element, p_$attrs, p_$ngModel) {
+                    // --------------------------------------------------------------------------------
+                    // Events
+                    // --------------------------------------------------------------------------------
+
+                    // --------------------------------------------------------------------------------
+                    // Render
+                    // --------------------------------------------------------------------------------
+                    p_$scope.init();
+                }
+            };
+        }
+    ]);
+})(jQuery, angular, document.children[0].hasAttribute("debug"));
+(function ($, ng, debugMode, undefined) {
+    "use strict";
+
+    // --------------------------------------------------------------------------------
+    // Dependencies
+    // --------------------------------------------------------------------------------
+    var module = ng.module("app");
+    var fincam = ng.fincam;
+
+    // --------------------------------------------------------------------------------
+    // Variables
+    // --------------------------------------------------------------------------------
+    var directiveName = "ficCustomerProjectGridItemPresentation";
+    var directiveControllerName = "directives." + directiveName + "Controller";
+    var templateUrl = "/templates/directives/customer/project/presentation/customer-project-grid-item-presentation.html";
+
+    // --------------------------------------------------------------------------------
+    // Controller
+    // --------------------------------------------------------------------------------
+    module.controller(directiveControllerName, [
+        "$rootScope",
+        "$scope",
+        "$stateParams",
+        "$state",
+        "$parse",
+        "$q",
+        "$window",
+        "$timeout",
+        "$interval",
+        "api.projectApi",
+        function (
+            p_$rootScope,
+            p_$scope,
+            p_$stateParams,
+            p_$state,
+            p_$parse,
+            p_$q,
+            p_$window,
+            p_$timeout,
+            p_$interval,
+            p_projectApi,
+            undefined
+        ) {
+            ng.fincam.directive(
+                p_$rootScope,
+                p_$scope,
+                p_$stateParams,
+                p_$state,
+                p_$parse,
+                p_$q,
+                p_$window,
+                p_$timeout,
+                p_$interval,
+                directiveControllerName
+            );
+
+            // --------------------------------------------------------------------------------
+            // Functions
+            // --------------------------------------------------------------------------------
+
+            p_$scope.isDisabled = function () {
+                return false;
+            }
+
+            p_$scope.init = function () {
+                if (!p_$scope.value)
+                    return p_$q.reject();
+
+                var tasks = [];
+
+                //p_$scope.defaultPresentationUrl = "https://localhost:44348/api/transaction/project/get-default-presentation/1?t=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxIiwianRpIjoiZmZlYzNmZTQtMWYyMy00NGQ1LWEzNTktMWYwOTQ2MWJmNDE2IiwibmFtZSI6IkZyYW1lIG4gc21pbGUiLCJ1c2VybmFtZSI6InNpdmEuZW52aXNpb25AZ21haWwuY29tIiwiZW1haWwiOiJzaXZhLmVudmlzaW9uQGdtYWlsLmNvbSIsIklzVmVuZG9yIjoiVHJ1ZSIsIlZlbmRvcklkIjoiMSIsIlZlbmRvcklkZW50aWZpZXIiOiJkMjUwNDM2NC01NTMyLTQ2MTItYjk4MS00NDk2NDkwODdhYmEiLCJhdWQiOlsiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzOTMvIiwiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzOTMvIl0sImV4cCI6MTYxMjEyMzc4NCwiaXNzIjoiaHR0cHM6Ly9sb2NhbGhvc3Q6NDQzNDgvIn0.0SndEjH6hBBoedLeTh_PtHJcIwaVgWrQsKe7GiXmDPs";
+
+                tasks.push(p_projectApi.getDefaultPresentationSrc(p_$scope.value.id).then(function (p_presentationUrl) {
+                    p_$scope.defaultPresentationUrl = p_presentationUrl;
+                }));
+
+                return p_$q.all(tasks).then(function () {
+                }).finally(function () {
+                    p_$scope.ready = true;
+                    p_$scope.loading = false;
+                });
+            }
+
+            p_$scope.isShareEnabled = function () {
+                return p_$scope.options && p_$scope.options.shareable;
             }
         }
     ]);
@@ -16172,5 +16534,5 @@
 })(jQuery, angular, document.children[0].hasAttribute("debug"));
 angular.module("app")
 .constant("clientConfig", {
-  "fincamApiUrl": "http://13.127.198.83:8080"
+  "fincamApiUrl": "https://apiv1.frameincam.com"
 });

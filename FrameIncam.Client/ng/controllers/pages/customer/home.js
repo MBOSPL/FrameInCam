@@ -76,6 +76,40 @@
             // --------------------------------------------------------------------------------
             // Functions
             // --------------------------------------------------------------------------------
+            p_$scope.vendorTypeConfig = {
+                create: false,
+                plugins: ['remove_button'],
+                valueField: 'id',
+                labelField: 'type',
+                searchField: ['type'],
+                placeholder: 'What you are looking for?',
+                onInitialize: function (selectize) {
+                    // receives the selectize object as an argument
+                },
+                onChange: function (selectize) {
+                    if (selectize == null) {
+                        p_$scope.searchQuery.vendorTypeId = '';
+                    }
+                },
+                maxItems: 1
+            };
+            p_$scope.cityConfig = {
+                create: false,
+                valueField: 'id',
+                plugins: ['remove_button'],
+                labelField: 'geoName',
+                searchField: ['geoName'],
+                placeholder: 'Select City',
+                onInitialize: function (selectize) {
+                    // receives the selectize object as an argument
+                },
+                onChange: function (selectize) {
+                    if (selectize == null) {
+                        p_$scope.searchQuery.vendorTypeId = '';
+                    }
+                },
+                maxItems: 1
+            };
 
             p_$scope.refresh = function () {
                 var asyncTasks = [];
@@ -86,7 +120,8 @@
                         type: "What you are looking for?"
                     });
 
-                    p_$scope.vendorTypes = [emptyVendorType].concat(p_vendorTypes || []);
+                    //p_$scope.vendorTypes = [emptyVendorType].concat(p_vendorTypes || []);
+                    p_$scope.vendorTypes = p_vendorTypes || [];
                 }));
 
                 asyncTasks.push(p_masterGeoApi.getOperationalCityList().then(function (p_cities) {
@@ -95,7 +130,8 @@
                         geoName: "Select City"
                     });
 
-                    p_$scope.geoCities = [emptyCity].concat(p_cities || []);
+                    //p_$scope.geoCities = [emptyCity].concat(p_cities || []);
+                    p_$scope.geoCities = p_cities || [];
                 }));
                 asyncTasks.push(p_projectFilesApi.getLatestProjectFiles().then(function (p_files) {
                     p_$scope.latestProjectFiles = p_files;
@@ -108,6 +144,7 @@
             p_$scope.init = function () {
                 var tasks = [];
                 tasks.push(p_$scope.initPage());
+                //$.fn.select2.defaults.set("height", "60px");
                 p_$scope.searchQuery = p_models.new(commonVendor.vendorSearchQuery, {
                     vendorTypeId: 0,
                     geoCityId: 0,
@@ -130,17 +167,15 @@
                 $('.customer-home #listing_img_slider .owl-carousel').owlCarousel({
                     loop: true,
                     margin: 0,
-                    nav: true,
                     dots: false,
                     autoplay: true,
-                    autoplayTimeout: 5000,
+                    autoplayTimeout: 3000,
                     responsive: {
                         0: { items: 1 },
                         650: { items: 2 },
                         1300: { items: 3 },
                         1950: { items: 4 },
-                        2600: { items: 5 },
-                        3250: { items: 6 }
+                        2600: { items: 5 }
                     }
                 })
 
@@ -155,7 +190,8 @@
             p_$scope.searchVendors = function () {
                 return p_$state.go("vendor-search", {
                     vendorTypeId: p_$scope.searchQuery.vendorTypeId,
-                    cityGeoId: p_$scope.searchQuery.cityGeoId
+                    cityGeoId: p_$scope.searchQuery.cityGeoId,
+                    searchText:0
                 });
             }
         }

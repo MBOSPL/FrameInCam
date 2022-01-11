@@ -14,13 +14,15 @@
     <link rel="stylesheet" href="css/ng.css" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
 
-    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.min.js"></script><script src="assets/js/jquery-ui.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
 
     <script src="dist/lib.js"></script>
     <script src="dist/ng.js"></script>
-
+    
+    <script src="lib/selectize/dist/js/standalone/selectize.min.js"></script>
+    <script src="assets/js/angular-selectize.js"></script>
 </head>
 <body class="vendor-signup" ng-controller="vendorSignupController" ng-cloak ng-init="init()">
     <section class="parallex-bg">
@@ -31,7 +33,7 @@
                         <div class="logo">
                             <img src="assets/images/FrameInCam_logo.png" width="70" height="40" alt="Frame In Cam" />
                         </div>
-                        <h3>Sign up as Vendor</h3>
+                        <h3>Sign up as Photographer</h3>
                         <p>Start your free subscription</p>
                         <form name="vendorRegisterForm" ng-submit="register(vendorRegisterForm)" ng-validate="registrationValidateOptions">
                             <div class="form-group">

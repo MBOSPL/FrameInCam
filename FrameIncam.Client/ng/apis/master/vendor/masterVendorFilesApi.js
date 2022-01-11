@@ -21,9 +21,10 @@
         function (p_$resource) {
             var actions = ng.fincam.resource.apply({}, [url, {
                 getPhotos: { method: "GET", url: "get-photos/:vendorId", isArray: true },
-                clearOldFiles: { method: "POST", "url": 'clear-old-photos' },
+                clearOldFiles: { method: "POST", "url": 'clear-old-photos/:fileId' },
                 storeVideos: { method: "POST", url: "store-videos" },
-                getVideos: { method: "POST", url: "get-videos/:vendorId", isArray: true  }
+                getVideos: { method: "POST", url: "get-videos/:vendorId", isArray: true },
+                setProfileImage: { method: "POST", url: "select-profile-photo/:fileId"}
             }]);
 
             return p_$resource(url, {}, actions);
@@ -91,8 +92,8 @@
             self.getDefaultPresentationSrc = function (vendorId,p_fileId) {
                 return (p_clientConfig.fincamApiUrl + url + "/get-default-presentation/" + vendorId+"/"+ p_fileId + "?t="+p_$rootScope.token);
             }
-            self.clearOldFiles = function () {
-                return p_resources.clearOldFiles({}).$promise
+            self.clearOldFiles = function (id) {
+                return p_resources.clearOldFiles({'fileId':id},null).$promise
                     .then(self.handleSuccess, self.handleError, self.handleNotify);
             }
             self.storeVideos = function (req) {
@@ -102,6 +103,10 @@
             self.getVideos = function (vendor_id) {
                 return p_resources.getVideos({ 'vendorId': vendor_id },null).$promise
                     .then(self.array, self.handleError, self.handleNotify);
+            }
+            self.setProfileImage = function (fileId) {
+                return p_resources.setProfileImage({ 'fileId': fileId }, null).$promise
+                    .then(self.handleSuccess, self.handleError, self.handleNotify);
             }
             return self;
         }]);

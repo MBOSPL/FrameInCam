@@ -49,8 +49,11 @@
                     vendorId: {
                         name: "int",
                         nullable: true
+                    },
+                    maxProfilePhotoSizeInMB: {
+                        name: "int",
+                        nullable: true
                     }
-
                 },
                 prototype: new function () {
                     var self = this;

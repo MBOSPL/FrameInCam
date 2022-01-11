@@ -123,7 +123,11 @@
                         id: 0,
                         geoName: "Select State"
                     });
-
+                    p_states.sort(function(a, b){
+                        if(a.geoName < b.geoName) { return -1; }
+                        if(a.geoName > b.geoName) { return 1; }
+                        return 0;
+                    });
                     p_$scope.geoStates = [emptyState].concat(p_states || []);
                 }));
                 asyncTasks.push(p_masterLovApi.getByType("vendor_experience").then(function (p_vendorExperiences) {
@@ -313,6 +317,10 @@
                             });
                         }
                     });
+                }
+                else{
+                    var validator = $("#updateProfileForm").data("validator");
+                    validator.focusInvalid();
                 }
             }
 

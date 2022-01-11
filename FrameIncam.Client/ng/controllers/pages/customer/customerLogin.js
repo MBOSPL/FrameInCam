@@ -81,6 +81,8 @@
             p_$scope.init = function () {
                 var tasks = [];
 
+                p_$scope.is_processing = false;
+
                 p_$scope.errorMsgs = [];
                 p_$scope.user = {
                     username: "",
@@ -112,7 +114,51 @@
                     p_$scope.ready = true;
                 });
             }
-
+            p_$scope.forgotPassword = function () {
+                $.confirm({
+                    title: 'Forgot Password',
+                    content: '' +
+                        '<form action="" class="formName">' +
+                        '<div class="form-group">' +
+                        '<label>Enter Email or Mobile No</label>' +
+                        '<input type="text" placeholder="Enter Here" class="name form-control" required />' +
+                        '</div>' +
+                        '</form>',
+                    buttons: {
+                        formSubmit: {
+                            text: 'Submit',
+                            btnClass: 'btn-blue',
+                            action: function () {
+                                var name = this.$content.find('.name').val();
+                                if (!name) {
+                                    $.alert('Email is Required');
+                                    return false;
+                                }
+                                return p_accountApi.forgotPassword(name).then(res => {
+                                    if (res.result == true) {
+                                        $.alert({
+                                            title: "Alert!!",
+                                            content: "Password Reset Mail Sent!"
+                                        });
+                                    }
+                                    else {
+                                        $.alert({
+                                            title: "Error!!",
+                                            content: res.errorMsgs
+                                        });
+                                    }
+                                });
+                            }
+                        },
+                        cancel: function () {
+                            //close
+                        },
+                    },
+                    onContentReady: function () {
+                        // bind to events
+                    }
+                });
+            }
             p_$scope.initValidationOptions = function () {
                 p_$scope.signinValidationOptions = {
                     rules: {
@@ -132,7 +178,9 @@
 
             p_$scope.signin = function (p_customerSigninForm) {
                 if (p_customerSigninForm.validate()) {
+                    p_$scope.is_processing = true;
                     return p_accountApi.connect(p_$scope.user).then(function (p_authResult) {
+                        p_$scope.is_processing = false;
                         if (p_utils.isArray(p_authResult.errorMsgs) && p_authResult.errorMsgs.length > 0) {
                             p_$scope.errorMsgs = p_authResult.errorMsgs;
                             return p_$q.reject();
@@ -155,6 +203,8 @@
                                 });
                             });
                         });
+                    }, err => {
+                       p_$scope.is_processing = false;
                     });
                 }
             }

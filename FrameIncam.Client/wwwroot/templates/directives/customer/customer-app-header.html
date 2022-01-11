@@ -10,7 +10,7 @@
                                         <i class="fa fa-camera pr-1"></i>
                                     </h6> -->
                                         <img src="/assets/images/FrameInCam.png" width="30px" height="40px" />
-                                    <strong class="text-white d-inline-block pl-3">Frame In Cam</strong>
+                                    <strong class="text-dark d-inline-block pl-3" style="margin: 2px">Frame In Cam</strong>
                                 </a>
                             </div>
                         </div>
@@ -27,7 +27,7 @@
                                         <li ng-if="false"><a href>Your Account</a></li>
                                         <li><a ng-click="customerProfile()">Your Profile</a></li>
                                         <li><a ng-click="browseProjects()">Your Projects</a></li>
-                                        <li><a ng-click="browseShortlistedVendors()">Your Shortlisted Vendors</a></li>
+                                        <li><a ng-click="browseShortlistedVendors()">Your Shortlisted Photographers</a></li>
                                         <li ng-if="false"><a>Your messages</a></li>
                                         <li><a ng-click="logout()">Logout</a></li>
                                     </ul>
@@ -35,7 +35,7 @@
                                 <li ng-if="!$root.isCustomerLoggedIn()"><a href ng-click="loginCustomer()">Sign In</a></li>
                             </ul>
                             <div class="submit_listing" ng-if="!$root.isUserLoggedIn()">
-                                <a href ng-click="registerVendor()" class="btn outline-btn"><i class="fa fa-plus-circle"></i> Register as Vendor</a>
+                                <a href ng-click="registerVendor()" class="btn outline-btn"><i class="fa fa-plus-circle"></i> Register as Photographer</a>
                             </div>
                             <div class="submit_listing" ng-if="$root.isVendorLoggedIn()">
                                 <a href ng-click="goHome()" class="btn outline-btn"><i class="fa fa-home"></i> Go Home</a>

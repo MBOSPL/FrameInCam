@@ -1,7 +1,7 @@
 ﻿(function ($, ng, debugMode, undefined) {
     "use strict";
 
-    ng.module("app", ['ui.router', 'ngResource', 'angular-loading-bar', 'ngValidate', 'thatisuday.dropzone', 'ui.bootstrap.carousel','ui.bootstrap.tpls']);
+    ng.module("app", ['ui.router', 'ngResource', 'angular-loading-bar', 'ngValidate', 'thatisuday.dropzone', 'ui.bootstrap.carousel', 'ui.bootstrap.tpls', 'selectize', 'ui.sortable', 'ui.carousel']);
 
     // --------------------------------------------------------------------------------
     // Run
@@ -121,5 +121,6 @@
                     requireBase: true,
                     rewriteLinks: false
                 });
+                //$.fn.select2.defaults.set("theme", "bootstrap4");
             }]);
 })(jQuery, angular, document.children[0].hasAttribute("debug"));

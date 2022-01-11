@@ -11,3 +11,6 @@
             background-color: #007bff;
             color: white;
         }
+.medium-zoom-image--opened{
+    z-index:11;
+}

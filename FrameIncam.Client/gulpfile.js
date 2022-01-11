@@ -4,6 +4,7 @@ var fs = require("fs");
 var path = require('path');
 var merge = require('merge-stream');
 var gulp = require('gulp');
+
 //var hash = require('gulp-hash');
 function getFolders(dir) {
     return fs.readdirSync(dir)
@@ -72,7 +73,7 @@ gulp.task('_lib', function () {
         "node_modules/dropzone/dist/min/dropzone.min.js",
         "node_modules/ngdropzone/dist/ng-dropzone.min.js",
         "node_modules/angular-ui-bootstrap/dist/ui-bootstrap-tpls.js",
-        "node_modules/angular-ui-bootstrap/dist/ui-bootstrap.js"
+        "node_modules/angular-ui-sortable/dist/sortable.min.js",
     ], { base: "." })
         .pipe(concat("wwwroot/dist/lib.js"))
         .pipe(uglify())

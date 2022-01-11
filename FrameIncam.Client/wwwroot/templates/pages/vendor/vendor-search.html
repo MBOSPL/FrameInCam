@@ -13,24 +13,73 @@
             <div class="layout-switcher">
                 <a href="" ng-class="{'active':view == 'grid'}" ng-click="view = 'grid'"><i class="fa fa-th"></i></a>
                 <a href="" ng-class="{'active':view == 'list'}" ng-click="view = 'list'"><i class="fa fa-align-justify"></i></a>
+                <!-- <a href="" ng-click=""><i class="fa fa-filter"></i></a> -->
             </div>
             <div class="pull-right col-4">
                 <input type="text" class="form-control" placeholder="Search" ng-change="refresh()" ng-model="searchQuery.search">
                 <button type="button" class="btn mr-3 btn-link btn-icon btn-clear-text" tabindex="-1" ng-if="searchQuery.search" ng-click="clearSearch($event)">
                     <i class="fa fa-close text-danger"></i>
                 </button>
-            </div>
-        </div>
+                <br />
 
+            </div>
+
+        </div>
+        <p class="vendor-search-filter">
+            <button class="btn" ng-class="{'collapsed':!isFilterApplied()}" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <i class="fa" aria-hidden="true"></i>
+                Filter
+            </button>
+            <button class="btn btn-filter"
+                    ng-if="isFilterApplied()"
+                    ng-click="clearFilter()">
+                Clear Filter
+            </button>
+        </p>
+            <div id="collapseOne" ng-class="{'show':isFilterApplied()}" class="collapse" aria-labelledby="headingOne">
+                <div class="card-body">
+                    <form class="form-inline">
+                        <span class="col-4 ng-hide">
+                            <div class="form-group">
+                                <label for="vendorType">Choose a Vendor Type</label>
+                                <selectize id="vendorType" class="col-12" config='vendorTypeConfig' options='vendorTypes' ng-model="vendorTypeIdTV"></selectize>
+                            </div>
+                        </span>
+                        <span class="col-md-5 col-lg-4">
+                            <div class="form-group">
+                                <label for="cityId">Choose a City</label>
+                                <selectize id="cityId" class="col-12" config='cityConfig' options='geoCities' ng-model="geoCityIdTV"></selectize>
+                                <!--
+        <select name="city" id="cityId" class="col-12" ng-model="searchQuery.geoCityId"
+                ng-options="geoCity.id as geoCity.geoName for geoCity in geoCities">
+        </select>
+    -->
+                            </div>
+                        </span>
+                        <div class="form-group search_btn">
+                            <input type="button" value="Apply" class="btn btn-block" ng-click="refreshPage()">
+                        </div>
+                    </form>
+                </div>
+            </div>
         <div class="vendor-explorer-container">
             <fic-vendor-grid-explorer ng-model="vendors" select-vendor="toggleVendorSelection($vendor)" ng-disabled="isDisabled()" ng-if="view == 'grid'"></fic-vendor-grid-explorer>
             <fic-vendor-list-explorer ng-model="vendors" select-vendor="toggleVendorSelection($vendor)" ng-disabled="isDisabled()" ng-if="view == 'list'"></fic-vendor-list-explorer>
         </div>
         <nav class="pagination_nav">
             <ul class="pagination">
-                <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
-                <li class="active"><a href="#">1</a></li>
-                <li class="disabled"><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+                <li class="disabled">
+                    <a href=""
+                       href="" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+                </li>
+                <li class="active">
+                    <a href=""
+                       href="">1</a>
+                </li>
+                <li class="disabled">
+                    <a href=""
+                       href="" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+                </li>
             </ul>
         </nav>
     </div>

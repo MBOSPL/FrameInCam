@@ -1,41 +1,74 @@
-﻿<div ng-init="init()" class="customer-home">
-    <section id="banner" class="parallex-bg section-padding">
-        <div class="container-fluid">
-            <div id="listing_img_slider">
-                <div class="owl-carousel owl-theme">
-                    <div class="item"><img src="assets/images/landing-cover/2.jpg" width="650" height="325" alt="image"></div>
-                    <div class="item"><img src="assets/images/landing-cover/3.jpg" width="650" height="325" alt="image"></div>
-                    <div class="item"><img src="assets/images/landing-cover/6.jpg" width="650" height="325" alt="image"></div>
-                    <div class="item"><img src="assets/images/landing-cover/7.jpg" width="650" height="325" alt="image"></div>
-                    <div class="item"><img src="assets/images/landing-cover/8.jpg" width="650" height="325" alt="image"></div>
-                    <div class="item"><img src="assets/images/landing-cover/9.jpg" width="650" height="325" alt="image"></div>
+﻿<div ng-init="init()" class="customer-home sridhar-media" style="height: 607px;">
+    <!-- Class cutted by sridhar  -- section-padding -->
+    <!-- Id cutted by sridhar  -- benner -->
+    <section id="banner" class="parallex-bg">
+        <div class="container-fluid sridhar-container-pad-left">
+            <div id="listing_img_slider" style = "position: relative; top: -180px;">
+                <h4 class="sridhar-media-h4" style="position: relative; color: white; z-index: 1000; font-size: 32px; font-weight: 900; top: 439px;">Welcome to Frame In Cam</h4>
+                <div class="search_form sridhar-media-form" style="position: relative; top: 320px; top: 457px">
+                    <form>
+                        <div class="form-group">
+                            <selectize class="col-12" config='vendorTypeConfig' options='vendorTypes' ng-model="searchQuery.vendorTypeId"></selectize>
+                            <!-- <select name="type" class="form-control" ng-model="searchQuery.vendorTypeId"
+                                        ng-options="vendorType.id as vendorType.type for vendorType in vendorTypes">
+                                </select>
+                            -->
+                        </div>
+                        <div class="form-group">
+                            <selectize class="col-12" config='cityConfig' options='geoCities' ng-model="searchQuery.cityGeoId"></selectize>
+
+                            <!--
+ <select name="city" class="form-control" ng-model="searchQuery.cityGeoId"
+        ng-options="geoCity.id as geoCity.geoName for geoCity in geoCities">
+</select>
+-->
+                        </div>
+                        <div class="form-group search_btn">
+                            <input type="submit" value="Search" class="btn btn-block" ng-click="searchVendors()" />
+                        </div>
+                    </form>
                 </div>
+                <img src="assets/images/landing-cover/new/photo10.jpg" class="re_ban_img">
+                <!-- <div class="owl-carousel owl-theme">
+                    <div class="item"><img src="assets/images/landing-cover/new/photo1.jpg" width="650" height="325" alt="image"></div>
+                    <div class="item"><img src="assets/images/landing-cover/new/photo2.jpg" width="650" height="325" alt="image"></div>
+                    <div class="item"><img src="assets/images/landing-cover/new/photo3.jpg" width="650" height="325" alt="image"></div>
+                    <div class="item"><img src="assets/images/landing-cover/new/photo4.jpg" width="650" height="325" alt="image"></div>
+                    <div class="item"><img src="assets/images/landing-cover/new/photo5.jpg" width="650" height="325" alt="image"></div>
+                    <div class="item"><img src="assets/images/landing-cover/new/photo6.jpg" width="650" height="325" alt="image"></div>
+                    <div class="item"><img src="assets/images/landing-cover/new/photo7.jpg" width="650" height="325" alt="image"></div>  
+                </div> -->
             </div>
         </div>
-        <div class="container p-4">
-            <div class="intro_text white-text div_zindex">
+        <!-- <div class="p-4 bg-white">
+            <div class="intro_text text-dark div_zindex">
                 <h1>Welcome to Frame In Cam</h1>
                     <h5>Find &amp; Explore Nearest Photographers</h5>
                     <div class="search_form">
                         <form>
-                            <div class="form-group select">
-                                <select name="type" class="form-control" ng-model="searchQuery.vendorTypeId"
-                                        ng-options="vendorType.id as vendorType.type for vendorType in vendorTypes">
-                                </select>
-                            </div>
-                            <div class="form-group select">
-                                <select name="city" class="form-control" ng-model="searchQuery.cityGeoId"
-                                        ng-options="geoCity.id as geoCity.geoName for geoCity in geoCities">
-                                </select>
-                            </div>
+                            <div class="form-group">
+                                <selectize class="col-12" config='vendorTypeConfig' options='vendorTypes' ng-model="searchQuery.vendorTypeId"></selectize> -->
+                                <!-- <select name="type" class="form-control" ng-model="searchQuery.vendorTypeId"
+                                            ng-options="vendorType.id as vendorType.type for vendorType in vendorTypes">
+                                    </select>
+                                -->
+                            <!-- </div>
+                            <div class="form-group">
+                                <selectize class="col-12" config='cityConfig' options='geoCities' ng-model="searchQuery.cityGeoId"></selectize> -->
+                                <!--
+     <select name="city" class="form-control" ng-model="searchQuery.cityGeoId"
+            ng-options="geoCity.id as geoCity.geoName for geoCity in geoCities">
+    </select>
+    -->
+                            <!-- </div>
                             <div class="form-group search_btn">
                                 <input type="submit" value="Search" class="btn btn-block" ng-click="searchVendors()">
                             </div>
                         </form>
                     </div>
             </div>
-        </div>
-        <div class="dark-overlay"></div>
+        </div> -->
+        <div class="bg-white"></div>
     </section>
 
     <section id="photo" class="p-5 text-center ng-hide">

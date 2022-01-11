@@ -19,5 +19,8 @@ namespace FrameIncam.Domains.Models.Master.Vendor
         public string FileType { get; set; }
         [Column("vendor_id")]
         public int? VendorId { get; set; }
+
+        [Column("is_selected_for_profile")]
+        public bool IsSelectedForProfile { get; set; }
     }
 }

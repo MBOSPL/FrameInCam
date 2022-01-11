@@ -22,5 +22,6 @@ namespace FrameIncam
         public string StaticClientUrl { get; set; }
         public string SecondShooterClientUrl { get; set; }
         public string CompanyLogoPath { get; set; }
+        public int MaxProfilePhotoSizeInMB { get; set; }
     }
 }

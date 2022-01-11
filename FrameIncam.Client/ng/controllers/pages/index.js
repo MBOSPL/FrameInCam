@@ -82,8 +82,9 @@
                         var paths = s_path.split("/");
                         var last_path = paths[(paths.length) - 1];
                         if (last_path == "")
-                            p_$window.location.href = "/subscription";
-                            //return p_$state.go("home");
+                            return p_$state.go("home");
+                            //p_$window.location.href = "/subscription";
+                            
                     });
                 }).finally(function () {
                     p_$scope.ready = true;

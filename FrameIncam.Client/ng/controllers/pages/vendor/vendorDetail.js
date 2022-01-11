@@ -94,6 +94,10 @@
 
                 });
             }
+            p_$scope.shareViaFacebook = function () {
+                var fblink = "https://facebook.com/sharer/sharer.php?u=" + encodeURIComponent(window.location.href);
+                p_$window.open(fblink, '', 'menubar=no,toolbar=no,resizable=yes,scrollbars=yes,height=300,width=600'); return false;
+            }
             p_$scope.storeReview = function () {
                 p_$scope.review_is_submitting = true;
                 p_$scope.review.vendor_id =parseInt(p_$stateParams.vendorId);
@@ -105,20 +109,7 @@
                             content: "Review Posted Successfully"
                         })
                         return p_$scope.refresh().then(function () {
-                            $('#listing_img_slider .owl-carousel').owlCarousel({
-                                loop: true,
-                                margin: 0,
-                                nav: true,
-                                dots: false,
-                                autoplay: true,
-                                autoplayTimeout: 5000,
-                                responsive: {
-                                    0: { items: 1 },
-                                    400: { items: 2 },
-                                    768: { items: 3 },
-                                    992: { items: 4 }
-                                }
-                            })
+                            //p_$scope.initCarousel();
                         });
                     }
                     else {
@@ -160,21 +151,31 @@
                 return p_$sce.trustAsResourceUrl(src);
             };
             p_$scope.initCarousel = function () {
-                console.log($('#listing_img_slider .owl-carousel'));
-                $('#listing_img_slider .owl-carousel').owlCarousel({
-                    loop: true,
+                var carousel = [];
+                var width = 0;
+                p_$scope.photos.forEach((photo, index) => {
+                    carousel[width] ={ items: (index + 1) };
+                    width += 400;
+                });
+                $('#listing_img_slider_vendor_detail .owl-carousel').owlCarousel({
+                    loop: false,
                     margin: 0,
+                    items: (p_$scope.photos.length-1),
                     nav: true,
+                    responsive: {
+                        0: { items: 2 },
+                        650: { items: 4 },
+                        1300: { items: 5 },
+                        1950: { items: 6, autoplay: false },
+                        2600: { items: 7, autoplay: false }
+                    },
                     dots: false,
                     autoplay: true,
-                    autoplayTimeout: 5000,
-                    responsive: {
-                        0: { items: 1 },
-                        400: { items: 2 },
-                        768: { items: 3 },
-                        992: { items: 4 }
-                    }
-                })
+                    autoplayTimeout: 2000
+                });
+                /*p_$timeout(function () {
+
+                }, 10000)*/
             }
             p_$scope.init = function () {
                 /*if (!p_$rootScope.isUserLoggedIn()) {
@@ -195,6 +196,7 @@
                         var projectFiles = res;
                         p_$scope.photos = projectFiles.map(function (r) {
                             var obj = { presentationUrl: '' };
+                            obj.id = r.id;
                             obj.presentationUrl = p_masterVendorFileApi.getDefaultPresentationSrc(vendorId,r.id);
                             return obj;
                         });

@@ -11,6 +11,11 @@ namespace FrameIncam.WebApi.Controllers.Master.Vendor
     [Route("api/master/vendor-type")]
     public class MasterVendorTypeController : FrameIncamApiController<MasterVendorType, IMasterVendorTypeRepository>
     {
-        
+
+        [HttpGet("get-all")]
+        public async override Task<List<MasterVendorType>> GetAll([FromQuery(Name = "init")] bool p_init = true)
+        {
+            return await this.Repository.GetAllVendorTypes();
+        }
     }
 }

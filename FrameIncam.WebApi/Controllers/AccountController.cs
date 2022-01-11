@@ -590,14 +590,17 @@ namespace FrameIncam.WebApi.Controllers
                 IConfigUserRoleRepository userRoleRepo = this.Provider.GetService<IConfigUserRoleRepository>();
                 role = await userRoleRepo.GetRoleByUserId(user.Id);
             }
+            IOptions<AppSettings> appSettings = this.Provider.GetService<IOptions<AppSettings>>();
 
+            int MaxProfilePhotoSizeInMB = appSettings.Value.MaxProfilePhotoSizeInMB;
             UserProfile profile = new UserProfile()
             {
                 Role = role,
                 User = user,
                 CustomerId = securityContext.GetCustomerId(),
                 VendorId = securityContext.GetVendorId(),
-                FreeLancerId=securityContext.GetFreeLancerId()
+                FreeLancerId=securityContext.GetFreeLancerId(),
+                MaxProfilePhotoSizeInMB= MaxProfilePhotoSizeInMB
             };
 
             return profile;

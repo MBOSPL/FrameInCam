@@ -80,6 +80,7 @@
                     password: "",
                     scope:"Vendor"
                 };
+                p_$scope.is_processing = false;
                 var searchObject = p_$location.search();
                 if (p_utils.isObject(searchObject)) {
                     p_$location.search({});
@@ -177,7 +178,9 @@
             }
             p_$scope.signin = function (p_vendorSigninForm) {
                 if (p_vendorSigninForm.validate()) {
+                    p_$scope.is_processing = true;
                     return p_accountApi.connect(p_$scope.user).then(function (p_authResult) {
+                        p_$scope.is_processing = false;
                         if (p_utils.isArray(p_authResult.errorMsgs) && p_authResult.errorMsgs.length > 0) {
                             p_$scope.errorMsgs = p_authResult.errorMsgs;
                             return p_$q.reject();
@@ -200,6 +203,8 @@
                                 });
                             });
                         });
+                    }, err => {
+                            p_$scope.is_processing = false;
                     });
                 }
             }

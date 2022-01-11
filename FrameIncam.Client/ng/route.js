@@ -23,7 +23,7 @@
 
                 // Search
                 .state("vendor-search", {
-                    url: "/vendors/:vendorTypeId/:cityGeoId",
+                    url: "/vendors/:vendorTypeId/:cityGeoId/:searchText",
                     template: ng.fincam.template("/templates/pages/vendor/vendor-search.html"),
                     controller: "vendorSearchController"
                 })

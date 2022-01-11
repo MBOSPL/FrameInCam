@@ -1,6 +1,6 @@
 ﻿<div class="vendor-profile" ng-init="init()">
-    <form name="updateProfileForm" ng-submit="updateProfile(updateProfileForm)" ng-validate="profileUpdateValidationOptions" ng-if="ready">
-        <h4 class="mb-4">Profile <button type="submit" class="btn btn-sm bg-success pull-right"><i class="fa fa-save mr-2"></i> SAVE</button></h4>
+    <form name="updateProfileForm" id="updateProfileForm" ng-submit="updateProfile(updateProfileForm)" ng-validate="profileUpdateValidationOptions" ng-if="ready">
+        <h4 class="mb-4">Profile </h4>
         <div class="info-container">
             <div class="widget_title">
                 <label class="font-weight-bold">Personal Information</label>
@@ -172,6 +172,11 @@
                         <label class="form-label">Additional costs</label>
                         <textarea name="addCost" cols="" rows="" class="form-control" ng-model="profile.vendor.additionalCost"></textarea>
                     </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <button type="submit" class="btn btn-sm bg-success pull-right"><i class="fa fa-save mr-2"></i> SAVE</button>
                 </div>
             </div>
         </div>

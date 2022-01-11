@@ -54,6 +54,9 @@ namespace FrameIncam.Domains
             p_services.AddScoped <IMasterVendorFilesRepository>(p_provider => new MasterVendorFilesRepository(p_provider,
                     p_provider.GetService<FrameIncamDbContext>()));
 
+            p_services.AddScoped<IMasterVendorTypeRepository>(p_provider => new MasterVendorTypeRepository(p_provider,
+                   p_provider.GetService<FrameIncamDbContext>()));
+
             #region Freelancer
             p_services.AddScoped<IMasterFreeLancerTypeRepository>(p_provider => new MasterFreeLancerTypeRepository(p_provider,
             p_provider.GetService<FrameIncamDbContext>()));

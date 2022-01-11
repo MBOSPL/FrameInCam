@@ -93,6 +93,13 @@
             p_$scope.goHome = function () {
                 p_$window.location.href = "/vendor-home";
             }
+            p_$scope.searchVendors = function () {
+                return p_$state.go("vendor-search", {
+                    vendorTypeId: p_$scope.searchQuery.vendorTypeId,
+                    cityGeoId: p_$scope.searchQuery.cityGeoId,
+                    searchText:0
+                });
+            }
         }
     ]);
 

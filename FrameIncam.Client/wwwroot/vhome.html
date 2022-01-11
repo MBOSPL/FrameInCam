@@ -19,6 +19,7 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
 
     <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery-ui.min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src="assets/js/owl.carousel.min.js"></script>
@@ -28,6 +29,10 @@
     <script src="js/site.min.js"></script>
     <script src="dist/lib.js"></script>
     <script src="dist/ng.js"></script>
+
+    <script src="lib/selectize/dist/js/standalone/selectize.min.js"></script>
+    <script src="assets/js/angular-selectize.js"></script>
+
 </head>
 <body ng-controller="vendorHomeController" ng-cloak ng-init="init()">
     <div id="lb-back">
@@ -50,9 +55,9 @@
                             <!-- Tabs nav -->
                             <div class="nav flex-column nav-pills nav-pills-custom" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                                 <!--<a href class="nav-link mb-3 p-3 shadow active" id="v-pills-home-tab" data-toggle="pill" ng-click="loadTab('vendor-dashboard')" role="tab" aria-controls="v-pills-home" aria-selected="true">
-                                    <i class="fa fa-bar-chart mr-2"></i>
-                                    <span class="font-weight-bold small text-uppercase">Dashboard</span>
-                                </a>-->
+        <i class="fa fa-bar-chart mr-2"></i>
+        <span class="font-weight-bold small text-uppercase">Dashboard</span>
+    </a>-->
                                 <a href class="nav-link mb-3 p-3 shadow " id="v-pills-profile-tab" data-toggle="pill" ng-click="loadTab('vendor-profile')" ng-class="{'active':isMenuActive('vendor-profile')}" role="tab" aria-controls="v-pills-profile" aria-selected="true">
                                     <i class="fa fa-user-circle-o mr-2"></i>
                                     <span class="font-weight-bold small text-uppercase">Profile</span>
@@ -61,31 +66,39 @@
                                     <i class="fa fa-file-video-o mr-2"></i>
                                     <span class="font-weight-bold small text-uppercase">Portfolio</span>
                                 </a>
+                                <!--
                                 <a href class="nav-link mb-3 p-3 shadow" id="v-pills-projects-tab" data-toggle="pill" ng-class="{'active':isMenuActive('vendor-projects')}" ng-click="loadTab('vendor-projects')" role="tab" aria-controls="v-pills-projects" aria-selected="false">
                                     <i class="fa fa-list-alt mr-2"></i>
                                     <span class="font-weight-bold small text-uppercase">Projects</span>
                                 </a>
+                                -->
                                 <a href class="nav-link mb-3 p-3 shadow" ng-class="{'active':isMenuActive('vendor-reviews')}" id="v-pills-messages-tab" data-toggle="pill" ng-click="loadTab('vendor-reviews')" role="tab" aria-controls="v-pills-messages" aria-selected="false">
                                     <i class="fa fa-star mr-2"></i>
                                     <span class="font-weight-bold small text-uppercase">Reviews</span>
                                 </a>
-                                <a href class="nav-link mb-3 p-3 shadow" ng-class="{'active':isMenuActive('vendor-subscription')}" id="v-pills-subscription-tab" data-toggle="pill" ng-click="loadTab('vendor-subscription')" role="tab" aria-controls="v-pills-subscription" aria-selected="false">
-                                    <i class="fa fa-rupee mr-2"></i>
-                                    <span class="font-weight-bold small text-uppercase">Subscription</span>
-                                </a>
-                                <a href class="nav-link mb-3 p-3 shadow" ng-class="{'active':isMenuActive('vendor-freelancer')}" id="v-pills-freelancer-tab" data-toggle="pill" ng-click="loadTab('vendor-freelancer')" role="tab" aria-controls="v-pills-freelancer" aria-selected="false">
-                                    <i class="fa fa-rupee mr-2"></i>
-                                    <span class="font-weight-bold small text-uppercase">Second Shooter</span>
-                                </a>
-                                <a href class="nav-link mb-3 p-3 shadow" ng-click="downloadMSI()">
-                                    <i class="fa fa-download mr-2"></i>
-                                    <span class="font-weight-bold small text-uppercase">Download Installer</span>
-                                </a>
-                                <!--<a href class="nav-link mb-3 p-3 shadow" id="v-pills-users-tab" data-toggle="pill" ng-click="loadTab('vendor-users')" role="tab" aria-controls="v-pills-users" aria-selected="true">
-                                        <i class="fa fa-users mr-2"></i>
-                                        <span class="font-weight-bold small text-uppercase">Users</span>
+                                <!--
+                                    <a href class="nav-link mb-3 p-3 shadow" ng-class="{'active':isMenuActive('vendor-subscription')}" id="v-pills-subscription-tab" data-toggle="pill" ng-click="loadTab('vendor-subscription')" role="tab" aria-controls="v-pills-subscription" aria-selected="false">
+                                        <i class="fa fa-rupee mr-2"></i>
+                                        <span class="font-weight-bold small text-uppercase">Subscription</span>
                                     </a>
-                                 -->
+                                -->
+                                <!--
+                                    <a href class="nav-link mb-3 p-3 shadow" ng-class="{'active':isMenuActive('vendor-freelancer')}" id="v-pills-freelancer-tab" data-toggle="pill" ng-click="loadTab('vendor-freelancer')" role="tab" aria-controls="v-pills-freelancer" aria-selected="false">
+                                        <i class="fa fa-rupee mr-2"></i>
+                                        <span class="font-weight-bold small text-uppercase">Second Shooter</span>
+                                    </a>
+                                -->
+                                <!--
+                                    <a href class="nav-link mb-3 p-3 shadow" ng-click="downloadMSI()">
+                                        <i class="fa fa-download mr-2"></i>
+                                        <span class="font-weight-bold small text-uppercase">Download Installer</span>
+                                    </a>
+                                -->
+                                <!--<a href class="nav-link mb-3 p-3 shadow" id="v-pills-users-tab" data-toggle="pill" ng-click="loadTab('vendor-users')" role="tab" aria-controls="v-pills-users" aria-selected="true">
+            <i class="fa fa-users mr-2"></i>
+            <span class="font-weight-bold small text-uppercase">Users</span>
+        </a>
+     -->
                             </div>
                         </div>
                         <div class="col-md-10">

@@ -13,5 +13,6 @@ namespace FrameIncam.Domains.Common
         public int? VendorId { get; set; }
         public int? CustomerId { get; set; }
         public int? FreeLancerId { get; set; }
+        public int? MaxProfilePhotoSizeInMB { get; set; }
     }
 }

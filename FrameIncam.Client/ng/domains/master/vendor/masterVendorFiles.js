@@ -37,7 +37,8 @@
                     fileName: "string",
                     contentLength: "int",
                     contentType: "string",
-                    fileType: "string"
+                    fileType: "string",
+                    isSelectedForProfile:"bool"
                 },
                 prototype: new function () {
                     var self = this;

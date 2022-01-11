@@ -1,0 +1,31 @@
+﻿.vendor-search-filter [data-toggle="collapse"] {
+    background-color: #38CCFF;
+}
+.vendor-search-filter [data-toggle="collapse"].collapsed {
+       background-color: grey;
+}
+.vendor-search-filter [data-toggle="collapse"] .fa:before {
+    content: "\f139";
+}
+
+.vendor-search-filter [data-toggle="collapse"].collapsed .fa:before {
+    content: "\f13a";
+}
+.btn-filter {
+    background-color: white;
+    color: #38CCFF; 
+}
+.btn-filter:hover {
+   background-color: white;
+   color: #38CCFF;
+}
+.selectize-control .selectize-input {
+    height: 64px !important;
+}
+.selectize-input .item {
+    padding-top: 15px !important;
+}
+span .remove-single {
+    padding-top: 15px !important;
+    padding-right: 33px !important;
+}

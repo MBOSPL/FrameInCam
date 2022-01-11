@@ -13,20 +13,41 @@
                     </div>
                     <div class="row">
                         <div class="col-12">
-                            <a href class="d-block pull-left" tabindex="-1" ng-repeat="photo in photos">
-                                <div class="p-2">
-                                    <fic-thumbnail src="photo.presentationUrl" 
-                                                   style="  height: 200px !important;
+                            <span class="apps-container-header-text">
+                                <p>Profile Image (Drag & Drop Below)</p>
+                            </span>
+                            <span class="apps-container profile-photos" ui-sortable="sortableOptions" ng-model="profile_photos">
+                                <a href class="d-block pull-left " tabindex="-1" ng-repeat="photo in profile_photos">
+                                    <div class="p-2">
+                                        <fic-thumbnail src="photo.presentationUrl"
+                                                       style="  height: 200px !important;
                                         width: 200px !important;
                                         right: 5rem;
                                         left: 2rem;
                                         position: relative;" />
-                                </div>
-                            </a>
+                                    </div>
+                                </a>
+                            </span>
                         </div>
                     </div>
+                    <div class="row">
+                        <div class="col-12">
+                                
+                            <span ui-sortable="sortableOptions" class="uploaded-photos" ng-model="photos">
+                                    <a href class="d-block pull-left" tabindex="-1" ng-repeat="photo in photos">
+                                        <div class="p-2">
+                                            <fic-thumbnail src="photo.presentationUrl"
+                                                           style="  height: 200px !important;
+                                        width: 200px !important;
+                                        right: 5rem;
+                                        left: 2rem;
+                                        position: relative;" />
+                                        </div>
+                                    </a>
+                                </span>
+                            </div>
+                        </div>
                 </div>
-
                 <div class="tab-pane bg-white" id="v-pills-album" role="tabpanel" aria-labelledby="v-pills-album-tab">
                     <div class="widget_title">
                         <label class="font-weight-bold">Albums</label>
@@ -42,9 +63,18 @@
                             <div class="clear">
                                 <nav class="pagination_nav">
                                     <ul class="pagination">
-                                        <li class="disabled"><a href="#" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a></li>
-                                        <li class="active"><a href="#">1</a></li>
-                                        <li class="disabled"><a href="#" aria-label="Next"><span aria-hidden="true">&raquo;</span></a></li>
+                                        <li class="disabled">
+                                            <a href=""
+                                               href="" aria-label="Previous"><span aria-hidden="true">&laquo;</span></a>
+                                        </li>
+                                        <li class="active">
+                                            <a href=""
+                                               href="">1</a>
+                                        </li>
+                                        <li class="disabled">
+                                            <a href=""
+                                               href="" aria-label="Next"><span aria-hidden="true">&raquo;</span></a>
+                                        </li>
                                     </ul>
                                 </nav>
                             </div>
@@ -79,9 +109,9 @@
                     <span class="font-weight-bold small text-uppercase">Photos</span>
                 </a>
                 <!--<a href="#v-pills-album" class="nav-link mb-3 p-3 shadow" id="v-pills-album-tab" data-toggle="pill" role="tab" aria-controls="v-pills-album" aria-selected="false">
-                    <i class="fa fa-list mr-2"></i>
-                    <span class="font-weight-bold small text-uppercase">Albums</span>
-                </a>-->
+        <i class="fa fa-list mr-2"></i>
+        <span class="font-weight-bold small text-uppercase">Albums</span>
+    </a>-->
                 <a href="#v-pills-video" class="nav-link mb-3 p-3 shadow" id="v-pills-videos-tab" data-toggle="pill" role="tab" aria-controls="v-pills-video" aria-selected="false">
                     <i class="fa fa-file-video-o mr-2"></i>
                     <span class="font-weight-bold small text-uppercase">Videos</span>
@@ -122,7 +152,7 @@
                 <form ng-submit="submitVideos()" id="submitVideoForm">
                     <div class="form-group" ng-repeat="input in videoFormsInput">
                         <label for="email">Video #{{$index+1}}:</label>
-                        <input ng-model="input.fileName" type="text" class="form-control" placeholder="Enter a Embed Youtube or Vimeo Link">
+                        <input ng-paste='handlePaste($index,$event)' ng-model="input.fileName" type="text" class="form-control" placeholder="Enter a Embed Youtube or Vimeo Link">
                     </div>
                 </form>
             </div>

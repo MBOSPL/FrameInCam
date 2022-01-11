@@ -1,4 +1,10 @@
-﻿.vendor-signup {
+﻿.vendor-signup [data-toggle="collapse"] .fa:before
+{
+    content: "\f139";
+}
+
+.vendor-signup [data-toggle="collapse"].collapsed .fa:before {
+    content: "\f13a";
 }
 
     .vendor-signup .user-signin {

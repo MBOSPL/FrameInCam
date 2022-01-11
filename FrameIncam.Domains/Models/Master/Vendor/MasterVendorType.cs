@@ -12,6 +12,6 @@ namespace FrameIncam.Domains.Models.Master.Vendor
         public string Type { get; set; }
 
         [Column("isactive")]
-        public Int16 Isactive { get; set; }
+        public bool Isactive { get; set; }
     }
 }

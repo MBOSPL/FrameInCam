@@ -105,6 +105,26 @@ namespace FrameIncam.WebApi.Controllers.Master.Vendor
             }
             return result;
         }
+        [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme + ",Query")]
+        [HttpPost("select-profile-photo/{p_fileId}")]
+        public async Task<FincamApiActionResult<bool>> selectProfilePhoto(int? p_fileId)
+        {
+            FincamApiActionResult<bool> result = new FincamApiActionResult<bool>() { Result = false };
+            try
+            {
+                int? VendorId = SecurityContext.GetVendorId();
+                bool updateFlag = await this.Repository.setProfilePicture(VendorId,p_fileId);
+                if(updateFlag ==true)
+                {
+                    result.Result = true;
+                }
+            }
+            catch (Exception e)
+            {
+                result.ErrorMsgs.Add("Invalid input " + e.Message);
+            }
+            return result;
+        }
         private string GetProjectUploadPath(string p_identifier)
         {
             IOptions<AppSettings> appSettings = this.Provider.GetService<IOptions<AppSettings>>();
@@ -154,12 +174,15 @@ namespace FrameIncam.WebApi.Controllers.Master.Vendor
                 return new NoContentResult();
         }
         [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
-        [HttpPost("clear-old-photos")]
-        public async Task<FincamApiActionResult<bool>> clearOldPhotos()
+        [HttpPost("clear-old-photos/{fileId}")]
+        public async Task<FincamApiActionResult<bool>> clearOldPhotos(int? fileId)
         {
             FincamApiActionResult<bool> result = new FincamApiActionResult<bool>() { Result = false };
             int? VendorId = SecurityContext.GetVendorId();
-            var flag = await this.Repository.ClearOldFiles(VendorId,"photos");
+            IMasterVendorRepository vendorRepo = this.Provider.GetService<IMasterVendorRepository>();
+            MasterVendor masterVendor = await vendorRepo.GetByIdAsync(VendorId);
+            string projectThumbnailPath = GetProjectUploadPath(masterVendor.Identifier);
+            var flag = await this.Repository.ClearOldFiles(VendorId,"photos",fileId, projectThumbnailPath);
             if(flag==true)
             {
                 result.Result = true;
